@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+        <stringProp name="filename">User_Stress - User_updated.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">id,email</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">375</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">45</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">610</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="GetUserById" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;getUserByIdId&quot;: 3464569
+},&quot;query&quot;:&quot;query GetUserById($getUserByIdId: Int!) {\n  getUserById(id: $getUserByIdId) {\n    followerCount\n    id\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetUserById($getUserByIdId: Int!) {
+  getUserById(id: $getUserByIdId) {
+    followerCount
+    id
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;getUserByIdId&quot;: 3464569
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="AddFollowers" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{  &quot;userId&quot;: ${id},
+  &quot;followingId&quot;: 3464572
+},&quot;query&quot;:&quot;mutation AddFollowers($userId: Int!, $followingId: Int!) {\n  addFollowers(userId: $userId, followingId: $followingId)\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">mutation AddFollowers($userId: Int!, $followingId: Int!) {
+  addFollowers(userId: $userId, followingId: $followingId)
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{  &quot;userId&quot;: ${id},
+  &quot;followingId&quot;: 3464572
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

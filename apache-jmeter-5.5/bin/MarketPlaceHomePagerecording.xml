@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="906" it="0" lt="0" ct="453" ts="1682426303557" s="true" lb="/sessions/ping-362" rc="204" rm="No Content" tn="" dt="" de="" by="312" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+x-powered-by: Express
+access-control-allow-origin: *
+access-control-allow-methods: GET,HEAD,PUT,PATCH,POST,DELETE
+vary: Access-Control-Request-Headers
+access-control-allow-headers: api-token,content-type,gleap-hash,gleap-id
+date: Tue, 25 Apr 2023 12:37:23 GMT
+connection: close
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Sec-Fetch-Mode: cors
+Referer: https://nil.qa.nxlvl.app/
+Sec-Fetch-Site: cross-site
+Accept-Language: en-US,en;q=0.9
+Origin: https://nil.qa.nxlvl.app
+Access-Control-Request-Method: POST
+Accept: */*
+Host: api.gleap.io
+Access-Control-Request-Headers: api-token,content-type,gleap-hash,gleap-id
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.58
+Sec-Fetch-Dest: empty
+</requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">OPTIONS</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://api.gleap.io/sessions/ping</java.net.URL>
+</httpSample>
+<httpSample t="2589" it="0" lt="2589" ct="2312" ts="1682426313525" s="true" lb="/v1/users/ME/conversations-363" rc="200" rm="OK" tn="" dt="text" de="utf-8" by="653" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: no-store, must-revalidate, no-cache
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+X-Content-Type-Options: nosniff
+ContextId: tcid=3180525337297610597,server=BY3PEPF000085A8
+Date: Tue, 25 Apr 2023 12:37:34 GMT
+Connection: close
+Content-Length: 323
+Content-Encoding: gzip
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Sec-Fetch-Mode: cors
+BehaviorOverride: redirectAs404
+Sec-Fetch-Site: cross-site
+Accept-Language: en-US
+ClientInfo: os=Windows; osVer=10.0.19045; proc=x86; lcid=en-GB; deviceType=1; country=IN; clientName=skype4life; clientVer=1434/8.96.0.207//skype4life; timezone=Asia/Calcutta
+Accept: application/json
+sec-ch-ua: &quot; Not A;Brand&quot;;v=&quot;99&quot;, &quot;Chromium&quot;;v=&quot;102&quot;
+sec-ch-ua-mobile: ?0
+RegistrationToken: registrationToken=U2lnbmF0dXJlOjI6Mjg6QVFRQUFBQjVxaWNIZXMzVTN6K0s2T1dQMXFKNTtWZXJzaW9uOjY6MToxO0lzc3VlVGltZTo0OjE5OjUyNDk4NjU5OTUwNjUwNzMyMTc7RXAuSWRUeXBlOjc6MTo4O0VwLklkOjI6MjU6bGl2ZTouY2lkLjVmNzg3MDQwNWY1NGE5MjtFcC5FcGlkOjU6MzY6NTAwZWI2M2YtZmZmZi1mZmZmLTJkMjItZGEyZGY3YzkxYjYzO0VwLkxvZ2luVGltZTo3OjE6MDtFcC5BdXRoVGltZTo0OjE5OjUyNDk4NjU5OTUwNjAyMjkxOTY7RXAuQXV0aFR5cGU6NzoyOjE1O0VwLkV4cFRpbWU6NDoxOTo1MjQ5ODY2ODU5MDE3Mzg3OTA0O0VwLlNreXBlVG9rZW46Mjo2MzU6ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNklqRXdOaUlzSW5nMWRDSTZJbTlRTVdGeFFubGZSM2haVTNwU2FYaHVRMjV6ZEU1UFUycDJjeUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwWVhRaU9qRTJPREl6TVRJM05UQXNJbVY0Y0NJNk1UWTRNak01T1RFME55d2ljMnQ1Y0dWcFpDSTZJbXhwZG1VNkxtTnBaQzQxWmpjNE56QTBNRFZtTlRSaE9USWlMQ0p6WTNBaU9qazFOaXdpWTNOcElqb2lNVFk0TWpNeE1qYzBOeUlzSW1OcFpDSTZJalZtTnpnM01EUXdOV1kxTkdFNU1pSXNJbUZoZENJNk1UWTNOVFk0TWpBek9YMC5RS3JaTHYtVHc2d09HTncxdVhIeUFIU0Y5TmlqUmE2TkdLSGdlZlBzLUhiVUJmeGtUWjIxSjZLcXZIVDRNanN6SHQxVTZFSUdmdUF6LXBZbGFqSGE0aFIxcmM5a3RSU0NRa3pWQy1VTm4wbHlJQjEyVzFHSHBvcUtZS1RtZEVJNnFwb1NWRGh2eC0ySmZvMXdEWnhDM2ZtaUhfTkVtMURLTldlRVpxYVkyWXFSR1kteGE1OWEwNk43Um9rQXYwLTBoYXA1eXBkeTRNa1BVbElld05EeE5wTTd2eHI3elF0YkkwS1h4S2lBbHZTMmJsNy0za0xHTzF6WF91b1FhNy0yNE16ZThHSWdJRV9qTU1IRGItQ3dmRUFYZWFzejBiRWdwRk5PYUR4Tlh6cVlCZWUxUm5EUU9rc2JETEFoaUx1aGJHYXJUdzRWcXZ1VDdZS2xjSXRBcmc7VXNyLk5ldE1hc2s6MTE6MToyO1Vzci5YZnJDbnQ6NjoxOjA7VXNyLlJkcmN0RmxnOjI6MDo7VXNyLkV4cElkOjk6MTowO1Vzci5FeHBJZExhc3RMb2c6NDoxOjA7VXNlci5BdGhDdHh0OjI6NDQwOkNsTnJlWEJsVkc5clpXNFpiR2wyWlRvdVkybGtMalZtTnpnM01EUXdOV1kxTkdFNU1nRURWV2xqRkRFdk1TOHdNREF4SURFeU9qQXdPakF3SUVGTkRFNXZkRk53WldOcFptbGxaSkpLOVFVRWgvY0ZBQUFBQUFBQVFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFCbHNhWFpsT2k1amFXUXVOV1kzT0Rjd05EQTFaalUwWVRreUFBQUFBQUFBQUFBQUIwNXZVMk52Y21VQUFBQUFCQUFBQUFBQUFBQUFBQUFBa2tyMUJRU0g5d1VBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUVaYkdsMlpUb3VZMmxrTGpWbU56ZzNNRFF3TldZMU5HRTVNZ0FBQUFBQVcyWkhaQWNBQUFBSVNXUmxiblJwZEhrT1NXUmxiblJwZEhsVmNHUmhkR1VJUTI5dWRHRmpkSE1PUTI5dWRHRmpkSE5WY0dSaGRHVUlRMjl0YldWeVkyVU5RMjl0YlhWdWFXTmhkR2x2YmhWRGIyMXRkVzVwWTJGMGFXOXVVbVZoWkU5dWJIa0FBQT09Ow==; expires=1682487259; endpointId={500eb63f-ffff-ffff-2d22-da2df7c91b63}
+sec-ch-ua-platform: &quot;Windows&quot;
+Host: azwus1-client-s.gateway.messenger.live.com
+X-ECS-Etag: &quot;PBMZXUJLvYKDp1bssplt31llabVCsSHru3lqyRgaRVs=&quot;
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.96.0.207 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+Authentication: skypetoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwNiIsIng1dCI6Im9QMWFxQnlfR3hZU3pSaXhuQ25zdE5PU2p2cyIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODI0MDA4NTksImV4cCI6MTY4MjQ4NzI1OSwic2t5cGVpZCI6ImxpdmU6LmNpZC41Zjc4NzA0MDVmNTRhOTIiLCJzY3AiOjk1NiwiY3NpIjoiMTY4MjQwMDg1OSIsImNpZCI6IjVmNzg3MDQwNWY1NGE5MiIsImFhdCI6MTY3NTY4MjAzOX0.scrmUIdiAJFtSgpMfYJA0C6nJpckieN1qtQ9Qi23YbWJl85wxAN9jl5lBkV1QQ-MbYQccTlAR-ccsZD81w2_uwAL7K0N7Us1N_mzqd9e1_mmUWFgEQaQ1XKfcq3HOlgoR7BU9ki8jR0_ElQJJP6Rsm349diUrwZx7m2kfHgopLWLXGu2lMbsQ5LFItTlOdDBV9w0V3uit-1m2i93GC815m6Ulw62-KLCDRRP9iFr-Iit9RL0NBOFJtsIiCXM4nlqZdfiD_bplYQKZSKKTLIEg4yrOqNuWM6Z5tE2O5k1aDuVQYnJp4hALDvZKSwqtSvV6iHHYkRtmyq8dLYruHX0VQ
+Sec-Fetch-Dest: empty
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;conversations&quot;:[],&quot;_metadata&quot;:{&quot;totalCount&quot;:0,&quot;forwardLink&quot;:&quot;&quot;,&quot;syncState&quot;:&quot;https://azwus1-client-s.gateway.messenger.live.com/v1/users/ME/conversations?syncState=45010000000000000000000000775a0a00924af5050487f705190000006c6976653a2e6369642e356637383730343035663534613932000000000000000001000000000000000046566bb88701000001010000000000000046566bb88701000001000000000000000046566bb88701000001010000000000000046566bb887010000020278757687010000376bf499870100003494aa9a8701000046566bb887010000000000000000000000000000&amp;pageSize=100&amp;view=supportsExtendedHistory|msnp24Equivalent&quot;}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://azwus1-client-s.gateway.messenger.live.com/v1/users/ME/conversations?view=supportsExtendedHistory%7Cmsnp24Equivalent&amp;pageSize=100&amp;syncState=45010000000000000000000000775a0a00924af5050487f705190000006c6976653a2e6369642e356637383730343035663534613932000000000000000001000000000000000073c34fb88701000001010000000000000073c34fb88701000001000000000000000073c34fb88701000001010000000000000073c34fb887010000020278757687010000376bf499870100003494aa9a8701000073c34fb887010000000000000000000000000000</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="marketplace.qa.nxlvl.app:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1372" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT marketplace.qa.nxlvl.app:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="marketplace.qa.nxlvl.app:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1372" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT marketplace.qa.nxlvl.app:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<httpSample t="31" it="0" lt="0" ct="12" ts="1682426317917" s="true" lb="/generate_204-365" rc="204" rm="No Content" tn="" dt="" de="" by="146" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Content-Length: 0
+Cross-Origin-Resource-Policy: cross-origin
+Date: Tue, 25 Apr 2023 12:37:36 GMT
+Connection: close
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept-Language: en-US,en;q=0.9
+Host: www.gstatic.com
+Cache-Control: no-cache
+Pragma: no-cache
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+</requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://www.gstatic.com/generate_204</java.net.URL>
+</httpSample>
+<httpSample t="1261" it="0" lt="0" ct="753" ts="1682426317131" s="true" lb="/sessions/ping-364" rc="204" rm="No Content" tn="" dt="" de="" by="312" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+x-powered-by: Express
+access-control-allow-origin: *
+access-control-allow-methods: GET,HEAD,PUT,PATCH,POST,DELETE
+vary: Access-Control-Request-Headers
+access-control-allow-headers: api-token,content-type,gleap-hash,gleap-id
+date: Tue, 25 Apr 2023 12:37:37 GMT
+connection: close
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Sec-Fetch-Mode: cors
+Referer: https://nil.qa.nxlvl.app/
+Sec-Fetch-Site: cross-site
+Accept-Language: en-US,en;q=0.9
+Origin: https://nil.qa.nxlvl.app
+Access-Control-Request-Method: POST
+Accept: */*
+Host: api.gleap.io
+Access-Control-Request-Headers: api-token,content-type,gleap-hash,gleap-id
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+Sec-Fetch-Dest: empty
+</requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">OPTIONS</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://api.gleap.io/sessions/ping</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="api.gleap.io:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1490" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT api.gleap.io:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<httpSample t="957" it="0" lt="0" ct="450" ts="1682426343135" s="true" lb="/sessions/ping-367" rc="204" rm="No Content" tn="" dt="" de="" by="312" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+x-powered-by: Express
+access-control-allow-origin: *
+access-control-allow-methods: GET,HEAD,PUT,PATCH,POST,DELETE
+vary: Access-Control-Request-Headers
+access-control-allow-headers: api-token,content-type,gleap-hash,gleap-id
+date: Tue, 25 Apr 2023 12:38:02 GMT
+connection: close
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Sec-Fetch-Mode: cors
+Referer: https://nil.qa.nxlvl.app/
+Sec-Fetch-Site: cross-site
+Accept-Language: en-US,en;q=0.9
+Origin: https://nil.qa.nxlvl.app
+Access-Control-Request-Method: POST
+Accept: */*
+Host: api.gleap.io
+Access-Control-Request-Headers: api-token,content-type,gleap-hash,gleap-id
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.58
+Sec-Fetch-Dest: empty
+</requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">OPTIONS</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://api.gleap.io/sessions/ping</java.net.URL>
+</httpSample>
+<httpSample t="18413" it="0" lt="18413" ct="1209" ts="1682426327113" s="true" lb="/v1/users/ME/endpoints/%7B500eb63f-ffff-ffff-2d22-da2df7c91b63%7D/subscriptions/0/poll?ackId=3709-366" rc="200" rm="OK" tn="" dt="text" de="utf-8" by="776" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: no-store, must-revalidate, no-cache
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+X-Content-Type-Options: nosniff
+ContextId: tcid=3841268126647422879,server=BY3PEPF00008536
+Date: Tue, 25 Apr 2023 12:38:03 GMT
+Connection: close
+Content-Length: 446
+Content-Encoding: gzip
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Sec-Fetch-Mode: cors
+BehaviorOverride: redirectAs404
+Sec-Fetch-Site: cross-site
+Accept-Language: en-US
+ClientInfo: os=Windows; osVer=10.0.19045; proc=x86; lcid=en-GB; deviceType=1; country=IN; clientName=skype4life; clientVer=1434/8.96.0.207//skype4life; timezone=Asia/Calcutta
+EndpointId: {500eb63f-ffff-ffff-2d22-da2df7c91b63}
+Accept: application/json
+sec-ch-ua: &quot; Not A;Brand&quot;;v=&quot;99&quot;, &quot;Chromium&quot;;v=&quot;102&quot;
+sec-ch-ua-mobile: ?0
+RegistrationToken: registrationToken=U2lnbmF0dXJlOjI6Mjg6QVFRQUFBQjVxaWNIZXMzVTN6K0s2T1dQMXFKNTtWZXJzaW9uOjY6MToxO0lzc3VlVGltZTo0OjE5OjUyNDk4NjU5OTUwNjUwNzMyMTc7RXAuSWRUeXBlOjc6MTo4O0VwLklkOjI6MjU6bGl2ZTouY2lkLjVmNzg3MDQwNWY1NGE5MjtFcC5FcGlkOjU6MzY6NTAwZWI2M2YtZmZmZi1mZmZmLTJkMjItZGEyZGY3YzkxYjYzO0VwLkxvZ2luVGltZTo3OjE6MDtFcC5BdXRoVGltZTo0OjE5OjUyNDk4NjU5OTUwNjAyMjkxOTY7RXAuQXV0aFR5cGU6NzoyOjE1O0VwLkV4cFRpbWU6NDoxOTo1MjQ5ODY2ODU5MDE3Mzg3OTA0O0VwLlNreXBlVG9rZW46Mjo2MzU6ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNklqRXdOaUlzSW5nMWRDSTZJbTlRTVdGeFFubGZSM2haVTNwU2FYaHVRMjV6ZEU1UFUycDJjeUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwWVhRaU9qRTJPREl6TVRJM05UQXNJbVY0Y0NJNk1UWTRNak01T1RFME55d2ljMnQ1Y0dWcFpDSTZJbXhwZG1VNkxtTnBaQzQxWmpjNE56QTBNRFZtTlRSaE9USWlMQ0p6WTNBaU9qazFOaXdpWTNOcElqb2lNVFk0TWpNeE1qYzBOeUlzSW1OcFpDSTZJalZtTnpnM01EUXdOV1kxTkdFNU1pSXNJbUZoZENJNk1UWTNOVFk0TWpBek9YMC5RS3JaTHYtVHc2d09HTncxdVhIeUFIU0Y5TmlqUmE2TkdLSGdlZlBzLUhiVUJmeGtUWjIxSjZLcXZIVDRNanN6SHQxVTZFSUdmdUF6LXBZbGFqSGE0aFIxcmM5a3RSU0NRa3pWQy1VTm4wbHlJQjEyVzFHSHBvcUtZS1RtZEVJNnFwb1NWRGh2eC0ySmZvMXdEWnhDM2ZtaUhfTkVtMURLTldlRVpxYVkyWXFSR1kteGE1OWEwNk43Um9rQXYwLTBoYXA1eXBkeTRNa1BVbElld05EeE5wTTd2eHI3elF0YkkwS1h4S2lBbHZTMmJsNy0za0xHTzF6WF91b1FhNy0yNE16ZThHSWdJRV9qTU1IRGItQ3dmRUFYZWFzejBiRWdwRk5PYUR4Tlh6cVlCZWUxUm5EUU9rc2JETEFoaUx1aGJHYXJUdzRWcXZ1VDdZS2xjSXRBcmc7VXNyLk5ldE1hc2s6MTE6MToyO1Vzci5YZnJDbnQ6NjoxOjA7VXNyLlJkcmN0RmxnOjI6MDo7VXNyLkV4cElkOjk6MTowO1Vzci5FeHBJZExhc3RMb2c6NDoxOjA7VXNlci5BdGhDdHh0OjI6NDQwOkNsTnJlWEJsVkc5clpXNFpiR2wyWlRvdVkybGtMalZtTnpnM01EUXdOV1kxTkdFNU1nRURWV2xqRkRFdk1TOHdNREF4SURFeU9qQXdPakF3SUVGTkRFNXZkRk53WldOcFptbGxaSkpLOVFVRWgvY0ZBQUFBQUFBQVFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFCbHNhWFpsT2k1amFXUXVOV1kzT0Rjd05EQTFaalUwWVRreUFBQUFBQUFBQUFBQUIwNXZVMk52Y21VQUFBQUFCQUFBQUFBQUFBQUFBQUFBa2tyMUJRU0g5d1VBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUVaYkdsMlpUb3VZMmxrTGpWbU56ZzNNRFF3TldZMU5HRTVNZ0FBQUFBQVcyWkhaQWNBQUFBSVNXUmxiblJwZEhrT1NXUmxiblJwZEhsVmNHUmhkR1VJUTI5dWRHRmpkSE1PUTI5dWRHRmpkSE5WY0dSaGRHVUlRMjl0YldWeVkyVU5RMjl0YlhWdWFXTmhkR2x2YmhWRGIyMXRkVzVwWTJGMGFXOXVVbVZoWkU5dWJIa0FBQT09Ow==; expires=1682487259; endpointId={500eb63f-ffff-ffff-2d22-da2df7c91b63}
+sec-ch-ua-platform: &quot;Windows&quot;
+Host: azwus1-client-s.gateway.messenger.live.com
+X-ECS-Etag: &quot;PBMZXUJLvYKDp1bssplt31llabVCsSHru3lqyRgaRVs=&quot;
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.96.0.207 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+Authentication: skypetoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwNiIsIng1dCI6Im9QMWFxQnlfR3hZU3pSaXhuQ25zdE5PU2p2cyIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODI0MDA4NTksImV4cCI6MTY4MjQ4NzI1OSwic2t5cGVpZCI6ImxpdmU6LmNpZC41Zjc4NzA0MDVmNTRhOTIiLCJzY3AiOjk1NiwiY3NpIjoiMTY4MjQwMDg1OSIsImNpZCI6IjVmNzg3MDQwNWY1NGE5MiIsImFhdCI6MTY3NTY4MjAzOX0.scrmUIdiAJFtSgpMfYJA0C6nJpckieN1qtQ9Qi23YbWJl85wxAN9jl5lBkV1QQ-MbYQccTlAR-ccsZD81w2_uwAL7K0N7Us1N_mzqd9e1_mmUWFgEQaQ1XKfcq3HOlgoR7BU9ki8jR0_ElQJJP6Rsm349diUrwZx7m2kfHgopLWLXGu2lMbsQ5LFItTlOdDBV9w0V3uit-1m2i93GC815m6Ulw62-KLCDRRP9iFr-Iit9RL0NBOFJtsIiCXM4nlqZdfiD_bplYQKZSKKTLIEg4yrOqNuWM6Z5tE2O5k1aDuVQYnJp4hALDvZKSwqtSvV6iHHYkRtmyq8dLYruHX0VQ
+Sec-Fetch-Dest: empty
+Content-Length: 0
+Content-Type: text/plain; charset=UTF-8
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;eventMessages&quot;:[{&quot;id&quot;:3710,&quot;type&quot;:&quot;EventMessage&quot;,&quot;resourceType&quot;:&quot;NewMessage&quot;,&quot;time&quot;:&quot;2023-04-25T12:38:04Z&quot;,&quot;resourceLink&quot;:&quot;https://azwus1-client-s.gateway.messenger.live.com/v1/users/ME/conversations/19:591a4eb93f304e5998db3f18837f7df8@thread.skype/messages/1682426284126&quot;,&quot;resource&quot;:{&quot;ackrequired&quot;:&quot;https://azwus1-client-s.gateway.messenger.live.com/v1/users/ME/conversations/ALL/messages/1682426284126/ack&quot;,&quot;type&quot;:&quot;Message&quot;,&quot;from&quot;:&quot;https://azwus1-client-s.gateway.messenger.live.com/v1/users/ME/contacts/8:live:cygnet.nmshah&quot;,&quot;conversationLink&quot;:&quot;https://azwus1-client-s.gateway.messenger.live.com/v1/users/ME/conversations/19:591a4eb93f304e5998db3f18837f7df8@thread.skype&quot;,&quot;version&quot;:&quot;1682426284126&quot;,&quot;messagetype&quot;:&quot;Control/Typing&quot;,&quot;counterpartymessageid&quot;:&quot;1682426284126&quot;,&quot;imdisplayname&quot;:&quot;live:cygnet.nmshah&quot;,&quot;composetime&quot;:&quot;2023-04-25T12:38:03.948Z&quot;,&quot;origincontextid&quot;:&quot;0&quot;,&quot;originalarrivaltime&quot;:&quot;2023-04-25T12:38:03.948Z&quot;,&quot;threadtopic&quot;:&quot;NXLVL&quot;,&quot;contenttype&quot;:&quot;Application/Message&quot;,&quot;mlsEpoch&quot;:&quot;0&quot;,&quot;isactive&quot;:true,&quot;id&quot;:&quot;1682426284126&quot;,&quot;properties&quot;:{}}}]}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://azwus1-client-s.gateway.messenger.live.com/v1/users/ME/endpoints/%7B500eb63f-ffff-ffff-2d22-da2df7c91b63%7D/subscriptions/0/poll?ackId=3709</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="api.gleap.io:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1490" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT api.gleap.io:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="go.trouter.teams.microsoft.com:443" rc="" rm="Insufficient buffer remaining for AEAD cipher fragment (2). Needs to be more than or equal to IV size (8) + tag size (16)&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1763" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT go.trouter.teams.microsoft.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<httpSample t="8596" it="0" lt="8595" ct="1516" ts="1682426345545" s="true" lb="/v1/users/ME/endpoints/%7B500eb63f-ffff-ffff-2d22-da2df7c91b63%7D/subscriptions/0/poll?ackId=3710-368" rc="200" rm="OK" tn="" dt="text" de="utf-8" by="804" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: no-store, must-revalidate, no-cache
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+X-Content-Type-Options: nosniff
+ContextId: tcid=476830564021959674,server=BY3PEPF000083CE
+Date: Tue, 25 Apr 2023 12:38:12 GMT
+Connection: close
+Content-Length: 475
+Content-Encoding: gzip
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Sec-Fetch-Mode: cors
+BehaviorOverride: redirectAs404
+Sec-Fetch-Site: cross-site
+Accept-Language: en-US
+ClientInfo: os=Windows; osVer=10.0.19045; proc=x86; lcid=en-GB; deviceType=1; country=IN; clientName=skype4life; clientVer=1434/8.96.0.207//skype4life; timezone=Asia/Calcutta
+EndpointId: {500eb63f-ffff-ffff-2d22-da2df7c91b63}
+Accept: application/json
+sec-ch-ua: &quot; Not A;Brand&quot;;v=&quot;99&quot;, &quot;Chromium&quot;;v=&quot;102&quot;
+sec-ch-ua-mobile: ?0
+RegistrationToken: registrationToken=U2lnbmF0dXJlOjI6Mjg6QVFRQUFBQjVxaWNIZXMzVTN6K0s2T1dQMXFKNTtWZXJzaW9uOjY6MToxO0lzc3VlVGltZTo0OjE5OjUyNDk4NjU5OTUwNjUwNzMyMTc7RXAuSWRUeXBlOjc6MTo4O0VwLklkOjI6MjU6bGl2ZTouY2lkLjVmNzg3MDQwNWY1NGE5MjtFcC5FcGlkOjU6MzY6NTAwZWI2M2YtZmZmZi1mZmZmLTJkMjItZGEyZGY3YzkxYjYzO0VwLkxvZ2luVGltZTo3OjE6MDtFcC5BdXRoVGltZTo0OjE5OjUyNDk4NjU5OTUwNjAyMjkxOTY7RXAuQXV0aFR5cGU6NzoyOjE1O0VwLkV4cFRpbWU6NDoxOTo1MjQ5ODY2ODU5MDE3Mzg3OTA0O0VwLlNreXBlVG9rZW46Mjo2MzU6ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNklqRXdOaUlzSW5nMWRDSTZJbTlRTVdGeFFubGZSM2haVTNwU2FYaHVRMjV6ZEU1UFUycDJjeUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwWVhRaU9qRTJPREl6TVRJM05UQXNJbVY0Y0NJNk1UWTRNak01T1RFME55d2ljMnQ1Y0dWcFpDSTZJbXhwZG1VNkxtTnBaQzQxWmpjNE56QTBNRFZtTlRSaE9USWlMQ0p6WTNBaU9qazFOaXdpWTNOcElqb2lNVFk0TWpNeE1qYzBOeUlzSW1OcFpDSTZJalZtTnpnM01EUXdOV1kxTkdFNU1pSXNJbUZoZENJNk1UWTNOVFk0TWpBek9YMC5RS3JaTHYtVHc2d09HTncxdVhIeUFIU0Y5TmlqUmE2TkdLSGdlZlBzLUhiVUJmeGtUWjIxSjZLcXZIVDRNanN6SHQxVTZFSUdmdUF6LXBZbGFqSGE0aFIxcmM5a3RSU0NRa3pWQy1VTm4wbHlJQjEyVzFHSHBvcUtZS1RtZEVJNnFwb1NWRGh2eC0ySmZvMXdEWnhDM2ZtaUhfTkVtMURLTldlRVpxYVkyWXFSR1kteGE1OWEwNk43Um9rQXYwLTBoYXA1eXBkeTRNa1BVbElld05EeE5wTTd2eHI3elF0YkkwS1h4S2lBbHZTMmJsNy0za0xHTzF6WF91b1FhNy0yNE16ZThHSWdJRV9qTU1IRGItQ3dmRUFYZWFzejBiRWdwRk5PYUR4Tlh6cVlCZWUxUm5EUU9rc2JETEFoaUx1aGJHYXJUdzRWcXZ1VDdZS2xjSXRBcmc7VXNyLk5ldE1hc2s6MTE6MToyO1Vzci5YZnJDbnQ6NjoxOjA7VXNyLlJkcmN0RmxnOjI6MDo7VXNyLkV4cElkOjk6MTowO1Vzci5FeHBJZExhc3RMb2c6NDoxOjA7VXNlci5BdGhDdHh0OjI6NDQwOkNsTnJlWEJsVkc5clpXNFpiR2wyWlRvdVkybGtMalZtTnpnM01EUXdOV1kxTkdFNU1nRURWV2xqRkRFdk1TOHdNREF4SURFeU9qQXdPakF3SUVGTkRFNXZkRk53WldOcFptbGxaSkpLOVFVRWgvY0ZBQUFBQUFBQVFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFCbHNhWFpsT2k1amFXUXVOV1kzT0Rjd05EQTFaalUwWVRreUFBQUFBQUFBQUFBQUIwNXZVMk52Y21VQUFBQUFCQUFBQUFBQUFBQUFBQUFBa2tyMUJRU0g5d1VBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUVaYkdsMlpUb3VZMmxrTGpWbU56ZzNNRFF3TldZMU5HRTVNZ0FBQUFBQVcyWkhaQWNBQUFBSVNXUmxiblJwZEhrT1NXUmxiblJwZEhsVmNHUmhkR1VJUTI5dWRHRmpkSE1PUTI5dWRHRmpkSE5WY0dSaGRHVUlRMjl0YldWeVkyVU5RMjl0YlhWdWFXTmhkR2x2YmhWRGIyMXRkVzVwWTJGMGFXOXVVbVZoWkU5dWJIa0FBQT09Ow==; expires=1682487259; endpointId={500eb63f-ffff-ffff-2d22-da2df7c91b63}
+sec-ch-ua-platform: &quot;Windows&quot;
+Host: azwus1-client-s.gateway.messenger.live.com
+X-ECS-Etag: &quot;PBMZXUJLvYKDp1bssplt31llabVCsSHru3lqyRgaRVs=&quot;
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.96.0.207 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+Authentication: skypetoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwNiIsIng1dCI6Im9QMWFxQnlfR3hZU3pSaXhuQ25zdE5PU2p2cyIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODI0MDA4NTksImV4cCI6MTY4MjQ4NzI1OSwic2t5cGVpZCI6ImxpdmU6LmNpZC41Zjc4NzA0MDVmNTRhOTIiLCJzY3AiOjk1NiwiY3NpIjoiMTY4MjQwMDg1OSIsImNpZCI6IjVmNzg3MDQwNWY1NGE5MiIsImFhdCI6MTY3NTY4MjAzOX0.scrmUIdiAJFtSgpMfYJA0C6nJpckieN1qtQ9Qi23YbWJl85wxAN9jl5lBkV1QQ-MbYQccTlAR-ccsZD81w2_uwAL7K0N7Us1N_mzqd9e1_mmUWFgEQaQ1XKfcq3HOlgoR7BU9ki8jR0_ElQJJP6Rsm349diUrwZx7m2kfHgopLWLXGu2lMbsQ5LFItTlOdDBV9w0V3uit-1m2i93GC815m6Ulw62-KLCDRRP9iFr-Iit9RL0NBOFJtsIiCXM4nlqZdfiD_bplYQKZSKKTLIEg4yrOqNuWM6Z5tE2O5k1aDuVQYnJp4hALDvZKSwqtSvV6iHHYkRtmyq8dLYruHX0VQ
+Sec-Fetch-Dest: empty
+Content-Length: 0
+Content-Type: text/plain; charset=UTF-8
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;eventMessages&quot;:[{&quot;id&quot;:3711,&quot;type&quot;:&quot;EventMessage&quot;,&quot;resourceType&quot;:&quot;NewMessage&quot;,&quot;time&quot;:&quot;2023-04-25T12:38:12Z&quot;,&quot;resourceLink&quot;:&quot;https://azwus1-client-s.gateway.messenger.live.com/v1/users/ME/conversations/19:591a4eb93f304e5998db3f18837f7df8@thread.skype/messages/1682426292892&quot;,&quot;resource&quot;:{&quot;ackrequired&quot;:&quot;https://azwus1-client-s.gateway.messenger.live.com/v1/users/ME/conversations/ALL/messages/1682426292892/ack&quot;,&quot;type&quot;:&quot;Message&quot;,&quot;from&quot;:&quot;https://azwus1-client-s.gateway.messenger.live.com/v1/users/ME/contacts/8:live:cygnet.nmshah&quot;,&quot;clientmessageid&quot;:&quot;5284316868175632559&quot;,&quot;version&quot;:&quot;1682426292892&quot;,&quot;messagetype&quot;:&quot;RichText&quot;,&quot;counterpartymessageid&quot;:&quot;1682426292892&quot;,&quot;imdisplayname&quot;:&quot;Nisarg Shah&quot;,&quot;content&quot;:&quot;Away for an hour&quot;,&quot;composetime&quot;:&quot;2023-04-25T12:38:11.915Z&quot;,&quot;origincontextid&quot;:&quot;0&quot;,&quot;originalarrivaltime&quot;:&quot;2023-04-25T12:38:11.915Z&quot;,&quot;threadtopic&quot;:&quot;NXLVL&quot;,&quot;contenttype&quot;:&quot;text&quot;,&quot;mlsEpoch&quot;:&quot;0&quot;,&quot;conversationLink&quot;:&quot;https://azwus1-client-s.gateway.messenger.live.com/v1/users/ME/conversations/19:591a4eb93f304e5998db3f18837f7df8@thread.skype&quot;,&quot;isactive&quot;:true,&quot;id&quot;:&quot;1682426292892&quot;}}]}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://azwus1-client-s.gateway.messenger.live.com/v1/users/ME/endpoints/%7B500eb63f-ffff-ffff-2d22-da2df7c91b63%7D/subscriptions/0/poll?ackId=3710</java.net.URL>
+</httpSample>
+
+</testResults>

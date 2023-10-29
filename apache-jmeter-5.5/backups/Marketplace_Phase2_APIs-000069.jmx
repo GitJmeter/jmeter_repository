@@ -1,0 +1,3109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="false">
+        <stringProp name="filename">Phase2_MarketplaceId.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">userId</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config_getBookMarkUserID" enabled="false">
+        <stringProp name="filename">getBookMarkUserID.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">id1,username1,email</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config_Login" enabled="false">
+        <stringProp name="filename">C:/Users/pravin.parakhe/Documents/CreateBookMarkUserID.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">Bookmark_UserID</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config_getMyOrderId" enabled="false">
+        <stringProp name="filename">getMyOrderId.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">id1,email,accessToken</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config_getOrderDetailsById" enabled="false">
+        <stringProp name="filename">getOrderDetails.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">id1,accessToken</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config_GetUserChargesAndFees" enabled="false">
+        <stringProp name="filename">GetUserChargesAndFees.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">userId,accessToken</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config_getNFTEditionById" enabled="false">
+        <stringProp name="filename">getNFTEditionById.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">getNFTEditionById</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config_GetBuyNFTItemDetails" enabled="false">
+        <stringProp name="filename">GetBuyNFTItemDetails.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">userId,nftItemId,nftEditionId</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config_listForSaleSecondary" enabled="false">
+        <stringProp name="filename">D:/NXLVL/Marketplace/Stress_Data/emailIds1.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">buyerId,nftEditionId,email</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config_getLegendaryNFT" enabled="false">
+        <stringProp name="filename">getLegendaryNFT.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">getLegendaryNFT</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config_getUserDetailsById" enabled="false">
+        <stringProp name="filename">User_Stress - User_updated.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">id,email</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config_TransactionId" enabled="false">
+        <stringProp name="filename">TransactionId.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">TransactionId,accessToken</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config_getNFTEdition_ListedPageIds" enabled="false">
+        <stringProp name="filename">getNFTEdition_ListedPageIds.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">ListedPageIds</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config_getNFTEdition_SoldPageIds" enabled="false">
+        <stringProp name="filename">getNFTEdition_SoldPageIds.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">SoldPageIds</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config_getNFTEdition_Created" enabled="false">
+        <stringProp name="filename">getNFTEdition_Created.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">Created_Ids</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config_getNFTEdition_Bookmarked" enabled="false">
+        <stringProp name="filename">getNFTEdition_Bookmarked.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">Bookmarked_Ids,email,accessToken</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config_getNFTEdition_Draft" enabled="false">
+        <stringProp name="filename">getNFTEditionDraft.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">Draft_accessToken</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config_getNFTEdition_Purchased" enabled="false">
+        <stringProp name="filename">getNFTEdition_Purchased.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">Purchased_Ids</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config_getNFTEdition_listForSaleNFTSecondaryMarket" enabled="false">
+        <stringProp name="filename">ListForSalesIdEmailId.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">nftEditionId,userId,email</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config_getNFTEdition_listForSaleNFTSecondaryMarket" enabled="true">
+        <stringProp name="filename">getNFTEdition_SoldNormalIds.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">Sold_NormalIds</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <stringProp name="HTTPSampler.protocol"></stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+        <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout">60000</stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">375</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">5</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">910</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="Login" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;query&quot;:&quot;mutation {\n  login(\n    loginInput: {\n      email: \&quot;${email}\&quot;\n      password: \&quot;QWRtaW5AMTIz\&quot;\n    }\n  ) {\n    accessToken\n    userId\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">mutation {
+  login(
+    loginInput: {
+      email: &quot;${email}&quot;
+      password: &quot;QWRtaW5AMTIz&quot;
+    }
+  ) {
+    accessToken
+    userId
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables"></stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjkwMDQsInBlcm0iOiIiLCJpYXQiOjE2ODg5ODY3NjYsImV4cCI6MTY5MTU3ODc2NiwicHJtIjoiY2QwYmI3YjY1MTg0MmNkNGQ5ZjY4N2NkZTRmYTI1NWYiLCJqaWQiOiJjbGJ1Z3B3eDU2OTk5MjBqMmEyZGt3bndwdkBsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1Z3B3eDU2OTk5MjBqMmEyZGt3bndwdiIsInVrZXkiOiI1ZmEyNDcwZi04ZWIwLTQyZGItYTQ1Ni01MTY2OTY5ZGRhNTYiLCJjbGllbnQiOiIiLCJqdGkiOiI4MmFiMTYxMS1kMjFmLTQ2YmUtOWY3OC04ZjYzMWVlMTU3YmQifQ.EWtPA6GnuikcCm3Mq4xI6SXgBL5Oa2frJ4YoUDr3RvJulI4-FluCjLew2KnglHK2sb2GitQA-EkeMaLNCQiwLxb45frD1PsfWpf_L6Kp6dTxygDWJd2I6-hfPWGrLkWIGjJ7m-H7uGqsVgWn2IOkIcLGUrkuc5QeqB4g1a0W-dDOznlH6mj9UosYRC2EBS9jtS_sEXWwvaSjRxU0GdkvpicwDj6Js5uXYDQiV7AHJDilWL9gbqmKhJ5fqA585e30tFJdt1e45OLBrcQvxZY8uA_9Dui7pOypmP4sOe7VSXlsfagtpFnWA7jlvwMqxP03STowHOLuz1KxJGClDSp7Qw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="sParse_accessToken" enabled="true">
+            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+            <stringProp name="RegexExtractor.refname">sParse_accessToken</stringProp>
+            <stringProp name="RegexExtractor.regex">&quot;accessToken&quot;:&quot;(.*?)&quot;,&quot;</stringProp>
+            <stringProp name="RegexExtractor.template">$1$</stringProp>
+            <stringProp name="RegexExtractor.default">sParse_accessToken_NF</stringProp>
+            <stringProp name="RegexExtractor.match_number">1</stringProp>
+          </RegexExtractor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="script">Bookmarked = vars.get(&quot;Bookmarked&quot;);
+email = vars.get(&quot;email&quot;);
+accessToken = vars.get(&quot;sParse_accessToken&quot;);
+//log.info(UserID);  // if you want to log something to jmeter.log file
+// Pass true if you want to append to existing file
+// If you want to overwrite, then don&apos;t pass the second argument
+f = new FileOutputStream(&quot;D:/NXLVL/Marketplace/Stress_Data/BookmarkedAccessToken.csv&quot;, true);
+p = new PrintStream(f);
+this.interpreter.setOut(p);
+print(&quot;Bookmarked &quot; + Bookmarked + &quot;\t email &quot; + email + &quot;\t accessToken &quot; + accessToken);
+f.close();
+
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="listForSaleNFTSecondaryMarket" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;listForSaleNFTArgs&quot;: {
+    &quot;sellingPrice&quot;: ${__Random(1,100,)},
+    &quot;quantity&quot;: 1,
+    &quot;nftEditionId&quot;: ${nftEditionId}
+  }
+},&quot;query&quot;:&quot;mutation listForSaleNFTSecondaryMarket($listForSaleNFTArgs: ListForSaleNFT!) {\n  listForSaleNFTSecondaryMarket(listForSaleNFTArgs: $listForSaleNFTArgs)\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">mutation listForSaleNFTSecondaryMarket($listForSaleNFTArgs: ListForSaleNFT!) {
+  listForSaleNFTSecondaryMarket(listForSaleNFTArgs: $listForSaleNFTArgs)
+} 
+</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;listForSaleNFTArgs&quot;: {
+    &quot;sellingPrice&quot;: ${__Random(1,100,)},
+    &quot;quantity&quot;: 1,
+    &quot;nftEditionId&quot;: ${nftEditionId}
+  }
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${sParse_accessToken}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="script">accessToken = vars.get(&quot;sParse_accessToken&quot;);
+userId = vars.get(&quot;id&quot;);
+//log.info(UserID);  // if you want to log something to jmeter.log file
+// Pass true if you want to append to existing file
+// If you want to overwrite, then don&apos;t pass the second argument
+f = new FileOutputStream(&quot;D:/NXLVL/Marketplace/Stress_Data/accessToken1.csv&quot;, true);
+p = new PrintStream(f);
+this.interpreter.setOut(p);
+print(&quot;accessToken &quot; + accessToken + &quot;\t userId &quot; +userId);
+f.close();
+
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="CreateBookmark" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;bookmarkArgs&quot;: {
+    &quot;bookmarkType&quot;: &quot;User&quot;,
+    &quot;userId&quot;: ${Bookmark_UserID}
+  }
+},&quot;query&quot;:&quot;mutation CreateBookmark($bookmarkArgs: bookmarkArgument!) {\n  createBookmark(bookmarkArgs: $bookmarkArgs) {\n    message\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">mutation CreateBookmark($bookmarkArgs: bookmarkArgument!) {
+  createBookmark(bookmarkArgs: $bookmarkArgs) {
+    message
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;bookmarkArgs&quot;: {
+    &quot;bookmarkType&quot;: &quot;User&quot;,
+    &quot;userId&quot;: ${Bookmark_UserID}
+  }
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${sParse_accessToken}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="nftStatistics" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;userId&quot;: ${userId}
+},&quot;query&quot;:&quot;query nftStatistics($userId: Int) {\n  getNFTStatistics(userId: $userId) {\n    userId\n    listedCount\n    createdCount\n    soldCount\n    purchaseCount\n    bookmarkCount\n    draftCount\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query nftStatistics($userId: Int) {
+  getNFTStatistics(userId: $userId) {
+    userId
+    listedCount
+    createdCount
+    soldCount
+    purchaseCount
+    bookmarkCount
+    draftCount
+  }
+}
+</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;userId&quot;: ${userId}
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjkwMDQsInBlcm0iOiIiLCJpYXQiOjE2OTU5NjkwOTgsImV4cCI6MTY5ODU2MTA5OCwicHJtIjoiZjdlNDE3MDIyMTNmNGNiYmE5MGE0YTZhNDczMDAwZWQiLCJqaWQiOiJjbGJ1Z3B3eDU2OTk5MjBqMmEyZGt3bndwdkBsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1Z3B3eDU2OTk5MjBqMmEyZGt3bndwdiIsInVrZXkiOiI1ZmEyNDcwZi04ZWIwLTQyZGItYTQ1Ni01MTY2OTY5ZGRhNTYiLCJjbGllbnQiOiIiLCJqdGkiOiJkNWRkNGU4NS05ZmFjLTRiODUtYmNkNS1hMmQ5ZWFjMjUxOGUifQ.P5RUSOQELWzx0U0DwvRAl8W5AOhNmCfDJaZraDBrT3XCRGiISMa6_zjwn0im9SQYQNyWeYZl8jJc1hHopNgqYGo5ksFiIyKVpcjp1BxMlFOaDDU-zj1et37JLOCZ6oBqYKvq3VKtrDuco3o3EWCvBe0O1gRot68v-7wLcM-6PsO70LhPJer2lVIU-y7liIZpygeyxxOWFYQObpnKXBBiBLqBVrF0XBcxDkpbB8bMhNPCoP-KRz2Ugw6MlAuM-NJkD6nmsucMgQRee0vGqLbpJLkiSY0yXTgH-HfcGR0tgqg2DTEnrAqxqJH38Eky2zvooBdzl7QgEQ-EzccRrC8BpA</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="getNFTEdition_Listed" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;nftEditionStatus&quot;: &quot;Listed&quot;,
+  &quot;tiers&quot;: [],
+  &quot;isForSale&quot;: false,
+  &quot;activityIds&quot;: [],
+  &quot;userId&quot;: ${userId},
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 10,
+  &quot;pageNo&quot;: 0
+},&quot;query&quot;:&quot;query getNFTEdition($nftEditionStatus: NFTEditionStatus, $activityIds: [Int], $sortBy: NFTSortBy, $tiers: [NFTEditionTier], $userId: Int, $take: Int, $cursor: Int, $pageNo: Int, $priceRange: PriceRange, $isForSale: Boolean) {\n  getNFTEdition(\n    getNFTEditionsArgs: {nftEditionStatus: $nftEditionStatus, activityIds: $activityIds, sortBy: $sortBy, tiers: $tiers, userId: $userId, take: $take, cursor: $cursor, pageNo: $pageNo, priceRange: $priceRange, isForSale: $isForSale}\n  ) {\n    \n    pageEdges {\n      node {\n        id\n        associatedTiers(nftEditionStatus: $nftEditionStatus, userId: $userId)\n        tier\n        status\n        createdAt\n        updatedAt\n        isRelisted\n        isBookmarked\n        NILLinked\n        seriesNumber\n        nftId\n        price\n        left\n        size\n        tier\n        autoGenerated\n        nft {\n          id\n          description\n          name\n          isNFTBookmarked\n          isLiked\n          isPublished\n          likeCount\n          imageUrl\n          videoData\n          viewCount\n          nftMultiAssetMedia {\n            isPublished\n            videoData\n          }\n          user {\n            id\n            firstname\n            lastname\n            username\n            profileImage\n            dwollaCustomer {\n              status \n            } \n          } \n        } \n      }\n    }\n    pageInfo {\n      hasNextPage\n      totalCount\n      pageNo\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query getNFTEdition($nftEditionStatus: NFTEditionStatus, $activityIds: [Int], $sortBy: NFTSortBy, $tiers: [NFTEditionTier], $userId: Int, $take: Int, $cursor: Int, $pageNo: Int, $priceRange: PriceRange, $isForSale: Boolean) {
+  getNFTEdition(
+    getNFTEditionsArgs: {nftEditionStatus: $nftEditionStatus, activityIds: $activityIds, sortBy: $sortBy, tiers: $tiers, userId: $userId, take: $take, cursor: $cursor, pageNo: $pageNo, priceRange: $priceRange, isForSale: $isForSale}
+  ) {
+    
+    pageEdges {
+      node {
+        id
+        associatedTiers(nftEditionStatus: $nftEditionStatus, userId: $userId)
+        tier
+        status
+        createdAt
+        updatedAt
+        isRelisted
+        isBookmarked
+        NILLinked
+        seriesNumber
+        nftId
+        price
+        left
+        size
+        tier
+        autoGenerated
+        nft {
+          id
+          description
+          name
+          isNFTBookmarked
+          isLiked
+          isPublished
+          likeCount
+          imageUrl
+          videoData
+          viewCount
+          nftMultiAssetMedia {
+            isPublished
+            videoData
+          }
+          user {
+            id
+            firstname
+            lastname
+            username
+            profileImage
+            dwollaCustomer {
+              status 
+            } 
+          } 
+        } 
+      }
+    }
+    pageInfo {
+      hasNextPage
+      totalCount
+      pageNo
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;nftEditionStatus&quot;: &quot;Listed&quot;,
+  &quot;tiers&quot;: [],
+  &quot;isForSale&quot;: false,
+  &quot;activityIds&quot;: [],
+  &quot;userId&quot;: ${userId},
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 10,
+  &quot;pageNo&quot;: 0
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjkwMDQsInBlcm0iOiIiLCJpYXQiOjE2OTU5NjkwOTgsImV4cCI6MTY5ODU2MTA5OCwicHJtIjoiZjdlNDE3MDIyMTNmNGNiYmE5MGE0YTZhNDczMDAwZWQiLCJqaWQiOiJjbGJ1Z3B3eDU2OTk5MjBqMmEyZGt3bndwdkBsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1Z3B3eDU2OTk5MjBqMmEyZGt3bndwdiIsInVrZXkiOiI1ZmEyNDcwZi04ZWIwLTQyZGItYTQ1Ni01MTY2OTY5ZGRhNTYiLCJjbGllbnQiOiIiLCJqdGkiOiJkNWRkNGU4NS05ZmFjLTRiODUtYmNkNS1hMmQ5ZWFjMjUxOGUifQ.P5RUSOQELWzx0U0DwvRAl8W5AOhNmCfDJaZraDBrT3XCRGiISMa6_zjwn0im9SQYQNyWeYZl8jJc1hHopNgqYGo5ksFiIyKVpcjp1BxMlFOaDDU-zj1et37JLOCZ6oBqYKvq3VKtrDuco3o3EWCvBe0O1gRot68v-7wLcM-6PsO70LhPJer2lVIU-y7liIZpygeyxxOWFYQObpnKXBBiBLqBVrF0XBcxDkpbB8bMhNPCoP-KRz2Ugw6MlAuM-NJkD6nmsucMgQRee0vGqLbpJLkiSY0yXTgH-HfcGR0tgqg2DTEnrAqxqJH38Eky2zvooBdzl7QgEQ-EzccRrC8BpA</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="getNFTEdition_Sold" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;nftEditionStatus&quot;: &quot;Sold&quot;,
+  &quot;tiers&quot;: [],
+  &quot;isForSale&quot;: false,
+  &quot;activityIds&quot;: [],
+  &quot;userId&quot;: ${Sold_NormalIds},
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 10,
+  &quot;pageNo&quot;: 0
+},&quot;query&quot;:&quot;query getNFTEdition($nftEditionStatus: NFTEditionStatus, $activityIds: [Int], $sortBy: NFTSortBy, $tiers: [NFTEditionTier], $userId: Int, $take: Int, $cursor: Int, $pageNo: Int, $priceRange: PriceRange, $isForSale: Boolean) {\n  getNFTEdition(\n    getNFTEditionsArgs: {nftEditionStatus: $nftEditionStatus, activityIds: $activityIds, sortBy: $sortBy, tiers: $tiers, userId: $userId, take: $take, cursor: $cursor, pageNo: $pageNo, priceRange: $priceRange, isForSale: $isForSale}\n  ) {\n    \n    pageEdges {\n      node {\n        id\n        associatedTiers(nftEditionStatus: $nftEditionStatus, userId: $userId)\n        tier\n        status\n        createdAt\n        updatedAt\n        isRelisted\n        isBookmarked\n        NILLinked\n        seriesNumber\n        nftId\n        price\n        left\n        size\n        tier\n        autoGenerated\n        nft {\n          id\n          description\n          name\n          isNFTBookmarked\n          isLiked\n          isPublished\n          likeCount\n          imageUrl\n          videoData\n          viewCount\n          user {\n            id\n            firstname\n            lastname\n            username\n            profileImage\n            dwollaCustomer {\n              status \n            } \n          } \n        } \n      }\n    }\n    pageInfo {\n      hasNextPage\n      totalCount\n      pageNo\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query getNFTEdition($nftEditionStatus: NFTEditionStatus, $activityIds: [Int], $sortBy: NFTSortBy, $tiers: [NFTEditionTier], $userId: Int, $take: Int, $cursor: Int, $pageNo: Int, $priceRange: PriceRange, $isForSale: Boolean) {
+  getNFTEdition(
+    getNFTEditionsArgs: {nftEditionStatus: $nftEditionStatus, activityIds: $activityIds, sortBy: $sortBy, tiers: $tiers, userId: $userId, take: $take, cursor: $cursor, pageNo: $pageNo, priceRange: $priceRange, isForSale: $isForSale}
+  ) {
+    
+    pageEdges {
+      node {
+        id
+        associatedTiers(nftEditionStatus: $nftEditionStatus, userId: $userId)
+        tier
+        status
+        createdAt
+        updatedAt
+        isRelisted
+        isBookmarked
+        NILLinked
+        seriesNumber
+        nftId
+        price
+        left
+        size
+        tier
+        autoGenerated
+        nft {
+          id
+          description
+          name
+          isNFTBookmarked
+          isLiked
+          isPublished
+          likeCount
+          imageUrl
+          videoData
+          viewCount
+          user {
+            id
+            firstname
+            lastname
+            username
+            profileImage
+            dwollaCustomer {
+              status 
+            } 
+          } 
+        } 
+      }
+    }
+    pageInfo {
+      hasNextPage
+      totalCount
+      pageNo
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;nftEditionStatus&quot;: &quot;Sold&quot;,
+  &quot;tiers&quot;: [],
+  &quot;isForSale&quot;: false,
+  &quot;activityIds&quot;: [],
+  &quot;userId&quot;: ${Sold_NormalIds},
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 10,
+  &quot;pageNo&quot;: 0
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjkwMDQsInBlcm0iOiIiLCJpYXQiOjE2OTU5NjkwOTgsImV4cCI6MTY5ODU2MTA5OCwicHJtIjoiZjdlNDE3MDIyMTNmNGNiYmE5MGE0YTZhNDczMDAwZWQiLCJqaWQiOiJjbGJ1Z3B3eDU2OTk5MjBqMmEyZGt3bndwdkBsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1Z3B3eDU2OTk5MjBqMmEyZGt3bndwdiIsInVrZXkiOiI1ZmEyNDcwZi04ZWIwLTQyZGItYTQ1Ni01MTY2OTY5ZGRhNTYiLCJjbGllbnQiOiIiLCJqdGkiOiJkNWRkNGU4NS05ZmFjLTRiODUtYmNkNS1hMmQ5ZWFjMjUxOGUifQ.P5RUSOQELWzx0U0DwvRAl8W5AOhNmCfDJaZraDBrT3XCRGiISMa6_zjwn0im9SQYQNyWeYZl8jJc1hHopNgqYGo5ksFiIyKVpcjp1BxMlFOaDDU-zj1et37JLOCZ6oBqYKvq3VKtrDuco3o3EWCvBe0O1gRot68v-7wLcM-6PsO70LhPJer2lVIU-y7liIZpygeyxxOWFYQObpnKXBBiBLqBVrF0XBcxDkpbB8bMhNPCoP-KRz2Ugw6MlAuM-NJkD6nmsucMgQRee0vGqLbpJLkiSY0yXTgH-HfcGR0tgqg2DTEnrAqxqJH38Eky2zvooBdzl7QgEQ-EzccRrC8BpA</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="getNFTEdition_Created" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;nftEditionStatus&quot;: &quot;Created&quot;,
+  &quot;tiers&quot;: [],
+  &quot;isForSale&quot;: false,
+  &quot;activityIds&quot;: [],
+  &quot;userId&quot;: ${Created_Ids},
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 10,
+  &quot;pageNo&quot;: 0
+},&quot;query&quot;:&quot;query getNFTEdition($nftEditionStatus: NFTEditionStatus, $activityIds: [Int], $sortBy: NFTSortBy, $tiers: [NFTEditionTier], $userId: Int, $take: Int, $cursor: Int, $pageNo: Int, $priceRange: PriceRange, $isForSale: Boolean) {\n  getNFTEdition(\n    getNFTEditionsArgs: {nftEditionStatus: $nftEditionStatus, activityIds: $activityIds, sortBy: $sortBy, tiers: $tiers, userId: $userId, take: $take, cursor: $cursor, pageNo: $pageNo, priceRange: $priceRange, isForSale: $isForSale}\n  ) {\n    \n    pageEdges {\n      node {\n        id\n        associatedTiers(nftEditionStatus: $nftEditionStatus, userId: $userId)\n        tier\n        status\n        createdAt\n        updatedAt\n        isRelisted\n        isBookmarked\n        NILLinked\n        seriesNumber\n        nftId\n        price\n        left\n        size\n        tier\n        autoGenerated\n        nft {\n          id\n          description\n          name\n          isNFTBookmarked\n          isLiked\n          isPublished\n          likeCount\n          imageUrl\n          videoData\n          viewCount\n          user {\n            id\n            firstname\n            lastname\n            username\n            profileImage\n            dwollaCustomer {\n              status \n            } \n          } \n        } \n      }\n    }\n    pageInfo {\n      hasNextPage\n      totalCount\n      pageNo\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query getNFTEdition($nftEditionStatus: NFTEditionStatus, $activityIds: [Int], $sortBy: NFTSortBy, $tiers: [NFTEditionTier], $userId: Int, $take: Int, $cursor: Int, $pageNo: Int, $priceRange: PriceRange, $isForSale: Boolean) {
+  getNFTEdition(
+    getNFTEditionsArgs: {nftEditionStatus: $nftEditionStatus, activityIds: $activityIds, sortBy: $sortBy, tiers: $tiers, userId: $userId, take: $take, cursor: $cursor, pageNo: $pageNo, priceRange: $priceRange, isForSale: $isForSale}
+  ) {
+    
+    pageEdges {
+      node {
+        id
+        associatedTiers(nftEditionStatus: $nftEditionStatus, userId: $userId)
+        tier
+        status
+        createdAt
+        updatedAt
+        isRelisted
+        isBookmarked
+        NILLinked
+        seriesNumber
+        nftId
+        price
+        left
+        size
+        tier
+        autoGenerated
+        nft {
+          id
+          description
+          name
+          isNFTBookmarked
+          isLiked
+          isPublished
+          likeCount
+          imageUrl
+          videoData
+          viewCount
+          user {
+            id
+            firstname
+            lastname
+            username
+            profileImage
+            dwollaCustomer {
+              status 
+            } 
+          } 
+        } 
+      }
+    }
+    pageInfo {
+      hasNextPage
+      totalCount
+      pageNo
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;nftEditionStatus&quot;: &quot;Created&quot;,
+  &quot;tiers&quot;: [],
+  &quot;isForSale&quot;: false,
+  &quot;activityIds&quot;: [],
+  &quot;userId&quot;: ${Created_Ids},
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 10,
+  &quot;pageNo&quot;: 0
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjk1OTY4Mzk1LCJleHAiOjE2OTg1NjAzOTUsInBybSI6IjJiYWZiZDQ1NjFjZDgzOGJkMWRiNTE1MjdkZTA4Njc2IiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJjb3JlLWFwcCIsImp0aSI6ImRmOGM0M2EyLWI4NDYtNGZlYi05ODAyLTMxY2ViOTIyYWY5OCJ9.DPR1SeQYbnAd87wH-bO8y6eifXEqQwYIjcO_1EN7I7RSOZXpSMWJkfBEsJtizjJEsas0bIhVozgSJz7zXuKFmIXPoafGODTtVwqMrVOyj-2eJzRtqut623KjYvwE4PKRC9JOXG5fUvfUVEM7RkCIbF8Om1_2vF6Wl6wvlWbS7aly7wEdHu6Vysw_8X93E6LhDppQL6dE2gedapDYM200xoKBvN6dAXA1uUE50aq8awmGTAT0gyf7jnj--Sy-LHc6qg90HtzAbT3vI1pYM0P4GayXufe5LTt0ZvtBY6i5akKAYT69VInfc0Q0wPtVnk6CToFubZ4oOLCXKSY-AIl2Vg</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="getNFTEdition_Bookmarked" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;nftEditionStatus&quot;: &quot;Bookmarked&quot;,
+  &quot;tiers&quot;: [],
+  &quot;isForSale&quot;: false,
+  &quot;activityIds&quot;: [],
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 10,
+  &quot;pageNo&quot;: 0
+},&quot;query&quot;:&quot;query getNFTEdition($nftEditionStatus: NFTEditionStatus, $activityIds: [Int], $sortBy: NFTSortBy, $tiers: [NFTEditionTier], $userId: Int, $take: Int, $cursor: Int, $pageNo: Int, $priceRange: PriceRange, $isForSale: Boolean) {\n  getNFTEdition(\n    getNFTEditionsArgs: {nftEditionStatus: $nftEditionStatus, activityIds: $activityIds, sortBy: $sortBy, tiers: $tiers, userId: $userId, take: $take, cursor: $cursor, pageNo: $pageNo, priceRange: $priceRange, isForSale: $isForSale}\n  ) {\n    \n    pageEdges {\n      node {\n        id\n        associatedTiers(nftEditionStatus: $nftEditionStatus, userId: $userId)\n        tier\n        status\n        createdAt\n        updatedAt\n        isRelisted\n        isBookmarked\n        NILLinked\n        seriesNumber\n        nftId\n        price\n        left\n        size\n        tier\n        autoGenerated\n        nft {\n          id\n          description\n          name\n          isNFTBookmarked\n          isLiked\n          isPublished\n          likeCount\n          imageUrl\n          videoData\n          viewCount\n          user {\n            id\n            firstname\n            lastname\n            username\n            profileImage\n            dwollaCustomer {\n              status \n            } \n          } \n        } \n      }\n    }\n    pageInfo {\n      hasNextPage\n      totalCount\n      pageNo\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query getNFTEdition($nftEditionStatus: NFTEditionStatus, $activityIds: [Int], $sortBy: NFTSortBy, $tiers: [NFTEditionTier], $userId: Int, $take: Int, $cursor: Int, $pageNo: Int, $priceRange: PriceRange, $isForSale: Boolean) {
+  getNFTEdition(
+    getNFTEditionsArgs: {nftEditionStatus: $nftEditionStatus, activityIds: $activityIds, sortBy: $sortBy, tiers: $tiers, userId: $userId, take: $take, cursor: $cursor, pageNo: $pageNo, priceRange: $priceRange, isForSale: $isForSale}
+  ) {
+    
+    pageEdges {
+      node {
+        id
+        associatedTiers(nftEditionStatus: $nftEditionStatus, userId: $userId)
+        tier
+        status
+        createdAt
+        updatedAt
+        isRelisted
+        isBookmarked
+        NILLinked
+        seriesNumber
+        nftId
+        price
+        left
+        size
+        tier
+        autoGenerated
+        nft {
+          id
+          description
+          name
+          isNFTBookmarked
+          isLiked
+          isPublished
+          likeCount
+          imageUrl
+          videoData
+          viewCount
+          user {
+            id
+            firstname
+            lastname
+            username
+            profileImage
+            dwollaCustomer {
+              status 
+            } 
+          } 
+        } 
+      }
+    }
+    pageInfo {
+      hasNextPage
+      totalCount
+      pageNo
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;nftEditionStatus&quot;: &quot;Bookmarked&quot;,
+  &quot;tiers&quot;: [],
+  &quot;isForSale&quot;: false,
+  &quot;activityIds&quot;: [],
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 10,
+  &quot;pageNo&quot;: 0
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${accessToken}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="getNFTEdition_Draft" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;nftEditionStatus&quot;: &quot;Draft&quot;,
+  &quot;tiers&quot;: [],
+  &quot;isForSale&quot;: false,
+  &quot;activityIds&quot;: [],
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 10,
+  &quot;pageNo&quot;: 0
+},&quot;query&quot;:&quot;query getNFTEdition($nftEditionStatus: NFTEditionStatus, $activityIds: [Int], $sortBy: NFTSortBy, $tiers: [NFTEditionTier], $userId: Int, $take: Int, $cursor: Int, $pageNo: Int, $priceRange: PriceRange, $isForSale: Boolean) {\n  getNFTEdition(\n    getNFTEditionsArgs: {nftEditionStatus: $nftEditionStatus, activityIds: $activityIds, sortBy: $sortBy, tiers: $tiers, userId: $userId, take: $take, cursor: $cursor, pageNo: $pageNo, priceRange: $priceRange, isForSale: $isForSale}\n  ) {\n    \n    pageEdges {\n      node {\n        id\n        associatedTiers(nftEditionStatus: $nftEditionStatus, userId: $userId)\n        tier\n        status\n        createdAt\n        updatedAt\n        isRelisted\n        isBookmarked\n        NILLinked\n        seriesNumber\n        nftId\n        price\n        left\n        size\n        tier\n        autoGenerated\n        nft {\n          id\n          description\n          name\n          isNFTBookmarked\n          isLiked\n          isPublished\n          likeCount\n          imageUrl\n          videoData\n          viewCount\n          nftMultiAssetMedia {\n            isPublished\n            videoData\n          }\n          user {\n            id\n            firstname\n            lastname\n            username\n            profileImage\n            dwollaCustomer {\n              status \n            } \n          } \n        } \n      }\n    }\n    pageInfo {\n      hasNextPage\n      totalCount\n      pageNo\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query getNFTEdition($nftEditionStatus: NFTEditionStatus, $activityIds: [Int], $sortBy: NFTSortBy, $tiers: [NFTEditionTier], $userId: Int, $take: Int, $cursor: Int, $pageNo: Int, $priceRange: PriceRange, $isForSale: Boolean) {
+  getNFTEdition(
+    getNFTEditionsArgs: {nftEditionStatus: $nftEditionStatus, activityIds: $activityIds, sortBy: $sortBy, tiers: $tiers, userId: $userId, take: $take, cursor: $cursor, pageNo: $pageNo, priceRange: $priceRange, isForSale: $isForSale}
+  ) {
+    
+    pageEdges {
+      node {
+        id
+        associatedTiers(nftEditionStatus: $nftEditionStatus, userId: $userId)
+        tier
+        status
+        createdAt
+        updatedAt
+        isRelisted
+        isBookmarked
+        NILLinked
+        seriesNumber
+        nftId
+        price
+        left
+        size
+        tier
+        autoGenerated
+        nft {
+          id
+          description
+          name
+          isNFTBookmarked
+          isLiked
+          isPublished
+          likeCount
+          imageUrl
+          videoData
+          viewCount
+          nftMultiAssetMedia {
+            isPublished
+            videoData
+          }
+          user {
+            id
+            firstname
+            lastname
+            username
+            profileImage
+            dwollaCustomer {
+              status 
+            } 
+          } 
+        } 
+      }
+    }
+    pageInfo {
+      hasNextPage
+      totalCount
+      pageNo
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;nftEditionStatus&quot;: &quot;Draft&quot;,
+  &quot;tiers&quot;: [],
+  &quot;isForSale&quot;: false,
+  &quot;activityIds&quot;: [],
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 10,
+  &quot;pageNo&quot;: 0
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${Draft_accessToken}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="getNFTEdition_Purchased" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;nftEditionStatus&quot;: &quot;Purchased&quot;,
+  &quot;tiers&quot;: [],
+  &quot;isForSale&quot;: false,
+  &quot;activityIds&quot;: [],
+  &quot;userId&quot;: ${Purchased_Ids},
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 10,
+  &quot;pageNo&quot;: 0
+},&quot;query&quot;:&quot;query getNFTEdition($nftEditionStatus: NFTEditionStatus, $activityIds: [Int], $sortBy: NFTSortBy, $tiers: [NFTEditionTier], $userId: Int, $take: Int, $cursor: Int, $pageNo: Int, $priceRange: PriceRange, $isForSale: Boolean) {\n  getNFTEdition(\n    getNFTEditionsArgs: {nftEditionStatus: $nftEditionStatus, activityIds: $activityIds, sortBy: $sortBy, tiers: $tiers, userId: $userId, take: $take, cursor: $cursor, pageNo: $pageNo, priceRange: $priceRange, isForSale: $isForSale}\n  ) {\n    \n    pageEdges {\n      node {\n        id\n        associatedTiers(nftEditionStatus: $nftEditionStatus, userId: $userId)\n        tier\n        status\n        createdAt\n        updatedAt\n        isRelisted\n        isBookmarked\n        NILLinked\n        seriesNumber\n        nftId\n        price\n        left\n        size\n        tier\n        autoGenerated\n        nft {\n          id\n          description\n          name\n          isNFTBookmarked\n          isLiked\n          isPublished\n          likeCount\n          imageUrl\n          videoData\n          viewCount\n          user {\n            id\n            firstname\n            lastname\n            username\n            profileImage\n            dwollaCustomer {\n              status \n            } \n          } \n        } \n      }\n    }\n    pageInfo {\n      hasNextPage\n      totalCount\n      pageNo\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query getNFTEdition($nftEditionStatus: NFTEditionStatus, $activityIds: [Int], $sortBy: NFTSortBy, $tiers: [NFTEditionTier], $userId: Int, $take: Int, $cursor: Int, $pageNo: Int, $priceRange: PriceRange, $isForSale: Boolean) {
+  getNFTEdition(
+    getNFTEditionsArgs: {nftEditionStatus: $nftEditionStatus, activityIds: $activityIds, sortBy: $sortBy, tiers: $tiers, userId: $userId, take: $take, cursor: $cursor, pageNo: $pageNo, priceRange: $priceRange, isForSale: $isForSale}
+  ) {
+    
+    pageEdges {
+      node {
+        id
+        associatedTiers(nftEditionStatus: $nftEditionStatus, userId: $userId)
+        tier
+        status
+        createdAt
+        updatedAt
+        isRelisted
+        isBookmarked
+        NILLinked
+        seriesNumber
+        nftId
+        price
+        left
+        size
+        tier
+        autoGenerated
+        nft {
+          id
+          description
+          name
+          isNFTBookmarked
+          isLiked
+          isPublished
+          likeCount
+          imageUrl
+          videoData
+          viewCount
+          user {
+            id
+            firstname
+            lastname
+            username
+            profileImage
+            dwollaCustomer {
+              status 
+            } 
+          } 
+        } 
+      }
+    }
+    pageInfo {
+      hasNextPage
+      totalCount
+      pageNo
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;nftEditionStatus&quot;: &quot;Purchased&quot;,
+  &quot;tiers&quot;: [],
+  &quot;isForSale&quot;: false,
+  &quot;activityIds&quot;: [],
+  &quot;userId&quot;: ${Purchased_Ids},
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 10,
+  &quot;pageNo&quot;: 0
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjkwMDQsInBlcm0iOiIiLCJpYXQiOjE2OTU5NjkwOTgsImV4cCI6MTY5ODU2MTA5OCwicHJtIjoiZjdlNDE3MDIyMTNmNGNiYmE5MGE0YTZhNDczMDAwZWQiLCJqaWQiOiJjbGJ1Z3B3eDU2OTk5MjBqMmEyZGt3bndwdkBsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1Z3B3eDU2OTk5MjBqMmEyZGt3bndwdiIsInVrZXkiOiI1ZmEyNDcwZi04ZWIwLTQyZGItYTQ1Ni01MTY2OTY5ZGRhNTYiLCJjbGllbnQiOiIiLCJqdGkiOiJkNWRkNGU4NS05ZmFjLTRiODUtYmNkNS1hMmQ5ZWFjMjUxOGUifQ.P5RUSOQELWzx0U0DwvRAl8W5AOhNmCfDJaZraDBrT3XCRGiISMa6_zjwn0im9SQYQNyWeYZl8jJc1hHopNgqYGo5ksFiIyKVpcjp1BxMlFOaDDU-zj1et37JLOCZ6oBqYKvq3VKtrDuco3o3EWCvBe0O1gRot68v-7wLcM-6PsO70LhPJer2lVIU-y7liIZpygeyxxOWFYQObpnKXBBiBLqBVrF0XBcxDkpbB8bMhNPCoP-KRz2Ugw6MlAuM-NJkD6nmsucMgQRee0vGqLbpJLkiSY0yXTgH-HfcGR0tgqg2DTEnrAqxqJH38Eky2zvooBdzl7QgEQ-EzccRrC8BpA</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="getFirebaseNotifications" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;userId&quot;: ${userId},
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 15
+},&quot;query&quot;:&quot;query getFirebaseNotifications($userId: Int!, $take: Int!, $cursor: Int!) {\n  getFirebaseNotifications(\n    notificationArgs: {userId: $userId, take: $take, cursor: $cursor}\n  ) {\n    pageEdges {\n      node {\n        id\n        isActionRequired\n        extraParameters\n        title\n        type\n        isRead\n        isViewed\n        receiverId\n        senderId\n        nftId\n        nftEditionId\n        nftEdition {\n          tier\n          price\n          seriesNumber          \n        }\n        nft {\n          name\n          imageUrl\n          videoData          \n        }\n        receiver {\n          firstname\n          lastname\n          profileImage          \n        }\n        sender {\n          firstname\n          lastname\n          profileImage          \n        }\n        createdAt        \n      }      \n    }\n    pageInfo {\n      hasNextPage\n      totalCount\n    }    \n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query getFirebaseNotifications($userId: Int!, $take: Int!, $cursor: Int!) {
+  getFirebaseNotifications(
+    notificationArgs: {userId: $userId, take: $take, cursor: $cursor}
+  ) {
+    pageEdges {
+      node {
+        id
+        isActionRequired
+        extraParameters
+        title
+        type
+        isRead
+        isViewed
+        receiverId
+        senderId
+        nftId
+        nftEditionId
+        nftEdition {
+          tier
+          price
+          seriesNumber          
+        }
+        nft {
+          name
+          imageUrl
+          videoData          
+        }
+        receiver {
+          firstname
+          lastname
+          profileImage          
+        }
+        sender {
+          firstname
+          lastname
+          profileImage          
+        }
+        createdAt        
+      }      
+    }
+    pageInfo {
+      hasNextPage
+      totalCount
+    }    
+  }
+}
+</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;userId&quot;: ${userId},
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 15
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjkwMDQsInBlcm0iOiIiLCJpYXQiOjE2OTU5NjkwOTgsImV4cCI6MTY5ODU2MTA5OCwicHJtIjoiZjdlNDE3MDIyMTNmNGNiYmE5MGE0YTZhNDczMDAwZWQiLCJqaWQiOiJjbGJ1Z3B3eDU2OTk5MjBqMmEyZGt3bndwdkBsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1Z3B3eDU2OTk5MjBqMmEyZGt3bndwdiIsInVrZXkiOiI1ZmEyNDcwZi04ZWIwLTQyZGItYTQ1Ni01MTY2OTY5ZGRhNTYiLCJjbGllbnQiOiIiLCJqdGkiOiJkNWRkNGU4NS05ZmFjLTRiODUtYmNkNS1hMmQ5ZWFjMjUxOGUifQ.P5RUSOQELWzx0U0DwvRAl8W5AOhNmCfDJaZraDBrT3XCRGiISMa6_zjwn0im9SQYQNyWeYZl8jJc1hHopNgqYGo5ksFiIyKVpcjp1BxMlFOaDDU-zj1et37JLOCZ6oBqYKvq3VKtrDuco3o3EWCvBe0O1gRot68v-7wLcM-6PsO70LhPJer2lVIU-y7liIZpygeyxxOWFYQObpnKXBBiBLqBVrF0XBcxDkpbB8bMhNPCoP-KRz2Ugw6MlAuM-NJkD6nmsucMgQRee0vGqLbpJLkiSY0yXTgH-HfcGR0tgqg2DTEnrAqxqJH38Eky2zvooBdzl7QgEQ-EzccRrC8BpA</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="bookmarkedUsers" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;userId&quot;: ${id1},
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 3
+},&quot;query&quot;:&quot;query bookmarkedUsers($cursor: Int!, $take: Int!, $userId: Int!) {\n  getBookmarkedUsers(userId: $userId, cursor: $cursor, take: $take) {\n    pageEdges {\n      node {\n        id\n        user {\n          id\n          firstname\n          lastname\n          username\n          profileImage\n          dwollaCustomer {\n            status            \n          }          \n        }        \n      }      \n    }\n    pageInfo {\n      totalCount\n      hasNextPage      \n    }    \n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query bookmarkedUsers($cursor: Int!, $take: Int!, $userId: Int!) {
+  getBookmarkedUsers(userId: $userId, cursor: $cursor, take: $take) {
+    pageEdges {
+      node {
+        id
+        user {
+          id
+          firstname
+          lastname
+          username
+          profileImage
+          dwollaCustomer {
+            status            
+          }          
+        }        
+      }      
+    }
+    pageInfo {
+      totalCount
+      hasNextPage      
+    }    
+  }
+}
+</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;userId&quot;: ${id1},
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 3
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjk1OTc4MDY4LCJleHAiOjE2OTg1NzAwNjgsInBybSI6ImJjNWEwZDQzZmYwZWVmYTk1ZGVhNmYzMzBlMWJiYzkzIiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJjb3JlLWFwcCIsImp0aSI6IjllMGY0OGI2LWE1YmUtNDg0OC1hY2JiLWZmOWE3YTc1OWU5MiJ9.gSXIaDH-LCIvEE-Yx8HdN_z1Tw6RBeJgacc4hXv7cYsH6My1OfXbLLgfsOtPt7F_VjM3UriRwJCc6XdSEibrQTUf2f-7PLx-ai8UjF0rCGjxBxAco4O-mgPAB9zJ4zmx-97KZf5NVd3SMtwNZ7q92GFGfP8JiksKslvKgpwJLiirD_utsb5XghX2S8j0rlrihlAObfDVHLlPRYiOcGrKaHn8BpYq7lhvYMsExcNoEU0CZbK-4t8AaX6eo4j3pf-qXEm6lOFBkfbmQaWShfkCkEo17dqNJwVOuN3uZdYoXBWwRbIFtYO0ZlERHm9tCbuR9GlA9DIqmNIOR75u3eDdOg</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="getMyOrders" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 10
+},&quot;query&quot;:&quot;query getMyOrders($cursor: Int!, $take: Int!, $status: [OrderStatus], $sortBy: OrderType, $orderDate: OrderDate) {\n  getMyOrders(\n    cursor: $cursor\n    take: $take\n    status: $status\n    sortBy: $sortBy\n    orderDate: $orderDate\n  ) {\n    pageEdges {\n      node {\n        id\n        type\n        status\n        amount\n        updatedAt\n        paymentType\n        payoutStatus\n        nft {\n          name\n          imageUrl\n          videoData\n        }\n       }\n      }\n    pageInfo {\n      hasNextPage\n      totalCount\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query getMyOrders($cursor: Int!, $take: Int!, $status: [OrderStatus], $sortBy: OrderType, $orderDate: OrderDate) {
+  getMyOrders(
+    cursor: $cursor
+    take: $take
+    status: $status
+    sortBy: $sortBy
+    orderDate: $orderDate
+  ) {
+    pageEdges {
+      node {
+        id
+        type
+        status
+        amount
+        updatedAt
+        paymentType
+        payoutStatus
+        nft {
+          name
+          imageUrl
+          videoData
+        }
+       }
+      }
+    pageInfo {
+      hasNextPage
+      totalCount
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 10
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${accessToken}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="getOrderDetailsById" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;getOrderDetailsByIdId&quot;: ${id1}
+},&quot;query&quot;:&quot;query GetOrderDetailsById($getOrderDetailsByIdId: Int!) {\n  getOrderDetailsById(id: $getOrderDetailsByIdId) {\n    orderId\n    nft {\n      id\n      imageUrl\n      name\n      videoData\n      user {\n        firstname\n        lastname\n      }\n    }\n    nftEdition {\n      tier\n      royaltyFee\n      seriesNumber\n      price\n      txHash\n    }\n    seller {\n      firstname\n      lastname\n    }\n    buyer {\n      firstname\n      lastname\n    }\n    orderType\n    price\n    transferHash\n    sellerId\n    buyerId\n    paymentType\n    transactionId\n    status\n    type\n    qty\n    fees\n    totalPrice\n    createdAt\n    updatedAt\n    serviceFee\n    cardNumber\n    payoutStatus\n    creditCardFlatFee\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetOrderDetailsById($getOrderDetailsByIdId: Int!) {
+  getOrderDetailsById(id: $getOrderDetailsByIdId) {
+    orderId
+    nft {
+      id
+      imageUrl
+      name
+      videoData
+      user {
+        firstname
+        lastname
+      }
+    }
+    nftEdition {
+      tier
+      royaltyFee
+      seriesNumber
+      price
+      txHash
+    }
+    seller {
+      firstname
+      lastname
+    }
+    buyer {
+      firstname
+      lastname
+    }
+    orderType
+    price
+    transferHash
+    sellerId
+    buyerId
+    paymentType
+    transactionId
+    status
+    type
+    qty
+    fees
+    totalPrice
+    createdAt
+    updatedAt
+    serviceFee
+    cardNumber
+    payoutStatus
+    creditCardFlatFee
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;getOrderDetailsByIdId&quot;: ${id1}
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${accessToken}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="getFirebaseNotificationCount" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;query&quot;:&quot;query getFirebaseNotificationCount {\n  getFirebaseNotificationCount\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query getFirebaseNotificationCount {
+  getFirebaseNotificationCount
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables"></stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${accessToken}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="getDwollaTransactionHistory" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;transHistoryArgs&quot;: {
+    &quot;pageNo&quot;: 0,
+    &quot;take&quot;: 10
+  }
+},&quot;query&quot;:&quot;query GetDwollaTransactionHistory($transHistoryArgs: TransactionHistoryArgs!) {\n  getDwollaTransactionHistory(transHistoryArgs: $transHistoryArgs) {\n    pageEdges {\n      node {\n        id\n        userId\n        tnxType\n        status\n        paymentType\n        amount {\n          value\n          currency\n        }\n        clearing {\n          source\n          destination\n        }\n        individualAchId\n        metadata {\n          nftId\n          nftName\n          orderId\n          quantity\n          tier\n          bankName\n          bankType\n          addAndWithdrawFundFee\n        }\n        createdAt\n        updatedAt\n      }\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetDwollaTransactionHistory($transHistoryArgs: TransactionHistoryArgs!) {
+  getDwollaTransactionHistory(transHistoryArgs: $transHistoryArgs) {
+    pageEdges {
+      node {
+        id
+        userId
+        tnxType
+        status
+        paymentType
+        amount {
+          value
+          currency
+        }
+        clearing {
+          source
+          destination
+        }
+        individualAchId
+        metadata {
+          nftId
+          nftName
+          orderId
+          quantity
+          tier
+          bankName
+          bankType
+          addAndWithdrawFundFee
+        }
+        createdAt
+        updatedAt
+      }
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;transHistoryArgs&quot;: {
+    &quot;pageNo&quot;: 0,
+    &quot;take&quot;: 10
+  }
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${accessToken}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="sParse_TransactionId" enabled="false">
+            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+            <stringProp name="RegexExtractor.refname">sParse_TransactionId</stringProp>
+            <stringProp name="RegexExtractor.regex">&quot;id&quot;:&quot;(.*?)&quot;,&quot;</stringProp>
+            <stringProp name="RegexExtractor.template">$1$</stringProp>
+            <stringProp name="RegexExtractor.default">sParse_TransactionId_NF</stringProp>
+            <stringProp name="RegexExtractor.match_number">1</stringProp>
+          </RegexExtractor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="script">TransactionId = vars.get(&quot;sParse_TransactionId&quot;);
+accessToken = vars.get(&quot;accessToken&quot;);
+//nftEditionId = vars.get(&quot;nftEditionId&quot;);
+//log.info(UserID);  // if you want to log something to jmeter.log file
+// Pass true if you want to append to existing file
+// If you want to overwrite, then don&apos;t pass the second argument
+f = new FileOutputStream(&quot;D:/NXLVL/Marketplace/Stress_Data/TransactionId.csv&quot;, true);
+p = new PrintStream(f);
+this.interpreter.setOut(p);
+print(&quot;TransactionId &quot; + TransactionId + &quot;\t accessToken &quot; + accessToken);
+f.close();
+
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="GetUserChargesAndFees" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;transHistoryArgs&quot;: {
+    &quot;pageNo&quot;: 0,
+    &quot;take&quot;: 10
+  }
+},&quot;query&quot;:&quot;query GetUserChargesAndFees {\n  getUserChargesAndFees {\n    userCharge {\n      id\n      userId\n      isWalletActivated\n      isBankAdded\n      subscriptionDetails\n      createdAt\n      updatedAt\n    }\n    addAndWithdrawFundFee\n    achFailureFee\n    subscriptionFee\n    addBankAccountFee\n    creditCardFlatFee\n    walletActivationFee\n    isUserEmailExistOrNot\n    ageRestricted\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetUserChargesAndFees {
+  getUserChargesAndFees {
+    userCharge {
+      id
+      userId
+      isWalletActivated
+      isBankAdded
+      subscriptionDetails
+      createdAt
+      updatedAt
+    }
+    addAndWithdrawFundFee
+    achFailureFee
+    subscriptionFee
+    addBankAccountFee
+    creditCardFlatFee
+    walletActivationFee
+    isUserEmailExistOrNot
+    ageRestricted
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;transHistoryArgs&quot;: {
+    &quot;pageNo&quot;: 0,
+    &quot;take&quot;: 10
+  }
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${accessToken}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="getNFTEditionById" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;id&quot;: ${getNFTEditionById}
+},&quot;query&quot;:&quot;query getNFTEditionById($id: Int!) {\n  getNFTEditionById(id: $id) {\n    id\n    autoGenerated\n    availableTiers\n    associatedTiers\n    tier\n    status\n    createdAt\n    updatedAt\n    seriesNumber\n    nftId\n    royaltyFee\n    price\n    size\n    tier\n    tokenId\n    left\n    forSale\n    minPrice\n    minted\n    inProgressQuantity\n    isBookmarked\n    CoRoyaltyUser {\n      coRoyaltyFee\n      userId\n      user {\n        id\n        firstname\n        lastname\n        username\n        profileImage\n        dwollaCustomer {\n          status\n        }\n      }\n    }\n    firstSaleShareUser {\n      value\n      userId\n      user {\n        id\n        firstname\n        lastname\n        username\n        profileImage\n        dwollaCustomer {\n          status\n        }\n      }\n    }\n    nft {\n      id\n      name\n      likeCount\n      imageUrl\n      videoData\n      isLiked\n      isReported\n      description\n      editions {\n        status\n        tier\n        seriesNumber\n      }\n      isPublished\n      nftMultiAssetMedia {\n        id\n        imageUrl\n        order\n        isDefault\n        isPublished\n        passthroughId\n        videoData\n      }\n      activitiesOnNfts {\n        activityId\n        activity {\n          id\n          name\n        }\n      }\n      attributesOnNfts {\n        attributeId\n      }\n      attributeValues {\n        id\n        name\n        type\n        value\n      }\n      user {\n        id\n        firstname\n        lastname\n        username\n        profileImage\n        dwollaCustomer {\n          status\n        }\n      }\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query getNFTEditionById($id: Int!) {
+  getNFTEditionById(id: $id) {
+    id
+    autoGenerated
+    availableTiers
+    associatedTiers
+    tier
+    status
+    createdAt
+    updatedAt
+    seriesNumber
+    nftId
+    royaltyFee
+    price
+    size
+    tier
+    tokenId
+    left
+    forSale
+    minPrice
+    minted
+    inProgressQuantity
+    isBookmarked
+    CoRoyaltyUser {
+      coRoyaltyFee
+      userId
+      user {
+        id
+        firstname
+        lastname
+        username
+        profileImage
+        dwollaCustomer {
+          status
+        }
+      }
+    }
+    firstSaleShareUser {
+      value
+      userId
+      user {
+        id
+        firstname
+        lastname
+        username
+        profileImage
+        dwollaCustomer {
+          status
+        }
+      }
+    }
+    nft {
+      id
+      name
+      likeCount
+      imageUrl
+      videoData
+      isLiked
+      isReported
+      description
+      editions {
+        status
+        tier
+        seriesNumber
+      }
+      isPublished
+      nftMultiAssetMedia {
+        id
+        imageUrl
+        order
+        isDefault
+        isPublished
+        passthroughId
+        videoData
+      }
+      activitiesOnNfts {
+        activityId
+        activity {
+          id
+          name
+        }
+      }
+      attributesOnNfts {
+        attributeId
+      }
+      attributeValues {
+        id
+        name
+        type
+        value
+      }
+      user {
+        id
+        firstname
+        lastname
+        username
+        profileImage
+        dwollaCustomer {
+          status
+        }
+      }
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables"> {
+  &quot;id&quot;: ${getNFTEditionById}
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjk1OTY4Mzk1LCJleHAiOjE2OTg1NjAzOTUsInBybSI6IjJiYWZiZDQ1NjFjZDgzOGJkMWRiNTE1MjdkZTA4Njc2IiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJjb3JlLWFwcCIsImp0aSI6ImRmOGM0M2EyLWI4NDYtNGZlYi05ODAyLTMxY2ViOTIyYWY5OCJ9.DPR1SeQYbnAd87wH-bO8y6eifXEqQwYIjcO_1EN7I7RSOZXpSMWJkfBEsJtizjJEsas0bIhVozgSJz7zXuKFmIXPoafGODTtVwqMrVOyj-2eJzRtqut623KjYvwE4PKRC9JOXG5fUvfUVEM7RkCIbF8Om1_2vF6Wl6wvlWbS7aly7wEdHu6Vysw_8X93E6LhDppQL6dE2gedapDYM200xoKBvN6dAXA1uUE50aq8awmGTAT0gyf7jnj--Sy-LHc6qg90HtzAbT3vI1pYM0P4GayXufe5LTt0ZvtBY6i5akKAYT69VInfc0Q0wPtVnk6CToFubZ4oOLCXKSY-AIl2Vg</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="getBuyingNftItemDetails" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;nftItemId&quot;: ${nftItemId},
+  &quot;userId&quot;: ${userId}
+},&quot;query&quot;:&quot;query getBuyingNftItemDetails($nftItemId: Int!, $userId: Int) {\n  getBuyingNftItemDetails(nftItemId: $nftItemId, userId: $userId) {\n    leftQuantity\n    dwollaFee\n    creditCardFee\n    creditCardFlatFee\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query getBuyingNftItemDetails($nftItemId: Int!, $userId: Int) {
+  getBuyingNftItemDetails(nftItemId: $nftItemId, userId: $userId) {
+    leftQuantity
+    dwollaFee
+    creditCardFee
+    creditCardFlatFee
+  }
+}
+</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;nftItemId&quot;: ${nftItemId},
+  &quot;userId&quot;: ${userId}
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjk1OTY4Mzk1LCJleHAiOjE2OTg1NjAzOTUsInBybSI6IjJiYWZiZDQ1NjFjZDgzOGJkMWRiNTE1MjdkZTA4Njc2IiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJjb3JlLWFwcCIsImp0aSI6ImRmOGM0M2EyLWI4NDYtNGZlYi05ODAyLTMxY2ViOTIyYWY5OCJ9.DPR1SeQYbnAd87wH-bO8y6eifXEqQwYIjcO_1EN7I7RSOZXpSMWJkfBEsJtizjJEsas0bIhVozgSJz7zXuKFmIXPoafGODTtVwqMrVOyj-2eJzRtqut623KjYvwE4PKRC9JOXG5fUvfUVEM7RkCIbF8Om1_2vF6Wl6wvlWbS7aly7wEdHu6Vysw_8X93E6LhDppQL6dE2gedapDYM200xoKBvN6dAXA1uUE50aq8awmGTAT0gyf7jnj--Sy-LHc6qg90HtzAbT3vI1pYM0P4GayXufe5LTt0ZvtBY6i5akKAYT69VInfc0Q0wPtVnk6CToFubZ4oOLCXKSY-AIl2Vg</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="getBuyingNftEditionDetail" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;nftEditionId&quot;: ${nftEditionId},
+  &quot;userId&quot;: ${userId}
+},&quot;query&quot;:&quot;query getBuyingNftEditionDetail($nftEditionId: Int!, $userId: Int) {\n  getBuyingNftEditionDetails(nftEditionId: $nftEditionId, userId: $userId) {\n    leftQuantity\n    dwollaFee\n    isUserBlocked\n    creditCardFee\n    creditCardFlatFee\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query getBuyingNftEditionDetail($nftEditionId: Int!, $userId: Int) {
+  getBuyingNftEditionDetails(nftEditionId: $nftEditionId, userId: $userId) {
+    leftQuantity
+    dwollaFee
+    isUserBlocked
+    creditCardFee
+    creditCardFlatFee
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;nftEditionId&quot;: ${nftEditionId},
+  &quot;userId&quot;: ${userId}
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjk1OTY4Mzk1LCJleHAiOjE2OTg1NjAzOTUsInBybSI6IjJiYWZiZDQ1NjFjZDgzOGJkMWRiNTE1MjdkZTA4Njc2IiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJjb3JlLWFwcCIsImp0aSI6ImRmOGM0M2EyLWI4NDYtNGZlYi05ODAyLTMxY2ViOTIyYWY5OCJ9.DPR1SeQYbnAd87wH-bO8y6eifXEqQwYIjcO_1EN7I7RSOZXpSMWJkfBEsJtizjJEsas0bIhVozgSJz7zXuKFmIXPoafGODTtVwqMrVOyj-2eJzRtqut623KjYvwE4PKRC9JOXG5fUvfUVEM7RkCIbF8Om1_2vF6Wl6wvlWbS7aly7wEdHu6Vysw_8X93E6LhDppQL6dE2gedapDYM200xoKBvN6dAXA1uUE50aq8awmGTAT0gyf7jnj--Sy-LHc6qg90HtzAbT3vI1pYM0P4GayXufe5LTt0ZvtBY6i5akKAYT69VInfc0Q0wPtVnk6CToFubZ4oOLCXKSY-AIl2Vg</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="getUserDetailsById" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;getUserDetailsByIdId&quot;: ${id},
+  &quot;userId&quot;: 825823
+},&quot;query&quot;:&quot;query GetUserDetailsById($getUserDetailsByIdId: Int!, $userId: Int!) {\n  getUserDetailsById(id: $getUserDetailsByIdId) {\n    id\n    username\n    firstname\n    lastname\n    userType\n    userInstitutions {\n      College {\n        institution {\n          name\n        }\n      }\n    }\n    preferences {\n      id\n      name\n    }\n    dwollaCustomer {\n      status\n    }\n    isPeopleBookmarked\n    backgroundVideoData\n    backgroundImage\n    backgroundImageThumbnail\n    profileImage\n    email\n    isFollowing(userId: $userId)\n    pageSpecificDetail {\n      userId\n      nilClubId\n      imageData\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetUserDetailsById($getUserDetailsByIdId: Int!, $userId: Int!) {
+  getUserDetailsById(id: $getUserDetailsByIdId) {
+    id
+    username
+    firstname
+    lastname
+    userType
+    userInstitutions {
+      College {
+        institution {
+          name
+        }
+      }
+    }
+    preferences {
+      id
+      name
+    }
+    dwollaCustomer {
+      status
+    }
+    isPeopleBookmarked
+    backgroundVideoData
+    backgroundImage
+    backgroundImageThumbnail
+    profileImage
+    email
+    isFollowing(userId: $userId)
+    pageSpecificDetail {
+      userId
+      nilClubId
+      imageData
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;getUserDetailsByIdId&quot;: ${id},
+  &quot;userId&quot;: 825823
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjk1OTY4Mzk1LCJleHAiOjE2OTg1NjAzOTUsInBybSI6IjJiYWZiZDQ1NjFjZDgzOGJkMWRiNTE1MjdkZTA4Njc2IiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJjb3JlLWFwcCIsImp0aSI6ImRmOGM0M2EyLWI4NDYtNGZlYi05ODAyLTMxY2ViOTIyYWY5OCJ9.DPR1SeQYbnAd87wH-bO8y6eifXEqQwYIjcO_1EN7I7RSOZXpSMWJkfBEsJtizjJEsas0bIhVozgSJz7zXuKFmIXPoafGODTtVwqMrVOyj-2eJzRtqut623KjYvwE4PKRC9JOXG5fUvfUVEM7RkCIbF8Om1_2vF6Wl6wvlWbS7aly7wEdHu6Vysw_8X93E6LhDppQL6dE2gedapDYM200xoKBvN6dAXA1uUE50aq8awmGTAT0gyf7jnj--Sy-LHc6qg90HtzAbT3vI1pYM0P4GayXufe5LTt0ZvtBY6i5akKAYT69VInfc0Q0wPtVnk6CToFubZ4oOLCXKSY-AIl2Vg</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="sParse_email" enabled="true">
+            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+            <stringProp name="RegexExtractor.refname">sParse_email</stringProp>
+            <stringProp name="RegexExtractor.regex">&quot;email&quot;:&quot;(.*?)&quot;,&quot;</stringProp>
+            <stringProp name="RegexExtractor.template">$1$</stringProp>
+            <stringProp name="RegexExtractor.default">sParse_email_NF</stringProp>
+            <stringProp name="RegexExtractor.match_number">1</stringProp>
+          </RegexExtractor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="script">email = vars.get(&quot;sParse_email&quot;);
+buyerId = vars.get(&quot;buyerId&quot;);
+nftEditionId = vars.get(&quot;nftEditionId&quot;);
+//log.info(UserID);  // if you want to log something to jmeter.log file
+// Pass true if you want to append to existing file
+// If you want to overwrite, then don&apos;t pass the second argument
+f = new FileOutputStream(&quot;D:/NXLVL/Marketplace/Stress_Data/emailIds1.csv&quot;, true);
+p = new PrintStream(f);
+this.interpreter.setOut(p);
+print(&quot;buyerId &quot; + buyerId + &quot;\t nftEditionId &quot; + nftEditionId + &quot;\t email &quot; +email);
+f.close();
+
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="getUserDetailsById" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;getUserDetailsByIdId&quot;: ${userId},
+  &quot;userId&quot;: 825823
+},&quot;query&quot;:&quot;query GetUserDetailsById($getUserDetailsByIdId: Int!, $userId: Int!) {\n  getUserDetailsById(id: $getUserDetailsByIdId) {\n    id\n    username\n    firstname\n    lastname\n    userType\n    userInstitutions {\n      College {\n        institution {\n          name\n        }\n      }\n    }\n    preferences {\n      id\n      name\n    }\n    dwollaCustomer {\n      status\n    }\n    isPeopleBookmarked\n    backgroundVideoData\n    backgroundImage\n    backgroundImageThumbnail\n    profileImage\n    email\n    isFollowing(userId: $userId)\n    pageSpecificDetail {\n      userId\n      nilClubId\n      imageData\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetUserDetailsById($getUserDetailsByIdId: Int!, $userId: Int!) {
+  getUserDetailsById(id: $getUserDetailsByIdId) {
+    id
+    username
+    firstname
+    lastname
+    userType
+    userInstitutions {
+      College {
+        institution {
+          name
+        }
+      }
+    }
+    preferences {
+      id
+      name
+    }
+    dwollaCustomer {
+      status
+    }
+    isPeopleBookmarked
+    backgroundVideoData
+    backgroundImage
+    backgroundImageThumbnail
+    profileImage
+    email
+    isFollowing(userId: $userId)
+    pageSpecificDetail {
+      userId
+      nilClubId
+      imageData
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;getUserDetailsByIdId&quot;: ${userId},
+  &quot;userId&quot;: 825823
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjk1OTY4Mzk1LCJleHAiOjE2OTg1NjAzOTUsInBybSI6IjJiYWZiZDQ1NjFjZDgzOGJkMWRiNTE1MjdkZTA4Njc2IiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJjb3JlLWFwcCIsImp0aSI6ImRmOGM0M2EyLWI4NDYtNGZlYi05ODAyLTMxY2ViOTIyYWY5OCJ9.DPR1SeQYbnAd87wH-bO8y6eifXEqQwYIjcO_1EN7I7RSOZXpSMWJkfBEsJtizjJEsas0bIhVozgSJz7zXuKFmIXPoafGODTtVwqMrVOyj-2eJzRtqut623KjYvwE4PKRC9JOXG5fUvfUVEM7RkCIbF8Om1_2vF6Wl6wvlWbS7aly7wEdHu6Vysw_8X93E6LhDppQL6dE2gedapDYM200xoKBvN6dAXA1uUE50aq8awmGTAT0gyf7jnj--Sy-LHc6qg90HtzAbT3vI1pYM0P4GayXufe5LTt0ZvtBY6i5akKAYT69VInfc0Q0wPtVnk6CToFubZ4oOLCXKSY-AIl2Vg</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="sParse_email" enabled="true">
+            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+            <stringProp name="RegexExtractor.refname">sParse_email</stringProp>
+            <stringProp name="RegexExtractor.regex">&quot;email&quot;:&quot;(.*?)&quot;,&quot;</stringProp>
+            <stringProp name="RegexExtractor.template">$1$</stringProp>
+            <stringProp name="RegexExtractor.default">sParse_email_NF</stringProp>
+            <stringProp name="RegexExtractor.match_number">1</stringProp>
+          </RegexExtractor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="script">nftEditionId = vars.get(&quot;nftEditionId&quot;);
+userId = vars.get(&quot;userId&quot;);
+email = vars.get(&quot;sParse_email&quot;);
+//nftEditionId = vars.get(&quot;nftEditionId&quot;);
+//log.info(UserID);  // if you want to log something to jmeter.log file
+// Pass true if you want to append to existing file
+// If you want to overwrite, then don&apos;t pass the second argument
+f = new FileOutputStream(&quot;D:/NXLVL/Marketplace/Stress_Data/ListForSalesIdEmailId.csv&quot;, true);
+p = new PrintStream(f);
+this.interpreter.setOut(p);
+print(&quot;nftEditionId &quot; +nftEditionId+ &quot;\t userId &quot;+userId+ &quot;\t email &quot; +email);
+//print(&quot;nftEditionId &quot; + nftEditionId + &quot;\t userId &quot; + userId + &quot;\t email &quot; +email);
+f.close();
+
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="getLegendaryNFTEditionDetail" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;nftId&quot;: ${getLegendaryNFT}
+},&quot;query&quot;:&quot;query getLegendaryNFTEditionDetail($nftId: Int!) {\n  getLegendaryNFTEditionDetail(nftId: $nftId) {\n    id\n    availableTiers\n    autoGenerated\n    isRelisted\n    associatedTiers\n    tier\n    status\n    createdAt\n    updatedAt\n    seriesNumber\n    nftId\n    royaltyFee\n    price\n    size\n    tier\n    tokenId\n    left\n    forSale\n    minPrice\n    isBookmarked\n    nft {\n      id\n      name\n      description\n      likeCount\n      imageUrl\n      videoData\n      isLiked\n      isReported\n      editions {\n        status\n        tier\n      }\n      nftMultiAssetMedia {\n        id\n        imageUrl\n        order\n        isDefault\n        isPublished\n        passthroughId\n        videoData\n      }\n      activitiesOnNfts {\n        activityId\n        activity {\n          id\n          name\n        }\n      }\n      user {\n        id\n        firstname\n        lastname\n        username\n        profileImage\n        dwollaCustomer {\n          status\n        }\n      }\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query getLegendaryNFTEditionDetail($nftId: Int!) {
+  getLegendaryNFTEditionDetail(nftId: $nftId) {
+    id
+    availableTiers
+    autoGenerated
+    isRelisted
+    associatedTiers
+    tier
+    status
+    createdAt
+    updatedAt
+    seriesNumber
+    nftId
+    royaltyFee
+    price
+    size
+    tier
+    tokenId
+    left
+    forSale
+    minPrice
+    isBookmarked
+    nft {
+      id
+      name
+      description
+      likeCount
+      imageUrl
+      videoData
+      isLiked
+      isReported
+      editions {
+        status
+        tier
+      }
+      nftMultiAssetMedia {
+        id
+        imageUrl
+        order
+        isDefault
+        isPublished
+        passthroughId
+        videoData
+      }
+      activitiesOnNfts {
+        activityId
+        activity {
+          id
+          name
+        }
+      }
+      user {
+        id
+        firstname
+        lastname
+        username
+        profileImage
+        dwollaCustomer {
+          status
+        }
+      }
+    }
+  }
+}
+</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;nftId&quot;: ${getLegendaryNFT}
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjk1OTY4Mzk1LCJleHAiOjE2OTg1NjAzOTUsInBybSI6IjJiYWZiZDQ1NjFjZDgzOGJkMWRiNTE1MjdkZTA4Njc2IiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJjb3JlLWFwcCIsImp0aSI6ImRmOGM0M2EyLWI4NDYtNGZlYi05ODAyLTMxY2ViOTIyYWY5OCJ9.DPR1SeQYbnAd87wH-bO8y6eifXEqQwYIjcO_1EN7I7RSOZXpSMWJkfBEsJtizjJEsas0bIhVozgSJz7zXuKFmIXPoafGODTtVwqMrVOyj-2eJzRtqut623KjYvwE4PKRC9JOXG5fUvfUVEM7RkCIbF8Om1_2vF6Wl6wvlWbS7aly7wEdHu6Vysw_8X93E6LhDppQL6dE2gedapDYM200xoKBvN6dAXA1uUE50aq8awmGTAT0gyf7jnj--Sy-LHc6qg90HtzAbT3vI1pYM0P4GayXufe5LTt0ZvtBY6i5akKAYT69VInfc0Q0wPtVnk6CToFubZ4oOLCXKSY-AIl2Vg</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="GetVerifiedDwollaCustomers" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;verifiedDwollaCustomersArgs&quot;: {
+    &quot;pageNo&quot;: 0,
+    &quot;take&quot;: 10
+  }
+},&quot;query&quot;:&quot;query GetVerifiedDwollaCustomers($verifiedDwollaCustomersArgs: VerifiedDwollaCustomersArgs) {\n  getVerifiedDwollaCustomers(verifiedDwollaCustomersArgs: $verifiedDwollaCustomersArgs) {\n    pageEdges {\n      node {\n        id\n        firstname\n        imageUrl\n        lastname\n        username\n      }\n    }\n    pageInfo {\n      hasNextPage\n      pageNo\n      totalCount\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetVerifiedDwollaCustomers($verifiedDwollaCustomersArgs: VerifiedDwollaCustomersArgs) {
+  getVerifiedDwollaCustomers(verifiedDwollaCustomersArgs: $verifiedDwollaCustomersArgs) {
+    pageEdges {
+      node {
+        id
+        firstname
+        imageUrl
+        lastname
+        username
+      }
+    }
+    pageInfo {
+      hasNextPage
+      pageNo
+      totalCount
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;verifiedDwollaCustomersArgs&quot;: {
+    &quot;pageNo&quot;: 0,
+    &quot;take&quot;: 10
+  }
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjkwMDQsInBlcm0iOiIiLCJpYXQiOjE2OTY0MTQwNzYsImV4cCI6MTY5OTAwNjA3NiwicHJtIjoiMzliNThmMmQzMjU1MDdmYTBlYTJlZDY1NWI4ZjQwM2YiLCJqaWQiOiJjbGJ1Z3B3eDU2OTk5MjBqMmEyZGt3bndwdkBsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1Z3B3eDU2OTk5MjBqMmEyZGt3bndwdiIsInVrZXkiOiI1ZmEyNDcwZi04ZWIwLTQyZGItYTQ1Ni01MTY2OTY5ZGRhNTYiLCJjbGllbnQiOiIiLCJqdGkiOiJjYTBiZmMzOC01NGUzLTRlNzQtYjJlNy04M2RmYjU5NDE3OWMifQ.GF8Zys_ycL634bxsjJTYHEAzXj6tMuHpdDzA9yLoK5UHIQLKf4rC5398JyQJ9AUN4atqzsmH5NKqeYkyuhOSvgjk0tZXxXXog2fht7k6M6qhciihh5Z5p6rBytYnB4k6MlJ9t-nVPilIYUJ1V3HSKR4oYqoJO0cUFahgoiaPPWxMq4GSFXDUwbeQoNG1xYq_57AuWgEJhjOrJjhpYh2E7M7USmzZEPJgUJkb8_k4i7ZGGSca8jBGu7NEagx-Z8jbt_TPFzlk-ql2e_pSOqIAFCyg4FaFJM_SlyhrS2elYgJMUrHDS6YSU5sOqNlKLA2Gl1FkBPz_oEzt9kdmWkuReg</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="GetDwollaTransactionById" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;getDwollaTransactionByIdId&quot;: &quot;${TransactionId}&quot;
+},&quot;query&quot;:&quot;query GetDwollaTransactionById($getDwollaTransactionByIdId: String!) {\n  getDwollaTransactionById(id: $getDwollaTransactionByIdId) {\n    id\n    userId\n    paymentType\n    tnxType\n    status\n    amount {\n      currency\n      value\n    }\n    clearing {\n      destination\n      source\n    }\n    individualAchId\n    metadata {\n      bankName\n      bankType\n      nftId\n      nftName\n      orderId\n      quantity\n      tier\n    }\n    createdAt\n    updatedAt\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetDwollaTransactionById($getDwollaTransactionByIdId: String!) {
+  getDwollaTransactionById(id: $getDwollaTransactionByIdId) {
+    id
+    userId
+    paymentType
+    tnxType
+    status
+    amount {
+      currency
+      value
+    }
+    clearing {
+      destination
+      source
+    }
+    individualAchId
+    metadata {
+      bankName
+      bankType
+      nftId
+      nftName
+      orderId
+      quantity
+      tier
+    }
+    createdAt
+    updatedAt
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;getDwollaTransactionByIdId&quot;: &quot;${TransactionId}&quot;
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${accessToken}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="GetItemsToSellOnSecondary" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;getSecondaryItemArgs&quot;: {
+    &quot;nftEditionId&quot;: ${nftEditionId},
+    &quot;sortBy&quot;: &quot;EditionLowToHigh&quot;,
+    &quot;take&quot;: 10,
+    &quot;cursor&quot;: 0
+  }
+},&quot;query&quot;:&quot;query GetItemsToSellOnSecondary($getSecondaryItemArgs: GetSecondaryItemArgs!) {\n  getItemsToSellOnSecondary(getSecondaryItemArgs: $getSecondaryItemArgs) {\n    pageInfo {\n      hasNextPage\n      totalCount\n    }\n    pageEdges {\n      node {\n        id\n        forSaleQty\n        sellingPrice\n        user {\n          id\n          firstname\n          lastname\n          profileImage\n        }\n      }\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetItemsToSellOnSecondary($getSecondaryItemArgs: GetSecondaryItemArgs!) {
+  getItemsToSellOnSecondary(getSecondaryItemArgs: $getSecondaryItemArgs) {
+    pageInfo {
+      hasNextPage
+      totalCount
+    }
+    pageEdges {
+      node {
+        id
+        forSaleQty
+        sellingPrice
+        user {
+          id
+          firstname
+          lastname
+          profileImage
+        }
+      }
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;getSecondaryItemArgs&quot;: {
+    &quot;nftEditionId&quot;: ${nftEditionId},
+    &quot;sortBy&quot;: &quot;EditionLowToHigh&quot;,
+    &quot;take&quot;: 10,
+    &quot;cursor&quot;: 0
+  }
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjk1OTY4Mzk1LCJleHAiOjE2OTg1NjAzOTUsInBybSI6IjJiYWZiZDQ1NjFjZDgzOGJkMWRiNTE1MjdkZTA4Njc2IiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJjb3JlLWFwcCIsImp0aSI6ImRmOGM0M2EyLWI4NDYtNGZlYi05ODAyLTMxY2ViOTIyYWY5OCJ9.DPR1SeQYbnAd87wH-bO8y6eifXEqQwYIjcO_1EN7I7RSOZXpSMWJkfBEsJtizjJEsas0bIhVozgSJz7zXuKFmIXPoafGODTtVwqMrVOyj-2eJzRtqut623KjYvwE4PKRC9JOXG5fUvfUVEM7RkCIbF8Om1_2vF6Wl6wvlWbS7aly7wEdHu6Vysw_8X93E6LhDppQL6dE2gedapDYM200xoKBvN6dAXA1uUE50aq8awmGTAT0gyf7jnj--Sy-LHc6qg90HtzAbT3vI1pYM0P4GayXufe5LTt0ZvtBY6i5akKAYT69VInfc0Q0wPtVnk6CToFubZ4oOLCXKSY-AIl2Vg</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="828" it="0" lt="828" ct="512" ts="1681454994758" s="true" lb="ES_Query1" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" de="" by="455" sby="3046" sc="1" ec="0" ng="1" na="1" hn="CIPL-LPT-1227">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Length: 160
+Content-Type: application/json
+X-Cloud-Request-Id: MPNvdPNATGapGEIbXo_doQ
+X-Elastic-Product: Elasticsearch
+X-Found-Handling-Cluster: b7b396c784ab47c98ae9a0c02bd9325a
+X-Found-Handling-Instance: instance-0000000004
+Date: Fri, 14 Apr 2023 06:49:01 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/json
+Authorization: Basic ZWxhc3RpYzp4MUZvT3l6NW03eVdLaTdCUGpGdUdRZzQ=
+Content-Length: 2726
+Host: b7b396c784ab47c98ae9a0c02bd9325a.centralus.azure.elastic-cloud.com:9243
+User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;took&quot;:2,&quot;timed_out&quot;:false,&quot;_shards&quot;:{&quot;total&quot;:1,&quot;successful&quot;:1,&quot;skipped&quot;:0,&quot;failed&quot;:0},&quot;hits&quot;:{&quot;total&quot;:{&quot;value&quot;:0,&quot;relation&quot;:&quot;eq&quot;},&quot;max_score&quot;:null,&quot;hits&quot;:[]}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;query&quot;: {&#xd;
+    &quot;bool&quot;: {&#xd;
+      &quot;must_not&quot;: [&#xd;
+        {&#xd;
+          &quot;terms&quot;: {&#xd;
+            &quot;userId&quot;: []&#xd;
+          }&#xd;
+        },&#xd;
+        {&#xd;
+          &quot;terms&quot;: {&#xd;
+            &quot;id&quot;: []&#xd;
+          }&#xd;
+        },&#xd;
+        {&#xd;
+          &quot;match&quot;: {&#xd;
+            &quot;isDelete&quot;: true&#xd;
+          }&#xd;
+        },&#xd;
+        {&#xd;
+          &quot;match&quot;: {&#xd;
+            &quot;isPublished&quot;: false&#xd;
+          }&#xd;
+        },&#xd;
+        {&#xd;
+          &quot;match&quot;: {&#xd;
+            &quot;isPublishedToFeed&quot;: false&#xd;
+          }&#xd;
+        },&#xd;
+        {&#xd;
+          &quot;match&quot;: {&#xd;
+            &quot;isActive&quot;: false&#xd;
+          }&#xd;
+        },&#xd;
+        {&#xd;
+          &quot;match&quot;: {&#xd;
+            &quot;visibility&quot;: &quot;OnlyMe&quot;&#xd;
+          }&#xd;
+        },&#xd;
+        {&#xd;
+          &quot;match&quot;: {&#xd;
+            &quot;contentType&quot;: &quot;Event&quot;&#xd;
+          }&#xd;
+        },&#xd;
+        {&#xd;
+          &quot;nested&quot;: {&#xd;
+            &quot;path&quot;: &quot;activity&quot;,&#xd;
+            &quot;query&quot;: {&#xd;
+              &quot;terms&quot;: {&#xd;
+                &quot;activity.id&quot;: []&#xd;
+              }&#xd;
+            }&#xd;
+          }&#xd;
+        }&#xd;
+      ],&#xd;
+      &quot;must&quot;: [&#xd;
+        {&#xd;
+          &quot;nested&quot;: {&#xd;
+            &quot;path&quot;: &quot;activity&quot;,&#xd;
+            &quot;query&quot;: {&#xd;
+              &quot;terms&quot;: {&#xd;
+                &quot;activity.id&quot;: [&#xd;
+                  3&#xd;
+                ]&#xd;
+              }&#xd;
+            }&#xd;
+          }&#xd;
+        }&#xd;
+      ],&#xd;
+      &quot;should&quot;: [&#xd;
+        {&#xd;
+          &quot;bool&quot;: {&#xd;
+            &quot;must&quot;: [&#xd;
+              {&#xd;
+                &quot;match&quot;: {&#xd;
+                  &quot;visibility&quot;: &quot;Connections&quot;&#xd;
+                }&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;terms&quot;: {&#xd;
+                  &quot;userId&quot;: []&#xd;
+                }&#xd;
+              }&#xd;
+            ]&#xd;
+          }&#xd;
+        },&#xd;
+        {&#xd;
+          &quot;bool&quot;: {&#xd;
+            &quot;must&quot;: [&#xd;
+              {&#xd;
+                &quot;terms&quot;: {&#xd;
+                  &quot;visibility&quot;: [&#xd;
+                    &quot;Public&quot;,&#xd;
+                    &quot;Followers&quot;&#xd;
+                  ]&#xd;
+                }&#xd;
+              },&#xd;
+              {&#xd;
+                &quot;terms&quot;: {&#xd;
+                  &quot;userId&quot;: [&#xd;
+                    9008,&#xd;
+                    150006,&#xd;
+                    60002&#xd;
+                  ]&#xd;
+                }&#xd;
+              }&#xd;
+            ]&#xd;
+          }&#xd;
+        },&#xd;
+        {&#xd;
+          &quot;bool&quot;: {&#xd;
+            &quot;must&quot;: [&#xd;
+              {&#xd;
+                &quot;match&quot;: {&#xd;
+                  &quot;visibility&quot;: &quot;Public&quot;&#xd;
+                }&#xd;
+              }&#xd;
+            ]&#xd;
+          }&#xd;
+        },&#xd;
+        {&#xd;
+          &quot;terms&quot;: {&#xd;
+            &quot;userId&quot;: [&#xd;
+              9008,&#xd;
+              150006,&#xd;
+              60002&#xd;
+            ]&#xd;
+          }&#xd;
+        }&#xd;
+      ]&#xd;
+    }&#xd;
+  },&#xd;
+  &quot;sort&quot;: [&#xd;
+    {&#xd;
+      &quot;updatedAt&quot;: {&#xd;
+        &quot;order&quot;: &quot;desc&quot;&#xd;
+      }&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;likeCount&quot;: {&#xd;
+        &quot;order&quot;: &quot;desc&quot;&#xd;
+      }&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;size&quot;: 20,&#xd;
+  &quot;from&quot;: 0&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://b7b396c784ab47c98ae9a0c02bd9325a.centralus.azure.elastic-cloud.com:9243/post_index_stress/_search</java.net.URL>
+</httpSample>
+
+</testResults>

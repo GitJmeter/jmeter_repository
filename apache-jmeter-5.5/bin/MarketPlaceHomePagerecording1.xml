@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="875" it="0" lt="0" ct="472" ts="1682426625126" s="true" lb="/sessions/ping-370" rc="204" rm="No Content" tn="" dt="" de="" by="312" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+x-powered-by: Express
+access-control-allow-origin: *
+access-control-allow-methods: GET,HEAD,PUT,PATCH,POST,DELETE
+vary: Access-Control-Request-Headers
+access-control-allow-headers: api-token,content-type,gleap-hash,gleap-id
+date: Tue, 25 Apr 2023 12:42:44 GMT
+connection: close
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Sec-Fetch-Mode: cors
+Referer: https://nil.qa.nxlvl.app/
+Sec-Fetch-Site: cross-site
+Accept-Language: en-US,en;q=0.9
+Origin: https://nil.qa.nxlvl.app
+Access-Control-Request-Method: POST
+Accept: */*
+Host: api.gleap.io
+Access-Control-Request-Headers: api-token,content-type,gleap-hash,gleap-id
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.58
+Sec-Fetch-Dest: empty
+</requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">OPTIONS</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://api.gleap.io/sessions/ping</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="teams.microsoft.com:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1372" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT teams.microsoft.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="teams.microsoft.com:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1372" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT teams.microsoft.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="marketplace.qa.nxlvl.app:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1372" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT marketplace.qa.nxlvl.app:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="marketplace.qa.nxlvl.app:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1372" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT marketplace.qa.nxlvl.app:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<httpSample t="34" it="0" lt="0" ct="14" ts="1682426632866" s="true" lb="/generate_204-371" rc="204" rm="No Content" tn="" dt="" de="" by="146" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+Content-Length: 0
+Cross-Origin-Resource-Policy: cross-origin
+Date: Tue, 25 Apr 2023 12:42:51 GMT
+Connection: close
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept-Language: en-US,en;q=0.9
+Host: www.gstatic.com
+Cache-Control: no-cache
+Pragma: no-cache
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+</requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://www.gstatic.com/generate_204</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="self.events.data.microsoft.com:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1490" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT self.events.data.microsoft.com:443 HTTP/1.0&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="self.events.data.microsoft.com:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1490" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT self.events.data.microsoft.com:443 HTTP/1.0&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="presence.teams.microsoft.com:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1372" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT presence.teams.microsoft.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="presence.teams.microsoft.com:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1372" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT presence.teams.microsoft.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="presence.teams.microsoft.com:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1372" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT presence.teams.microsoft.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="presence.teams.microsoft.com:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1372" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT presence.teams.microsoft.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="presence.teams.microsoft.com:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1372" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT presence.teams.microsoft.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="self.events.data.microsoft.com:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1490" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT self.events.data.microsoft.com:443 HTTP/1.0&#xd;
+</samplerData>
+</sample>
+<httpSample t="1828" it="0" lt="1828" ct="906" ts="1682426648031" s="true" lb="/v4/a?cor_id=83aba2a2-77a0-45ae-9635-4b051e04bcfe&amp;con_num=1682426639806_1&amp;epid=40577a5a-0db0-4106-b3e7-ce6ba4300c95&amp;sr=EEwAAPsgQzm8yJTPJU-W57zCswMzKuw87NbcW_IGe63GCqNLcAViEO-47sjY3j5oEmbCpDsY8AUk4IiPgeh1t0FBErXOKd-SRoZC6Gl9q7FBvmOSzQQ&amp;issuer=prod-2&amp;sp=connect&amp;se=1682955052905&amp;st=1682400563905&amp;sig=z0W6Rz_3XIuzKYEDDj0TdQCPHt7LGmFYowz8OuLwcRg&amp;v=v4-373" rc="200" rm="OK" tn="" dt="text" de="" by="853" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Type: application/json
+Expires: 0
+Server: Microsoft-HTTPAPI/2.0
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: Nosniff
+X-Frame-Options: SAMEORIGIN
+Access-Control-Allow-Origin: https://teams.microsoft.com
+Access-Control-Allow-Credentials: true
+Date: Tue, 25 Apr 2023 12:43:08 GMT
+Connection: close
+Content-Length: 346
+Content-Encoding: deflate
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Sec-Fetch-Mode: cors
+Referer: https://teams.microsoft.com/
+Sec-Fetch-Site: same-site
+Accept-Language: en-US
+Origin: https://teams.microsoft.com
+Accept: */*
+x-skypetoken: eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwNiIsIng1dCI6Im9QMWFxQnlfR3hZU3pSaXhuQ25zdE5PU2p2cyIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODI0MDA4NjMsImV4cCI6MTY4MjQ4NjY5NSwic2t5cGVpZCI6Im9yZ2lkOjQ0NzAzNDlmLWY2YTgtNDBiZC1hODE2LTIzNDI5NDQzYjM2MSIsInNjcCI6NzgwLCJjc2kiOiIxNjgyNDAwNTYxIiwidGlkIjoiM2M4OTNiMTAtZTIyYi00ZmE3LWI4MjgtYjk2M2VjM2M2NWU1IiwicmduIjoiYXBhYyIsImRldmljZWlkIjoiNTA3Y2M5NDYtYmNkOC00MzAzLWJmYWUtYWQ5ZTYzODc1MjFjIiwiYWFkX3V0aSI6IkRTRzFIUFhEQ1VLWGZKSjh6eElSQUEiLCJhYWRfaWF0IjoxNjgyNDAwNTYxfQ.eEfBFm-mjcWoj2SbEDAQSgJ5qFVAdwwrq4oK1nJ5WAWDIPaC0IXfBcgg4o6BhtofjlQG8c9g_YvAiM9kmo798InFglfp5FgnfJctXfFmYfk-OiLUbdrX9mjxefjFso1z_mF2JmzB6RNQEE-3WDpqmGPA377JX8EflMaV9_wzmXY1KZNSZNmnEfiU7norBK0OPtQJc2HsXp8CS2wfeaJm_HhO5TLz9tbMBZLtUM_qKP4Tcb1j8PciuZX-kcu0kTOI4V5jX3_iVy27zlTywSCjN1dTwQto7q48kI_eATtY-9AWosSpz9a7NQJH9-Q4Tx35TxEaMfIOon2zaEuST_6C5A
+Host: trouter2-azsc-krce-1-b.trouter.teams.microsoft.com
+content-type: text/plain
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Teams/1.6.00.6754 Chrome/102.0.5005.196 Electron/19.1.8 Safari/537.36
+Sec-Fetch-Dest: empty
+Content-Length: 0
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;ccid&quot;:&quot;W57zCswMzKg&quot;,&quot;id&quot;:&quot;Qzm8yJTPJU-W57zCswMzKg&quot;,&quot;socketio&quot;:&quot;https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com:443/&quot;,&quot;surl&quot;:&quot;https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com:3443/v4/f/Qzm8yJTPJU-W57zCswMzKg/&quot;,&quot;url&quot;:&quot;https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com:8443/v4/f/Qzm8yJTPJU-W57zCswMzKg/&quot;,&quot;ttl&quot;:&quot;528464&quot;,&quot;healthUrl&quot;:&quot;https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com:443/v4/h&quot;,&quot;curlb&quot;:&quot;https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com:443&quot;,&quot;connectparams&quot;:{&quot;sr&quot;:&quot;EEwAAPsgQzm8yJTPJU-W57zCswMzKuw87NbcW_IGe63GCqNLcAViEO-47sjY3j5oEmbCpDsY8AUk4IiPgeh1t0FBErXOKd-SRoZC6Gl9q7FBvmOSzQQ&quot;,&quot;issuer&quot;:&quot;prod-2&quot;,&quot;sp&quot;:&quot;connect&quot;,&quot;se&quot;:&quot;1682955052905&quot;,&quot;st&quot;:&quot;1682400563905&quot;,&quot;sig&quot;:&quot;z0W6Rz_3XIuzKYEDDj0TdQCPHt7LGmFYowz8OuLwcRg&quot;}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com/v4/a?cor_id=83aba2a2-77a0-45ae-9635-4b051e04bcfe&amp;con_num=1682426639806_1&amp;epid=40577a5a-0db0-4106-b3e7-ce6ba4300c95&amp;sr=EEwAAPsgQzm8yJTPJU-W57zCswMzKuw87NbcW_IGe63GCqNLcAViEO-47sjY3j5oEmbCpDsY8AUk4IiPgeh1t0FBErXOKd-SRoZC6Gl9q7FBvmOSzQQ&amp;issuer=prod-2&amp;sp=connect&amp;se=1682955052905&amp;st=1682400563905&amp;sig=z0W6Rz_3XIuzKYEDDj0TdQCPHt7LGmFYowz8OuLwcRg&amp;v=v4</java.net.URL>
+</httpSample>
+<httpSample t="992" it="0" lt="991" ct="846" ts="1682426651062" s="true" lb="/v4/a?cor_id=83aba2a2-77a0-45ae-9635-4b051e04bcfe&amp;con_num=1682426639806_2&amp;epid=40577a5a-0db0-4106-b3e7-ce6ba4300c95&amp;sr=EEwAAPsgQzm8yJTPJU-W57zCswMzKuw87NbcW_IGe63GCqNLcAViEO-47sjY3j5oEmbCpDsY8AUk4IiPgeh1t0FBErXOKd-SRoZC6Gl9q7FBvmOSzQQ&amp;issuer=prod-2&amp;sp=connect&amp;se=1682955052905&amp;st=1682400563905&amp;sig=z0W6Rz_3XIuzKYEDDj0TdQCPHt7LGmFYowz8OuLwcRg&amp;v=v4-374" rc="200" rm="OK" tn="" dt="text" de="" by="852" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Type: application/json
+Expires: 0
+Server: Microsoft-HTTPAPI/2.0
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: Nosniff
+X-Frame-Options: SAMEORIGIN
+Access-Control-Allow-Origin: https://teams.microsoft.com
+Access-Control-Allow-Credentials: true
+Date: Tue, 25 Apr 2023 12:43:10 GMT
+Connection: close
+Content-Length: 345
+Content-Encoding: deflate
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Sec-Fetch-Mode: cors
+Referer: https://teams.microsoft.com/
+Sec-Fetch-Site: same-site
+Accept-Language: en-US
+Origin: https://teams.microsoft.com
+Accept: */*
+x-skypetoken: eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwNiIsIng1dCI6Im9QMWFxQnlfR3hZU3pSaXhuQ25zdE5PU2p2cyIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODI0MDA4NjMsImV4cCI6MTY4MjQ4NjY5NSwic2t5cGVpZCI6Im9yZ2lkOjQ0NzAzNDlmLWY2YTgtNDBiZC1hODE2LTIzNDI5NDQzYjM2MSIsInNjcCI6NzgwLCJjc2kiOiIxNjgyNDAwNTYxIiwidGlkIjoiM2M4OTNiMTAtZTIyYi00ZmE3LWI4MjgtYjk2M2VjM2M2NWU1IiwicmduIjoiYXBhYyIsImRldmljZWlkIjoiNTA3Y2M5NDYtYmNkOC00MzAzLWJmYWUtYWQ5ZTYzODc1MjFjIiwiYWFkX3V0aSI6IkRTRzFIUFhEQ1VLWGZKSjh6eElSQUEiLCJhYWRfaWF0IjoxNjgyNDAwNTYxfQ.eEfBFm-mjcWoj2SbEDAQSgJ5qFVAdwwrq4oK1nJ5WAWDIPaC0IXfBcgg4o6BhtofjlQG8c9g_YvAiM9kmo798InFglfp5FgnfJctXfFmYfk-OiLUbdrX9mjxefjFso1z_mF2JmzB6RNQEE-3WDpqmGPA377JX8EflMaV9_wzmXY1KZNSZNmnEfiU7norBK0OPtQJc2HsXp8CS2wfeaJm_HhO5TLz9tbMBZLtUM_qKP4Tcb1j8PciuZX-kcu0kTOI4V5jX3_iVy27zlTywSCjN1dTwQto7q48kI_eATtY-9AWosSpz9a7NQJH9-Q4Tx35TxEaMfIOon2zaEuST_6C5A
+Host: trouter2-azsc-krce-1-b.trouter.teams.microsoft.com
+content-type: text/plain
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Teams/1.6.00.6754 Chrome/102.0.5005.196 Electron/19.1.8 Safari/537.36
+Sec-Fetch-Dest: empty
+Content-Length: 0
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;ccid&quot;:&quot;W57zCswMzKg&quot;,&quot;id&quot;:&quot;Qzm8yJTPJU-W57zCswMzKg&quot;,&quot;socketio&quot;:&quot;https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com:443/&quot;,&quot;surl&quot;:&quot;https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com:3443/v4/f/Qzm8yJTPJU-W57zCswMzKg/&quot;,&quot;url&quot;:&quot;https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com:8443/v4/f/Qzm8yJTPJU-W57zCswMzKg/&quot;,&quot;ttl&quot;:&quot;528461&quot;,&quot;healthUrl&quot;:&quot;https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com:443/v4/h&quot;,&quot;curlb&quot;:&quot;https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com:443&quot;,&quot;connectparams&quot;:{&quot;sr&quot;:&quot;EEwAAPsgQzm8yJTPJU-W57zCswMzKuw87NbcW_IGe63GCqNLcAViEO-47sjY3j5oEmbCpDsY8AUk4IiPgeh1t0FBErXOKd-SRoZC6Gl9q7FBvmOSzQQ&quot;,&quot;issuer&quot;:&quot;prod-2&quot;,&quot;sp&quot;:&quot;connect&quot;,&quot;se&quot;:&quot;1682955052905&quot;,&quot;st&quot;:&quot;1682400563905&quot;,&quot;sig&quot;:&quot;z0W6Rz_3XIuzKYEDDj0TdQCPHt7LGmFYowz8OuLwcRg&quot;}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com/v4/a?cor_id=83aba2a2-77a0-45ae-9635-4b051e04bcfe&amp;con_num=1682426639806_2&amp;epid=40577a5a-0db0-4106-b3e7-ce6ba4300c95&amp;sr=EEwAAPsgQzm8yJTPJU-W57zCswMzKuw87NbcW_IGe63GCqNLcAViEO-47sjY3j5oEmbCpDsY8AUk4IiPgeh1t0FBErXOKd-SRoZC6Gl9q7FBvmOSzQQ&amp;issuer=prod-2&amp;sp=connect&amp;se=1682955052905&amp;st=1682400563905&amp;sig=z0W6Rz_3XIuzKYEDDj0TdQCPHt7LGmFYowz8OuLwcRg&amp;v=v4</java.net.URL>
+</httpSample>
+<httpSample t="1077" it="0" lt="1077" ct="864" ts="1682426652069" s="true" lb="/socket.io/1/-375" rc="200" rm="OK" tn="" dt="text" de="UTF-8" by="568" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Transfer-Encoding: chunked
+Content-Type: text/plain; charset=UTF-8
+Expires: 0
+Server: Microsoft-HTTPAPI/2.0
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: Nosniff
+X-Frame-Options: SAMEORIGIN
+Access-Control-Allow-Origin: https://teams.microsoft.com
+Access-Control-Allow-Credentials: true
+Date: Tue, 25 Apr 2023 12:43:11 GMT
+Connection: close
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Sec-Fetch-Mode: cors
+Referer: https://teams.microsoft.com/
+Sec-Fetch-Site: same-site
+Accept-Language: en-US
+Origin: https://teams.microsoft.com
+Host: trouter2-azsc-krce-1-b.trouter.teams.microsoft.com
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Teams/1.6.00.6754 Chrome/102.0.5005.196 Electron/19.1.8 Safari/537.36
+Accept: */*
+Sec-Fetch-Dest: empty
+</requestHeader>
+  <responseData class="java.lang.String">e315d0d8e53c4378-43b36f681659e104:70:70:websocket,xhr-polling</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com/socket.io/1/?sr=EEwAAPsgQzm8yJTPJU-W57zCswMzKuw87NbcW_IGe63GCqNLcAViEO-47sjY3j5oEmbCpDsY8AUk4IiPgeh1t0FBErXOKd-SRoZC6Gl9q7FBvmOSzQQ&amp;issuer=prod-2&amp;sp=connect&amp;se=1682955052905&amp;st=1682400563905&amp;sig=z0W6Rz_3XIuzKYEDDj0TdQCPHt7LGmFYowz8OuLwcRg&amp;v=v4&amp;tc=%7B%22cv%22%3A%222023.09.01.1%22%2C%22ua%22%3A%22TeamsCDL%22%2C%22hr%22%3A%22%22%2C%22v%22%3A%2227%2F1.0.0.2023032504%22%7D&amp;timeout=40&amp;auth=true&amp;epid=40577a5a-0db0-4106-b3e7-ce6ba4300c95&amp;userActivity=%7B%22state%22%3A%22inactive%22%2C%22cv%22%3A%22k4dIrv9xXHOYNXQOenMwZQ.2%22%7D&amp;ccid=W57zCswMzKg&amp;cor_id=83aba2a2-77a0-45ae-9635-4b051e04bcfe&amp;con_num=1682426639806_2&amp;t=1682426652057</java.net.URL>
+</httpSample>
+<httpSample t="891" it="0" lt="891" ct="685" ts="1682426653169" s="false" lb="/socket.io/1/websocket/e315d0d8e53c4378-43b36f681659e104-376" rc="400" rm="Bad Request" tn="" dt="text" de="UTF-8" by="448" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 400 Bad Request
+Content-Length: 15
+Content-Type: text/plain; charset=UTF-8
+Server: Microsoft-HTTPAPI/2.0
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: Nosniff
+X-Frame-Options: SAMEORIGIN
+Access-Control-Allow-Origin: https://teams.microsoft.com
+Access-Control-Allow-Credentials: true
+Date: Tue, 25 Apr 2023 12:43:12 GMT
+Connection: close
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Upgrade: websocket
+Accept-Language: en-US
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+Origin: https://teams.microsoft.com
+Sec-WebSocket-Version: 13
+Pragma: no-cache
+Host: trouter2-azsc-krce-1-b.trouter.teams.microsoft.com
+Sec-WebSocket-Key: OXg+/FkUtjW0aCKTfw1HbA==
+Cache-Control: no-cache
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Teams/1.6.00.6754 Chrome/102.0.5005.196 Electron/19.1.8 Safari/537.36
+</requestHeader>
+  <responseData class="java.lang.String">400 Bad request</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">clienttype=windows; tenantId=3c893b10-e22b-4fa7-b828-b963ec3c65e5; SSOAUTHCOOKIE=eyJ0eXAiOiJKV1QiLCJub25jZSI6ImlrVTNzLTBDbGE0UEtkUk0xejg1djMxYnQ0S0Z6aHpfbWlMbkktR1pTY0kiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL2FwaS5zcGFjZXMuc2t5cGUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvM2M4OTNiMTAtZTIyYi00ZmE3LWI4MjgtYjk2M2VjM2M2NWU1LyIsImlhdCI6MTY4MTcwMjg0MiwibmJmIjoxNjgxNzAyODQyLCJleHAiOjE2ODE3ODY5NjgsImFjY3QiOjAsImFjciI6IjEiLCJhaW8iOiJBVVFBdS84VEFBQUFxWmY0eHZRb2VvUVBlQVFQSWJPaXdNUWF5anhHYUNRTzJmcHpub0hyYVk2NGxMQjZXSjlFYUtDeStVVm54cENLQm5mS1dUeGRzdHA5V0VaaXpwaC85QT09IiwiYW1yIjpbInB3ZCIsInJzYSIsIm1mYSJdLCJhcHBpZCI6IjFmZWM4ZTc4LWJjZTQtNGFhZi1hYjFiLTU0NTFjYzM4NzI2NCIsImFwcGlkYWNyIjoiMCIsImF1dGhfdGltZSI6MTY4MTI4NjQ1MiwiY25mIjp7InRiaCI6InVLSU42a2JGTFpGK1A2YUg3dk1vSkVtQVpCNFlwcE1LZEdFai9PaVFMTEE9In0sImRldmljZWlkIjoiNTA3Y2M5NDYtYmNkOC00MzAzLWJmYWUtYWQ5ZTYzODc1MjFjIiwiZmFtaWx5X25hbWUiOiJQYXJha2hlIiwiZ2l2ZW5fbmFtZSI6IlByYXZpbiIsImlwYWRkciI6IjExNy45OS4yNDUuMTE0IiwibmFtZSI6IlByYXZpbiBQYXJha2hlIiwib2lkIjoiNDQ3MDM0OWYtZjZhOC00MGJkLWE4MTYtMjM0Mjk0NDNiMzYxIiwib25wcmVtX3NpZCI6IlMtMS01LTIxLTE3MTgxMDI4MDYtMTA0NDQ5MjQ1OC0zOTMzMDIzMDQ4LTE5ODk0IiwicHVpZCI6IjEwMDMyMDAyNkU3RjdGMDUiLCJwd2RfdXJsIjoiaHR0cHM6Ly9wb3J0YWwubWljcm9zb2Z0b25saW5lLmNvbS9DaGFuZ2VQYXNzd29yZC5hc3B4IiwicmgiOiIwLkFUMEFFRHVKUEN2aXAwLTRLTGxqN0R4bDVWZjlGY3hzTEJkQnFJeURzZFZyUzc0OUFHNC4iLCJzY3AiOiJ1c2VyX2ltcGVyc29uYXRpb24iLCJzaWQiOiJjMjM1ZTNiMS0xM2UwLTQ5NDAtOWIxNy1iNGMyMGUzODc4ODYiLCJzdWIiOiJJM0R4NDJVUFhhWFZ6Vk1Oek1ZT0VDUmZkYXR2SF94ZXpLTTV3ZUxwTjVFIiwidGlkIjoiM2M4OTNiMTAtZTIyYi00ZmE3LWI4MjgtYjk2M2VjM2M2NWU1IiwidW5pcXVlX25hbWUiOiJwcmF2aW4ucGFyYWtoZUBjeWduZXRpbmZvdGVjaC5jb20iLCJ1cG4iOiJwcmF2aW4ucGFyYWtoZUBjeWduZXRpbmZvdGVjaC5jb20iLCJ1dGkiOiJyVFNibkpiakIwQ0Z5WGRXd2hkU0FBIiwidmVyIjoiMS4wIiwid2lkcyI6WyJiNzlmYmY0ZC0zZWY5LTQ2ODktODE0My03NmIxOTRlODU1MDkiXSwieG1zX2NjIjpbIkNQMSJdLCJ4bXNfc3NtIjoiMSJ9.lE5mEPtdHOg3qArrO-RQAtGktuoe0iZ4PR4hZaOQu82e7_Vblk5BSGHhVy3FKyj_9_jGljfYn6VJCldgv_ZKayUb_aoT--Wwc5pCGXSCAkboxmjr2z_qbvM9nrrZYKElpMGF_mIjkUINx4OIrWeUhATwZVUeF7CqNzlf2koyWIu9MpcuYJh-o54jj5FY804qK3ttVuJ1RrWkvVZKIta0DUb7NOr6PhfsLEfOT6BlpjfKOorZ6icHEC7Y8yFzNLi_PRTfs4OWG4tiFf1DPTbGSvWs-0A7PosWQlx50hv5Egs8bBK-RsTQNUPPbdbI7wrQ357yc5cPCl9bhGsu1puqqA; ssostatus=S:0:; platformid_asm=27; skypetoken_asm=eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwNiIsIng1dCI6Im9QMWFxQnlfR3hZU3pSaXhuQ25zdE5PU2p2cyIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODI0MDA4NjMsImV4cCI6MTY4MjQ4NjY5NSwic2t5cGVpZCI6Im9yZ2lkOjQ0NzAzNDlmLWY2YTgtNDBiZC1hODE2LTIzNDI5NDQzYjM2MSIsInNjcCI6NzgwLCJjc2kiOiIxNjgyNDAwNTYxIiwidGlkIjoiM2M4OTNiMTAtZTIyYi00ZmE3LWI4MjgtYjk2M2VjM2M2NWU1IiwicmduIjoiYXBhYyIsImRldmljZWlkIjoiNTA3Y2M5NDYtYmNkOC00MzAzLWJmYWUtYWQ5ZTYzODc1MjFjIiwiYWFkX3V0aSI6IkRTRzFIUFhEQ1VLWGZKSjh6eElSQUEiLCJhYWRfaWF0IjoxNjgyNDAwNTYxfQ.eEfBFm-mjcWoj2SbEDAQSgJ5qFVAdwwrq4oK1nJ5WAWDIPaC0IXfBcgg4o6BhtofjlQG8c9g_YvAiM9kmo798InFglfp5FgnfJctXfFmYfk-OiLUbdrX9mjxefjFso1z_mF2JmzB6RNQEE-3WDpqmGPA377JX8EflMaV9_wzmXY1KZNSZNmnEfiU7norBK0OPtQJc2HsXp8CS2wfeaJm_HhO5TLz9tbMBZLtUM_qKP4Tcb1j8PciuZX-kcu0kTOI4V5jX3_iVy27zlTywSCjN1dTwQto7q48kI_eATtY-9AWosSpz9a7NQJH9-Q4Tx35TxEaMfIOon2zaEuST_6C5A; authtoken=Bearer%3DeyJ0eXAiOiJKV1QiLCJub25jZSI6Im5Hc045TXFVWWx4Z2dWeFVIc0JSaW9oSHVoeU8yWmFkUEpzbm5YbE9GeWsiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL2FwaS5zcGFjZXMuc2t5cGUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvM2M4OTNiMTAtZTIyYi00ZmE3LWI4MjgtYjk2M2VjM2M2NWU1LyIsImlhdCI6MTY4MjQwMDU2MSwibmJmIjoxNjgyNDAwNTYxLCJleHAiOjE2ODI0ODY2OTUsImFjY3QiOjAsImFjciI6IjEiLCJhaW8iOiJBVVFBdS84VEFBQUE4OHIzMjZJcW1mQlUvRDVoekp1UHFaL3hJVnpMMHRjTmVWRldEMzJqb0NTbGxxSmIyYURYcHc1UUtteWw2VmdwZXBmaFFqQk5ja0tEMU42VFpQTFdvQT09IiwiYW1yIjpbInB3ZCIsInJzYSIsIm1mYSJdLCJhcHBpZCI6IjFmZWM4ZTc4LWJjZTQtNGFhZi1hYjFiLTU0NTFjYzM4NzI2NCIsImFwcGlkYWNyIjoiMCIsImF1dGhfdGltZSI6MTY4MTI4NjQ1MiwiY25mIjp7InRiaCI6InVLSU42a2JGTFpGK1A2YUg3dk1vSkVtQVpCNFlwcE1LZEdFai9PaVFMTEE9In0sImRldmljZWlkIjoiNTA3Y2M5NDYtYmNkOC00MzAzLWJmYWUtYWQ5ZTYzODc1MjFjIiwiZmFtaWx5X25hbWUiOiJQYXJha2hlIiwiZ2l2ZW5fbmFtZSI6IlByYXZpbiIsImlwYWRkciI6IjEyMy4yNTIuMTY1LjE1NCIsIm5hbWUiOiJQcmF2aW4gUGFyYWtoZSIsIm9pZCI6IjQ0NzAzNDlmLWY2YTgtNDBiZC1hODE2LTIzNDI5NDQzYjM2MSIsIm9ucHJlbV9zaWQiOiJTLTEtNS0yMS0xNzE4MTAyODA2LTEwNDQ0OTI0NTgtMzkzMzAyMzA0OC0xOTg5NCIsInB1aWQiOiIxMDAzMjAwMjZFN0Y3RjA1IiwicHdkX3VybCI6Imh0dHBzOi8vcG9ydGFsLm1pY3Jvc29mdG9ubGluZS5jb20vQ2hhbmdlUGFzc3dvcmQuYXNweCIsInJoIjoiMC5BVDBBRUR1SlBDdmlwMC00S0xsajdEeGw1VmY5RmN4c0xCZEJxSXlEc2RWclM3NDlBRzQuIiwic2NwIjoidXNlcl9pbXBlcnNvbmF0aW9uIiwic2lkIjoiYzIzNWUzYjEtMTNlMC00OTQwLTliMTctYjRjMjBlMzg3ODg2Iiwic2lnbmluX3N0YXRlIjpbImttc2kiXSwic3ViIjoiSTNEeDQyVVBYYVhWelZNTnpNWU9FQ1JmZGF0dkhfeGV6S001d2VMcE41RSIsInRpZCI6IjNjODkzYjEwLWUyMmItNGZhNy1iODI4LWI5NjNlYzNjNjVlNSIsInVuaXF1ZV9uYW1lIjoicHJhdmluLnBhcmFraGVAY3lnbmV0aW5mb3RlY2guY29tIiwidXBuIjoicHJhdmluLnBhcmFraGVAY3lnbmV0aW5mb3RlY2guY29tIiwidXRpIjoiRFNHMUhQWERDVUtYZkpKOHp4SVJBQSIsInZlciI6IjEuMCIsIndpZHMiOlsiYjc5ZmJmNGQtM2VmOS00Njg5LTgxNDMtNzZiMTk0ZTg1NTA5Il0sInhtc19jYyI6WyJDUDEiXSwieG1zX3NzbSI6IjEifQ.Y9_K2CGWqFuYyqGimPA9E4PYLy25bazKCTYK2y8tNUKSk0t3NTLCpekIO4fsXSUjlWnBMTRPpN04d87XyZj6qiO0BHU4B7Uq1NoJDxb6rJWpoL9a27ViECJFk-tjR5ZIyvlYh9rl98Hrmjq1r2v6slymJYVzN90mibF628rO7oTdrRgFkRU34TD31mJz-yPefVXiIKfcuhaiDKOm_6KRh56VDZ924ERGfx4U5jPqW5COa45KoMheRNgPYr3TiNEQAzfioRwWdz-SpE3zX7s0krL_yBFq4xDJ-sEmhmC3zQ_txkArvcfte0ib7ddKMbT2zz6LwGKsVoIuyUgB88gQCw%26Origin%3Dhttps%3A%2F%2Fteams.microsoft.com</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com/socket.io/1/websocket/e315d0d8e53c4378-43b36f681659e104?sr=EEwAAPsgQzm8yJTPJU-W57zCswMzKuw87NbcW_IGe63GCqNLcAViEO-47sjY3j5oEmbCpDsY8AUk4IiPgeh1t0FBErXOKd-SRoZC6Gl9q7FBvmOSzQQ&amp;issuer=prod-2&amp;sp=connect&amp;se=1682955052905&amp;st=1682400563905&amp;sig=z0W6Rz_3XIuzKYEDDj0TdQCPHt7LGmFYowz8OuLwcRg&amp;v=v4&amp;tc=%7B%22cv%22%3A%222023.09.01.1%22%2C%22ua%22%3A%22TeamsCDL%22%2C%22hr%22%3A%22%22%2C%22v%22%3A%2227%2F1.0.0.2023032504%22%7D&amp;timeout=40&amp;auth=true&amp;epid=40577a5a-0db0-4106-b3e7-ce6ba4300c95&amp;userActivity=%7B%22state%22%3A%22inactive%22%2C%22cv%22%3A%22k4dIrv9xXHOYNXQOenMwZQ.2%22%7D&amp;ccid=W57zCswMzKg&amp;cor_id=83aba2a2-77a0-45ae-9635-4b051e04bcfe&amp;con_num=1682426639806_2</java.net.URL>
+</httpSample>
+<httpSample t="1220" it="0" lt="1220" ct="1013" ts="1682426654071" s="true" lb="/socket.io/1/xhr-polling/e315d0d8e53c4378-43b36f681659e104-377" rc="200" rm="OK" tn="" dt="text" de="UTF-8" by="600" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Type: text/plain; charset=UTF-8
+Expires: 0
+Server: Microsoft-HTTPAPI/2.0
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: Nosniff
+X-Frame-Options: SAMEORIGIN
+Access-Control-Allow-Origin: https://teams.microsoft.com
+Access-Control-Allow-Credentials: true
+Date: Tue, 25 Apr 2023 12:43:13 GMT
+Connection: close
+Content-Length: 85
+Content-Encoding: deflate
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Sec-Fetch-Mode: cors
+Referer: https://teams.microsoft.com/
+Sec-Fetch-Site: same-site
+Accept-Language: en-US
+Origin: https://teams.microsoft.com
+Host: trouter2-azsc-krce-1-b.trouter.teams.microsoft.com
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Teams/1.6.00.6754 Chrome/102.0.5005.196 Electron/19.1.8 Safari/537.36
+Accept: */*
+Sec-Fetch-Dest: empty
+</requestHeader>
+  <responseData class="java.lang.String">�3�1::�70�5:1::{&quot;name&quot;:&quot;trouter.connected&quot;,&quot;args&quot;:[{&quot;ttl&quot;:528458,&quot;dur&quot;:&quot;2151&quot;}]}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com/socket.io/1/xhr-polling/e315d0d8e53c4378-43b36f681659e104?sr=EEwAAPsgQzm8yJTPJU-W57zCswMzKuw87NbcW_IGe63GCqNLcAViEO-47sjY3j5oEmbCpDsY8AUk4IiPgeh1t0FBErXOKd-SRoZC6Gl9q7FBvmOSzQQ&amp;issuer=prod-2&amp;sp=connect&amp;se=1682955052905&amp;st=1682400563905&amp;sig=z0W6Rz_3XIuzKYEDDj0TdQCPHt7LGmFYowz8OuLwcRg&amp;v=v4&amp;tc=%7B%22cv%22%3A%222023.09.01.1%22%2C%22ua%22%3A%22TeamsCDL%22%2C%22hr%22%3A%22%22%2C%22v%22%3A%2227%2F1.0.0.2023032504%22%7D&amp;timeout=40&amp;auth=true&amp;epid=40577a5a-0db0-4106-b3e7-ce6ba4300c95&amp;userActivity=%7B%22state%22%3A%22inactive%22%2C%22cv%22%3A%22k4dIrv9xXHOYNXQOenMwZQ.2%22%7D&amp;ccid=W57zCswMzKg&amp;cor_id=83aba2a2-77a0-45ae-9635-4b051e04bcfe&amp;con_num=1682426639806_2&amp;t=1682426654061</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="self.events.data.microsoft.com:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1490" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT self.events.data.microsoft.com:443 HTTP/1.0&#xd;
+</samplerData>
+</sample>
+<httpSample t="692" it="0" lt="692" ct="568" ts="1682426655319" s="true" lb="/v4/a?cor_id=83aba2a2-77a0-45ae-9635-4b051e04bcfe&amp;con_num=1682426639806_3&amp;epid=40577a5a-0db0-4106-b3e7-ce6ba4300c95&amp;sr=EEwAAPsgQzm8yJTPJU-W57zCswMzKuw87NbcW_IGe63GCqNLcAViEO-47sjY3j5oEmbCpDsY8AUk4IiPgeh1t0FBErXOKd-SRoZC6Gl9q7FBvmOSzQQ&amp;issuer=prod-2&amp;sp=connect&amp;se=1682955052905&amp;st=1682400563905&amp;sig=z0W6Rz_3XIuzKYEDDj0TdQCPHt7LGmFYowz8OuLwcRg&amp;v=v4-379" rc="200" rm="OK" tn="" dt="text" de="" by="854" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Type: application/json
+Expires: 0
+Server: Microsoft-HTTPAPI/2.0
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: Nosniff
+X-Frame-Options: SAMEORIGIN
+Access-Control-Allow-Origin: https://teams.microsoft.com
+Access-Control-Allow-Credentials: true
+Date: Tue, 25 Apr 2023 12:43:14 GMT
+Connection: close
+Content-Length: 347
+Content-Encoding: deflate
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Sec-Fetch-Mode: cors
+Referer: https://teams.microsoft.com/
+Sec-Fetch-Site: same-site
+Accept-Language: en-US
+Origin: https://teams.microsoft.com
+Accept: */*
+x-skypetoken: eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwNiIsIng1dCI6Im9QMWFxQnlfR3hZU3pSaXhuQ25zdE5PU2p2cyIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODI0MDA4NjMsImV4cCI6MTY4MjQ4NjY5NSwic2t5cGVpZCI6Im9yZ2lkOjQ0NzAzNDlmLWY2YTgtNDBiZC1hODE2LTIzNDI5NDQzYjM2MSIsInNjcCI6NzgwLCJjc2kiOiIxNjgyNDAwNTYxIiwidGlkIjoiM2M4OTNiMTAtZTIyYi00ZmE3LWI4MjgtYjk2M2VjM2M2NWU1IiwicmduIjoiYXBhYyIsImRldmljZWlkIjoiNTA3Y2M5NDYtYmNkOC00MzAzLWJmYWUtYWQ5ZTYzODc1MjFjIiwiYWFkX3V0aSI6IkRTRzFIUFhEQ1VLWGZKSjh6eElSQUEiLCJhYWRfaWF0IjoxNjgyNDAwNTYxfQ.eEfBFm-mjcWoj2SbEDAQSgJ5qFVAdwwrq4oK1nJ5WAWDIPaC0IXfBcgg4o6BhtofjlQG8c9g_YvAiM9kmo798InFglfp5FgnfJctXfFmYfk-OiLUbdrX9mjxefjFso1z_mF2JmzB6RNQEE-3WDpqmGPA377JX8EflMaV9_wzmXY1KZNSZNmnEfiU7norBK0OPtQJc2HsXp8CS2wfeaJm_HhO5TLz9tbMBZLtUM_qKP4Tcb1j8PciuZX-kcu0kTOI4V5jX3_iVy27zlTywSCjN1dTwQto7q48kI_eATtY-9AWosSpz9a7NQJH9-Q4Tx35TxEaMfIOon2zaEuST_6C5A
+Host: trouter2-azsc-krce-1-b.trouter.teams.microsoft.com
+content-type: text/plain
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Teams/1.6.00.6754 Chrome/102.0.5005.196 Electron/19.1.8 Safari/537.36
+Sec-Fetch-Dest: empty
+Content-Length: 0
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;ccid&quot;:&quot;W57zCswMzKg&quot;,&quot;id&quot;:&quot;Qzm8yJTPJU-W57zCswMzKg&quot;,&quot;socketio&quot;:&quot;https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com:443/&quot;,&quot;surl&quot;:&quot;https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com:3443/v4/f/Qzm8yJTPJU-W57zCswMzKg/&quot;,&quot;url&quot;:&quot;https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com:8443/v4/f/Qzm8yJTPJU-W57zCswMzKg/&quot;,&quot;ttl&quot;:&quot;528458&quot;,&quot;healthUrl&quot;:&quot;https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com:443/v4/h&quot;,&quot;curlb&quot;:&quot;https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com:443&quot;,&quot;connectparams&quot;:{&quot;sr&quot;:&quot;EEwAAPsgQzm8yJTPJU-W57zCswMzKuw87NbcW_IGe63GCqNLcAViEO-47sjY3j5oEmbCpDsY8AUk4IiPgeh1t0FBErXOKd-SRoZC6Gl9q7FBvmOSzQQ&quot;,&quot;issuer&quot;:&quot;prod-2&quot;,&quot;sp&quot;:&quot;connect&quot;,&quot;se&quot;:&quot;1682955052905&quot;,&quot;st&quot;:&quot;1682400563905&quot;,&quot;sig&quot;:&quot;z0W6Rz_3XIuzKYEDDj0TdQCPHt7LGmFYowz8OuLwcRg&quot;}}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com/v4/a?cor_id=83aba2a2-77a0-45ae-9635-4b051e04bcfe&amp;con_num=1682426639806_3&amp;epid=40577a5a-0db0-4106-b3e7-ce6ba4300c95&amp;sr=EEwAAPsgQzm8yJTPJU-W57zCswMzKuw87NbcW_IGe63GCqNLcAViEO-47sjY3j5oEmbCpDsY8AUk4IiPgeh1t0FBErXOKd-SRoZC6Gl9q7FBvmOSzQQ&amp;issuer=prod-2&amp;sp=connect&amp;se=1682955052905&amp;st=1682400563905&amp;sig=z0W6Rz_3XIuzKYEDDj0TdQCPHt7LGmFYowz8OuLwcRg&amp;v=v4</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="api.gleap.io:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1490" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT api.gleap.io:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<httpSample t="727" it="0" lt="727" ct="596" ts="1682426655309" s="true" lb="/socket.io/1/xhr-polling/e315d0d8e53c4378-43b36f681659e104?sr=EEwAAPsgQzm8yJTPJU-W57zCswMzKuw87NbcW_IGe63GCqNLcAViEO-47sjY3j5oEmbCpDsY8AUk4IiPgeh1t0FBErXOKd-SRoZC6Gl9q7FBvmOSzQQ&amp;issuer=prod-2&amp;sp=connect&amp;se=1682955052905&amp;st=1682400563905&amp;sig=z0W6Rz_3XIuzKYEDDj0TdQCPHt7LGmFYowz8OuLwcRg&amp;v=v4&amp;tc=%7B%22cv%22:%222023.09.01.1%22,%22ua%22:%22TeamsCDL%22,%22hr%22:%22%22,%22v%22:%2227/1.0.0.2023032504%22%7D&amp;timeout=40&amp;auth=true&amp;epid=40577a5a-0db0-4106-b3e7-ce6ba4300c95&amp;userActivity=%7B%22state%22:%22inactive%22,%22cv%22:%22k4dIrv9xXHOYNXQOenMwZQ.2%22%7D&amp;ccid=W57zCswMzKg&amp;cor_id=83aba2a2-77a0-45ae-9635-4b051e04bcfe&amp;con_num=1682426639806_2&amp;connected=true&amp;t=1682426655297-378" rc="200" rm="OK" tn="" dt="text" de="UTF-8" by="424" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Length: 1
+Content-Type: text/plain; charset=UTF-8
+Server: Microsoft-HTTPAPI/2.0
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: Nosniff
+X-Frame-Options: SAMEORIGIN
+Access-Control-Allow-Origin: https://teams.microsoft.com
+Access-Control-Allow-Credentials: true
+Date: Tue, 25 Apr 2023 12:43:14 GMT
+Connection: close
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Sec-Fetch-Mode: cors
+Referer: https://teams.microsoft.com/
+Sec-Fetch-Site: same-site
+Accept-Language: en-US
+Origin: https://teams.microsoft.com
+Accept: */*
+Host: trouter2-azsc-krce-1-b.trouter.teams.microsoft.com
+Content-type: text/plain;charset=UTF-8
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Teams/1.6.00.6754 Chrome/102.0.5005.196 Electron/19.1.8 Safari/537.36
+Sec-Fetch-Dest: empty
+Content-Length: 3
+</requestHeader>
+  <responseData class="java.lang.String">1</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">0::</queryString>
+  <java.net.URL>https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com/socket.io/1/xhr-polling/e315d0d8e53c4378-43b36f681659e104?sr=EEwAAPsgQzm8yJTPJU-W57zCswMzKuw87NbcW_IGe63GCqNLcAViEO-47sjY3j5oEmbCpDsY8AUk4IiPgeh1t0FBErXOKd-SRoZC6Gl9q7FBvmOSzQQ&amp;issuer=prod-2&amp;sp=connect&amp;se=1682955052905&amp;st=1682400563905&amp;sig=z0W6Rz_3XIuzKYEDDj0TdQCPHt7LGmFYowz8OuLwcRg&amp;v=v4&amp;tc=%7B%22cv%22:%222023.09.01.1%22,%22ua%22:%22TeamsCDL%22,%22hr%22:%22%22,%22v%22:%2227/1.0.0.2023032504%22%7D&amp;timeout=40&amp;auth=true&amp;epid=40577a5a-0db0-4106-b3e7-ce6ba4300c95&amp;userActivity=%7B%22state%22:%22inactive%22,%22cv%22:%22k4dIrv9xXHOYNXQOenMwZQ.2%22%7D&amp;ccid=W57zCswMzKg&amp;cor_id=83aba2a2-77a0-45ae-9635-4b051e04bcfe&amp;con_num=1682426639806_2&amp;connected=true&amp;t=1682426655297</java.net.URL>
+</httpSample>
+<httpSample t="907" it="0" lt="907" ct="741" ts="1682426656023" s="true" lb="/socket.io/1/-380" rc="200" rm="OK" tn="" dt="text" de="UTF-8" by="568" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Transfer-Encoding: chunked
+Content-Type: text/plain; charset=UTF-8
+Expires: 0
+Server: Microsoft-HTTPAPI/2.0
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: Nosniff
+X-Frame-Options: SAMEORIGIN
+Access-Control-Allow-Origin: https://teams.microsoft.com
+Access-Control-Allow-Credentials: true
+Date: Tue, 25 Apr 2023 12:43:14 GMT
+Connection: close
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Sec-Fetch-Mode: cors
+Referer: https://teams.microsoft.com/
+Sec-Fetch-Site: same-site
+Accept-Language: en-US
+Origin: https://teams.microsoft.com
+Host: trouter2-azsc-krce-1-b.trouter.teams.microsoft.com
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Teams/1.6.00.6754 Chrome/102.0.5005.196 Electron/19.1.8 Safari/537.36
+Accept: */*
+Sec-Fetch-Dest: empty
+</requestHeader>
+  <responseData class="java.lang.String">2f811237785c50a9-489562ffa26ad7c8:70:70:websocket,xhr-polling</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com/socket.io/1/?sr=EEwAAPsgQzm8yJTPJU-W57zCswMzKuw87NbcW_IGe63GCqNLcAViEO-47sjY3j5oEmbCpDsY8AUk4IiPgeh1t0FBErXOKd-SRoZC6Gl9q7FBvmOSzQQ&amp;issuer=prod-2&amp;sp=connect&amp;se=1682955052905&amp;st=1682400563905&amp;sig=z0W6Rz_3XIuzKYEDDj0TdQCPHt7LGmFYowz8OuLwcRg&amp;v=v4&amp;tc=%7B%22cv%22%3A%222023.09.01.1%22%2C%22ua%22%3A%22TeamsCDL%22%2C%22hr%22%3A%22%22%2C%22v%22%3A%2227%2F1.0.0.2023032504%22%7D&amp;timeout=40&amp;auth=true&amp;epid=40577a5a-0db0-4106-b3e7-ce6ba4300c95&amp;userActivity=%7B%22state%22%3A%22active%22%2C%22cv%22%3A%22TDB64+t47KnLM%2FqeSg05LA.1%22%7D&amp;ccid=W57zCswMzKg&amp;cor_id=83aba2a2-77a0-45ae-9635-4b051e04bcfe&amp;con_num=1682426639806_3&amp;t=1682426656015</java.net.URL>
+</httpSample>
+<httpSample t="1415" it="0" lt="1414" ct="1108" ts="1682426656944" s="false" lb="/socket.io/1/websocket/2f811237785c50a9-489562ffa26ad7c8-381" rc="400" rm="Bad Request" tn="" dt="text" de="UTF-8" by="448" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 400 Bad Request
+Content-Length: 15
+Content-Type: text/plain; charset=UTF-8
+Server: Microsoft-HTTPAPI/2.0
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: Nosniff
+X-Frame-Options: SAMEORIGIN
+Access-Control-Allow-Origin: https://teams.microsoft.com
+Access-Control-Allow-Credentials: true
+Date: Tue, 25 Apr 2023 12:43:16 GMT
+Connection: close
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Upgrade: websocket
+Accept-Language: en-US
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+Origin: https://teams.microsoft.com
+Sec-WebSocket-Version: 13
+Pragma: no-cache
+Host: trouter2-azsc-krce-1-b.trouter.teams.microsoft.com
+Sec-WebSocket-Key: 3B590J3NYQ0Om36OrSp5Vw==
+Cache-Control: no-cache
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Teams/1.6.00.6754 Chrome/102.0.5005.196 Electron/19.1.8 Safari/537.36
+</requestHeader>
+  <responseData class="java.lang.String">400 Bad request</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">clienttype=windows; tenantId=3c893b10-e22b-4fa7-b828-b963ec3c65e5; SSOAUTHCOOKIE=eyJ0eXAiOiJKV1QiLCJub25jZSI6ImlrVTNzLTBDbGE0UEtkUk0xejg1djMxYnQ0S0Z6aHpfbWlMbkktR1pTY0kiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL2FwaS5zcGFjZXMuc2t5cGUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvM2M4OTNiMTAtZTIyYi00ZmE3LWI4MjgtYjk2M2VjM2M2NWU1LyIsImlhdCI6MTY4MTcwMjg0MiwibmJmIjoxNjgxNzAyODQyLCJleHAiOjE2ODE3ODY5NjgsImFjY3QiOjAsImFjciI6IjEiLCJhaW8iOiJBVVFBdS84VEFBQUFxWmY0eHZRb2VvUVBlQVFQSWJPaXdNUWF5anhHYUNRTzJmcHpub0hyYVk2NGxMQjZXSjlFYUtDeStVVm54cENLQm5mS1dUeGRzdHA5V0VaaXpwaC85QT09IiwiYW1yIjpbInB3ZCIsInJzYSIsIm1mYSJdLCJhcHBpZCI6IjFmZWM4ZTc4LWJjZTQtNGFhZi1hYjFiLTU0NTFjYzM4NzI2NCIsImFwcGlkYWNyIjoiMCIsImF1dGhfdGltZSI6MTY4MTI4NjQ1MiwiY25mIjp7InRiaCI6InVLSU42a2JGTFpGK1A2YUg3dk1vSkVtQVpCNFlwcE1LZEdFai9PaVFMTEE9In0sImRldmljZWlkIjoiNTA3Y2M5NDYtYmNkOC00MzAzLWJmYWUtYWQ5ZTYzODc1MjFjIiwiZmFtaWx5X25hbWUiOiJQYXJha2hlIiwiZ2l2ZW5fbmFtZSI6IlByYXZpbiIsImlwYWRkciI6IjExNy45OS4yNDUuMTE0IiwibmFtZSI6IlByYXZpbiBQYXJha2hlIiwib2lkIjoiNDQ3MDM0OWYtZjZhOC00MGJkLWE4MTYtMjM0Mjk0NDNiMzYxIiwib25wcmVtX3NpZCI6IlMtMS01LTIxLTE3MTgxMDI4MDYtMTA0NDQ5MjQ1OC0zOTMzMDIzMDQ4LTE5ODk0IiwicHVpZCI6IjEwMDMyMDAyNkU3RjdGMDUiLCJwd2RfdXJsIjoiaHR0cHM6Ly9wb3J0YWwubWljcm9zb2Z0b25saW5lLmNvbS9DaGFuZ2VQYXNzd29yZC5hc3B4IiwicmgiOiIwLkFUMEFFRHVKUEN2aXAwLTRLTGxqN0R4bDVWZjlGY3hzTEJkQnFJeURzZFZyUzc0OUFHNC4iLCJzY3AiOiJ1c2VyX2ltcGVyc29uYXRpb24iLCJzaWQiOiJjMjM1ZTNiMS0xM2UwLTQ5NDAtOWIxNy1iNGMyMGUzODc4ODYiLCJzdWIiOiJJM0R4NDJVUFhhWFZ6Vk1Oek1ZT0VDUmZkYXR2SF94ZXpLTTV3ZUxwTjVFIiwidGlkIjoiM2M4OTNiMTAtZTIyYi00ZmE3LWI4MjgtYjk2M2VjM2M2NWU1IiwidW5pcXVlX25hbWUiOiJwcmF2aW4ucGFyYWtoZUBjeWduZXRpbmZvdGVjaC5jb20iLCJ1cG4iOiJwcmF2aW4ucGFyYWtoZUBjeWduZXRpbmZvdGVjaC5jb20iLCJ1dGkiOiJyVFNibkpiakIwQ0Z5WGRXd2hkU0FBIiwidmVyIjoiMS4wIiwid2lkcyI6WyJiNzlmYmY0ZC0zZWY5LTQ2ODktODE0My03NmIxOTRlODU1MDkiXSwieG1zX2NjIjpbIkNQMSJdLCJ4bXNfc3NtIjoiMSJ9.lE5mEPtdHOg3qArrO-RQAtGktuoe0iZ4PR4hZaOQu82e7_Vblk5BSGHhVy3FKyj_9_jGljfYn6VJCldgv_ZKayUb_aoT--Wwc5pCGXSCAkboxmjr2z_qbvM9nrrZYKElpMGF_mIjkUINx4OIrWeUhATwZVUeF7CqNzlf2koyWIu9MpcuYJh-o54jj5FY804qK3ttVuJ1RrWkvVZKIta0DUb7NOr6PhfsLEfOT6BlpjfKOorZ6icHEC7Y8yFzNLi_PRTfs4OWG4tiFf1DPTbGSvWs-0A7PosWQlx50hv5Egs8bBK-RsTQNUPPbdbI7wrQ357yc5cPCl9bhGsu1puqqA; ssostatus=S:0:; platformid_asm=27; skypetoken_asm=eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwNiIsIng1dCI6Im9QMWFxQnlfR3hZU3pSaXhuQ25zdE5PU2p2cyIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODI0MDA4NjMsImV4cCI6MTY4MjQ4NjY5NSwic2t5cGVpZCI6Im9yZ2lkOjQ0NzAzNDlmLWY2YTgtNDBiZC1hODE2LTIzNDI5NDQzYjM2MSIsInNjcCI6NzgwLCJjc2kiOiIxNjgyNDAwNTYxIiwidGlkIjoiM2M4OTNiMTAtZTIyYi00ZmE3LWI4MjgtYjk2M2VjM2M2NWU1IiwicmduIjoiYXBhYyIsImRldmljZWlkIjoiNTA3Y2M5NDYtYmNkOC00MzAzLWJmYWUtYWQ5ZTYzODc1MjFjIiwiYWFkX3V0aSI6IkRTRzFIUFhEQ1VLWGZKSjh6eElSQUEiLCJhYWRfaWF0IjoxNjgyNDAwNTYxfQ.eEfBFm-mjcWoj2SbEDAQSgJ5qFVAdwwrq4oK1nJ5WAWDIPaC0IXfBcgg4o6BhtofjlQG8c9g_YvAiM9kmo798InFglfp5FgnfJctXfFmYfk-OiLUbdrX9mjxefjFso1z_mF2JmzB6RNQEE-3WDpqmGPA377JX8EflMaV9_wzmXY1KZNSZNmnEfiU7norBK0OPtQJc2HsXp8CS2wfeaJm_HhO5TLz9tbMBZLtUM_qKP4Tcb1j8PciuZX-kcu0kTOI4V5jX3_iVy27zlTywSCjN1dTwQto7q48kI_eATtY-9AWosSpz9a7NQJH9-Q4Tx35TxEaMfIOon2zaEuST_6C5A; authtoken=Bearer%3DeyJ0eXAiOiJKV1QiLCJub25jZSI6Im5Hc045TXFVWWx4Z2dWeFVIc0JSaW9oSHVoeU8yWmFkUEpzbm5YbE9GeWsiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL2FwaS5zcGFjZXMuc2t5cGUuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvM2M4OTNiMTAtZTIyYi00ZmE3LWI4MjgtYjk2M2VjM2M2NWU1LyIsImlhdCI6MTY4MjQwMDU2MSwibmJmIjoxNjgyNDAwNTYxLCJleHAiOjE2ODI0ODY2OTUsImFjY3QiOjAsImFjciI6IjEiLCJhaW8iOiJBVVFBdS84VEFBQUE4OHIzMjZJcW1mQlUvRDVoekp1UHFaL3hJVnpMMHRjTmVWRldEMzJqb0NTbGxxSmIyYURYcHc1UUtteWw2VmdwZXBmaFFqQk5ja0tEMU42VFpQTFdvQT09IiwiYW1yIjpbInB3ZCIsInJzYSIsIm1mYSJdLCJhcHBpZCI6IjFmZWM4ZTc4LWJjZTQtNGFhZi1hYjFiLTU0NTFjYzM4NzI2NCIsImFwcGlkYWNyIjoiMCIsImF1dGhfdGltZSI6MTY4MTI4NjQ1MiwiY25mIjp7InRiaCI6InVLSU42a2JGTFpGK1A2YUg3dk1vSkVtQVpCNFlwcE1LZEdFai9PaVFMTEE9In0sImRldmljZWlkIjoiNTA3Y2M5NDYtYmNkOC00MzAzLWJmYWUtYWQ5ZTYzODc1MjFjIiwiZmFtaWx5X25hbWUiOiJQYXJha2hlIiwiZ2l2ZW5fbmFtZSI6IlByYXZpbiIsImlwYWRkciI6IjEyMy4yNTIuMTY1LjE1NCIsIm5hbWUiOiJQcmF2aW4gUGFyYWtoZSIsIm9pZCI6IjQ0NzAzNDlmLWY2YTgtNDBiZC1hODE2LTIzNDI5NDQzYjM2MSIsIm9ucHJlbV9zaWQiOiJTLTEtNS0yMS0xNzE4MTAyODA2LTEwNDQ0OTI0NTgtMzkzMzAyMzA0OC0xOTg5NCIsInB1aWQiOiIxMDAzMjAwMjZFN0Y3RjA1IiwicHdkX3VybCI6Imh0dHBzOi8vcG9ydGFsLm1pY3Jvc29mdG9ubGluZS5jb20vQ2hhbmdlUGFzc3dvcmQuYXNweCIsInJoIjoiMC5BVDBBRUR1SlBDdmlwMC00S0xsajdEeGw1VmY5RmN4c0xCZEJxSXlEc2RWclM3NDlBRzQuIiwic2NwIjoidXNlcl9pbXBlcnNvbmF0aW9uIiwic2lkIjoiYzIzNWUzYjEtMTNlMC00OTQwLTliMTctYjRjMjBlMzg3ODg2Iiwic2lnbmluX3N0YXRlIjpbImttc2kiXSwic3ViIjoiSTNEeDQyVVBYYVhWelZNTnpNWU9FQ1JmZGF0dkhfeGV6S001d2VMcE41RSIsInRpZCI6IjNjODkzYjEwLWUyMmItNGZhNy1iODI4LWI5NjNlYzNjNjVlNSIsInVuaXF1ZV9uYW1lIjoicHJhdmluLnBhcmFraGVAY3lnbmV0aW5mb3RlY2guY29tIiwidXBuIjoicHJhdmluLnBhcmFraGVAY3lnbmV0aW5mb3RlY2guY29tIiwidXRpIjoiRFNHMUhQWERDVUtYZkpKOHp4SVJBQSIsInZlciI6IjEuMCIsIndpZHMiOlsiYjc5ZmJmNGQtM2VmOS00Njg5LTgxNDMtNzZiMTk0ZTg1NTA5Il0sInhtc19jYyI6WyJDUDEiXSwieG1zX3NzbSI6IjEifQ.Y9_K2CGWqFuYyqGimPA9E4PYLy25bazKCTYK2y8tNUKSk0t3NTLCpekIO4fsXSUjlWnBMTRPpN04d87XyZj6qiO0BHU4B7Uq1NoJDxb6rJWpoL9a27ViECJFk-tjR5ZIyvlYh9rl98Hrmjq1r2v6slymJYVzN90mibF628rO7oTdrRgFkRU34TD31mJz-yPefVXiIKfcuhaiDKOm_6KRh56VDZ924ERGfx4U5jPqW5COa45KoMheRNgPYr3TiNEQAzfioRwWdz-SpE3zX7s0krL_yBFq4xDJ-sEmhmC3zQ_txkArvcfte0ib7ddKMbT2zz6LwGKsVoIuyUgB88gQCw%26Origin%3Dhttps%3A%2F%2Fteams.microsoft.com</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com/socket.io/1/websocket/2f811237785c50a9-489562ffa26ad7c8?sr=EEwAAPsgQzm8yJTPJU-W57zCswMzKuw87NbcW_IGe63GCqNLcAViEO-47sjY3j5oEmbCpDsY8AUk4IiPgeh1t0FBErXOKd-SRoZC6Gl9q7FBvmOSzQQ&amp;issuer=prod-2&amp;sp=connect&amp;se=1682955052905&amp;st=1682400563905&amp;sig=z0W6Rz_3XIuzKYEDDj0TdQCPHt7LGmFYowz8OuLwcRg&amp;v=v4&amp;tc=%7B%22cv%22%3A%222023.09.01.1%22%2C%22ua%22%3A%22TeamsCDL%22%2C%22hr%22%3A%22%22%2C%22v%22%3A%2227%2F1.0.0.2023032504%22%7D&amp;timeout=40&amp;auth=true&amp;epid=40577a5a-0db0-4106-b3e7-ce6ba4300c95&amp;userActivity=%7B%22state%22%3A%22active%22%2C%22cv%22%3A%22TDB64+t47KnLM%2FqeSg05LA.1%22%7D&amp;ccid=W57zCswMzKg&amp;cor_id=83aba2a2-77a0-45ae-9635-4b051e04bcfe&amp;con_num=1682426639806_3</java.net.URL>
+</httpSample>
+<httpSample t="1012" it="0" lt="1012" ct="831" ts="1682426658375" s="true" lb="/socket.io/1/xhr-polling/2f811237785c50a9-489562ffa26ad7c8-382" rc="200" rm="OK" tn="" dt="text" de="UTF-8" by="600" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Type: text/plain; charset=UTF-8
+Expires: 0
+Server: Microsoft-HTTPAPI/2.0
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: Nosniff
+X-Frame-Options: SAMEORIGIN
+Access-Control-Allow-Origin: https://teams.microsoft.com
+Access-Control-Allow-Credentials: true
+Date: Tue, 25 Apr 2023 12:43:17 GMT
+Connection: close
+Content-Length: 85
+Content-Encoding: deflate
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Sec-Fetch-Mode: cors
+Referer: https://teams.microsoft.com/
+Sec-Fetch-Site: same-site
+Accept-Language: en-US
+Origin: https://teams.microsoft.com
+Host: trouter2-azsc-krce-1-b.trouter.teams.microsoft.com
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Teams/1.6.00.6754 Chrome/102.0.5005.196 Electron/19.1.8 Safari/537.36
+Accept: */*
+Sec-Fetch-Dest: empty
+</requestHeader>
+  <responseData class="java.lang.String">�3�1::�70�5:1::{&quot;name&quot;:&quot;trouter.connected&quot;,&quot;args&quot;:[{&quot;ttl&quot;:528454,&quot;dur&quot;:&quot;2443&quot;}]}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://trouter2-azsc-krce-1-b.trouter.teams.microsoft.com/socket.io/1/xhr-polling/2f811237785c50a9-489562ffa26ad7c8?sr=EEwAAPsgQzm8yJTPJU-W57zCswMzKuw87NbcW_IGe63GCqNLcAViEO-47sjY3j5oEmbCpDsY8AUk4IiPgeh1t0FBErXOKd-SRoZC6Gl9q7FBvmOSzQQ&amp;issuer=prod-2&amp;sp=connect&amp;se=1682955052905&amp;st=1682400563905&amp;sig=z0W6Rz_3XIuzKYEDDj0TdQCPHt7LGmFYowz8OuLwcRg&amp;v=v4&amp;tc=%7B%22cv%22%3A%222023.09.01.1%22%2C%22ua%22%3A%22TeamsCDL%22%2C%22hr%22%3A%22%22%2C%22v%22%3A%2227%2F1.0.0.2023032504%22%7D&amp;timeout=40&amp;auth=true&amp;epid=40577a5a-0db0-4106-b3e7-ce6ba4300c95&amp;userActivity=%7B%22state%22%3A%22active%22%2C%22cv%22%3A%22TDB64+t47KnLM%2FqeSg05LA.1%22%7D&amp;ccid=W57zCswMzKg&amp;cor_id=83aba2a2-77a0-45ae-9635-4b051e04bcfe&amp;con_num=1682426639806_3&amp;t=1682426658360</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="teams.microsoft.com:443" rc="" rm="An established connection was aborted by the software in your host machine&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1565" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT teams.microsoft.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="teams.microsoft.com:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1372" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT teams.microsoft.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="self.events.data.microsoft.com:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1490" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT self.events.data.microsoft.com:443 HTTP/1.0&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="www.google.com:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1490" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT www.google.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="www.google.com:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1490" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT www.google.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="teams.microsoft.com:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1372" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT teams.microsoft.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<httpSample t="109" it="0" lt="108" ct="69" ts="1682426664715" s="true" lb="/api/report?cat=teams&amp;TenantId=3c893b10-e22b-4fa7-b828-b963ec3c65e5&amp;ClientVersion=27/1.0.0.2023032504&amp;FrontEnd=AFD&amp;DestinationEndpoint=Edge-Prod-BOM01r5b-384" rc="200" rm="OK" tn="" dt="text" de="" by="326" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 7
+Date: Tue, 25 Apr 2023 12:43:23 GMT
+Connection: close
+Access-Control-Allow-Headers: content-type
+Access-Control-Allow-Credentials: false
+Access-Control-Allow-Methods: *
+Access-Control-Allow-Methods: GET, OPTIONS, POST
+Access-Control-Allow-Origin: *
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept-Language: en-US
+Origin: https://teams.microsoft.com
+Host: teams.nel.measure.office.net
+Access-Control-Request-Headers: content-type
+Access-Control-Request-Method: POST
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Teams/1.6.00.6754 Chrome/102.0.5005.196 Electron/19.1.8 Safari/537.36
+</requestHeader>
+  <responseData class="java.lang.String">OPTIONS</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">OPTIONS</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://teams.nel.measure.office.net/api/report?cat=teams&amp;TenantId=3c893b10-e22b-4fa7-b828-b963ec3c65e5&amp;ClientVersion=27/1.0.0.2023032504&amp;FrontEnd=AFD&amp;DestinationEndpoint=Edge-Prod-BOM01r5b</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="teams.microsoft.com:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1372" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT teams.microsoft.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="self.events.data.microsoft.com:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1490" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT self.events.data.microsoft.com:443 HTTP/1.0&#xd;
+</samplerData>
+</sample>
+<httpSample t="3753" it="0" lt="3753" ct="44" ts="1682426664848" s="true" lb="/api/report?cat=teams&amp;TenantId=3c893b10-e22b-4fa7-b828-b963ec3c65e5&amp;ClientVersion=27/1.0.0.2023032504&amp;FrontEnd=AFD&amp;DestinationEndpoint=Edge-Prod-BOM01r5b-385" rc="200" rm="OK" tn="" dt="text" de="utf-8" by="572" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Vary: Accept-Encoding
+Request-Context: appId=cid-v1:c242839f-7b23-4fcd-8b70-f19e1d322576
+Date: Tue, 25 Apr 2023 12:43:27 GMT
+Connection: close
+Access-Control-Allow-Credentials: false
+Access-Control-Allow-Methods: *
+Access-Control-Allow-Methods: GET, OPTIONS, POST
+Access-Control-Allow-Origin: *
+Content-Length: 164
+Content-Encoding: gzip
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Accept-Language: en-US
+Host: teams.nel.measure.office.net
+Content-Type: application/reports+json
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Teams/1.6.00.6754 Chrome/102.0.5005.196 Electron/19.1.8 Safari/537.36
+Content-Length: 547
+</requestHeader>
+  <responseData class="java.lang.String">NEL Aggregarator has successfully processed the request</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">[{&quot;age&quot;:0,&quot;body&quot;:{&quot;elapsed_time&quot;:16,&quot;method&quot;:&quot;POST&quot;,&quot;phase&quot;:&quot;connection&quot;,&quot;protocol&quot;:&quot;http/1.1&quot;,&quot;referrer&quot;:&quot;https://teams.microsoft.com/statics/hashed/precompiled-shared-worker-18daa8b3fb584696.js&quot;,&quot;sampling_fraction&quot;:0.2,&quot;server_ip&quot;:&quot;&quot;,&quot;status_code&quot;:0,&quot;type&quot;:&quot;tls.cert.authority_invalid&quot;},&quot;type&quot;:&quot;network-error&quot;,&quot;url&quot;:&quot;https://teams.microsoft.com/registrar/prod/V2/registrations&quot;,&quot;user_agent&quot;:&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Teams/1.6.00.6754 Chrome/102.0.5005.196 Electron/19.1.8 Safari/537.36&quot;}]</queryString>
+  <java.net.URL>https://teams.nel.measure.office.net/api/report?cat=teams&amp;TenantId=3c893b10-e22b-4fa7-b828-b963ec3c65e5&amp;ClientVersion=27/1.0.0.2023032504&amp;FrontEnd=AFD&amp;DestinationEndpoint=Edge-Prod-BOM01r5b</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="teams.microsoft.com:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1372" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT teams.microsoft.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="self.events.data.microsoft.com:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1490" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT self.events.data.microsoft.com:443 HTTP/1.0&#xd;
+</samplerData>
+</sample>
+<httpSample t="684" it="0" lt="0" ct="301" ts="1682426677133" s="true" lb="/sessions/ping-386" rc="204" rm="No Content" tn="" dt="" de="" by="312" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 204 No Content
+x-powered-by: Express
+access-control-allow-origin: *
+access-control-allow-methods: GET,HEAD,PUT,PATCH,POST,DELETE
+vary: Access-Control-Request-Headers
+access-control-allow-headers: api-token,content-type,gleap-hash,gleap-id
+date: Tue, 25 Apr 2023 12:43:36 GMT
+connection: close
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Sec-Fetch-Mode: cors
+Referer: https://nil.qa.nxlvl.app/
+Sec-Fetch-Site: cross-site
+Accept-Language: en-US,en;q=0.9
+Origin: https://nil.qa.nxlvl.app
+Access-Control-Request-Method: POST
+Accept: */*
+Host: api.gleap.io
+Access-Control-Request-Headers: api-token,content-type,gleap-hash,gleap-id
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+Sec-Fetch-Dest: empty
+</requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">OPTIONS</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://api.gleap.io/sessions/ping</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="self.events.data.microsoft.com:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1490" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT self.events.data.microsoft.com:443 HTTP/1.0&#xd;
+</samplerData>
+</sample>
+<httpSample t="297" it="0" lt="297" ct="157" ts="1682426681313" s="true" lb="/gateway/api/gasv3/api/v1/batch-387" rc="200" rm="OK" tn="" dt="text" de="" by="749" sc="1" ec="0" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Tue, 25 Apr 2023 12:43:40 GMT
+Content-Type: application/json
+Vary: Accept-Encoding
+Server: AtlassianEdge
+X-Trace-Id: 910ae70d8c3d59c2
+X-Frame-Options: SameOrigin
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Atl-Traceid: 910ae70d8c3d59c2
+Report-To: {&quot;endpoints&quot;: [{&quot;url&quot;: &quot;https://dz8aopenkvv6s.cloudfront.net&quot;}], &quot;group&quot;: &quot;endpoint-1&quot;, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600}
+Nel: {&quot;failure_fraction&quot;: 0.001, &quot;include_subdomains&quot;: true, &quot;max_age&quot;: 600, &quot;report_to&quot;: &quot;endpoint-1&quot;}
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+Connection: close
+Content-Length: 74
+Content-Encoding: gzip
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Sec-Fetch-Mode: cors
+Referer: https://therecruit.atlassian.net/jira/software/c/projects/NXNIL/boards/14/backlog?view=detail&amp;selectedIssue=NXNIL-242&amp;issueLimit=100&amp;assignee=63ef6f10333d0e2ec16fe304
+Sec-Fetch-Site: same-origin
+Accept-Language: en-US,en;q=0.9
+Origin: https://therecruit.atlassian.net
+Accept: */*
+sec-ch-ua: &quot;Chromium&quot;;v=&quot;112&quot;, &quot;Google Chrome&quot;;v=&quot;112&quot;, &quot;Not:A-Brand&quot;;v=&quot;99&quot;
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: &quot;Windows&quot;
+Host: therecruit.atlassian.net
+Content-Type: text/plain
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+Sec-Fetch-Dest: empty
+Content-Length: 1127
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;success&quot;:true,&quot;validationErrors&quot;:null,&quot;message&quot;:null,&quot;code&quot;:0}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String">ajs_anonymous_id=%221e0e9734-c736-480b-a76a-90a5420188dc%22</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;batch&quot;:[{&quot;context&quot;:{&quot;locale&quot;:&quot;en_US&quot;,&quot;screen&quot;:{&quot;width&quot;:1366,&quot;height&quot;:768,&quot;density&quot;:1},&quot;library&quot;:{&quot;name&quot;:&quot;analytics.js&quot;,&quot;version&quot;:&quot;4.3.0&quot;},&quot;userAgent&quot;:&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36&quot;},&quot;timestamp&quot;:&quot;2023-04-25T12:43:02.894Z&quot;,&quot;type&quot;:&quot;track&quot;,&quot;userId&quot;:&quot;63ef6f10333d0e2ec16fe304&quot;,&quot;anonymousId&quot;:&quot;1e0e9734-c736-480b-a76a-90a5420188dc&quot;,&quot;properties&quot;:{&quot;env&quot;:&quot;prod&quot;,&quot;product&quot;:&quot;jira&quot;,&quot;subproduct&quot;:&quot;software&quot;,&quot;version&quot;:&quot;1.0.0&quot;,&quot;origin&quot;:&quot;web&quot;,&quot;platform&quot;:&quot;web&quot;,&quot;tenantIdType&quot;:&quot;cloudId&quot;,&quot;tenantId&quot;:&quot;9df03449-bd09-4039-9627-f4295f94bcb0&quot;,&quot;userIdType&quot;:&quot;atlassianAccount&quot;,&quot;source&quot;:&quot;ui&quot;,&quot;actionSubject&quot;:&quot;ui&quot;,&quot;action&quot;:&quot;viewed&quot;,&quot;attributes&quot;:{},&quot;eventType&quot;:&quot;ui&quot;,&quot;tabId&quot;:&quot;c4f54c38-8e58-42c2-b244-46b1a9735f0d&quot;,&quot;sessionId&quot;:&quot;1682426582894&quot;,&quot;taskSessions&quot;:{},&quot;pageLoadId&quot;:&quot;7c1e195d-ffea-4f48-bf79-a384b6cab571&quot;},&quot;event&quot;:&quot;ui viewed&quot;,&quot;messageId&quot;:&quot;ajs-5ed7b0b8-237a-4e59-b8ec-f8962b26fe8e&quot;,&quot;sentAt&quot;:&quot;2023-04-25T12:44:37.107Z&quot;,&quot;_metadata&quot;:{&quot;failedAttempts&quot;:1}}],&quot;sentAt&quot;:&quot;2023-04-25T12:44:37.107Z&quot;,&quot;metadata&quot;:{&quot;eventCount&quot;:1,&quot;resilienceMechanism&quot;:&quot;memory&quot;,&quot;httpRetryCount&quot;:1}}</queryString>
+  <java.net.URL>https://therecruit.atlassian.net/gateway/api/gasv3/api/v1/batch</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="self.events.data.microsoft.com:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1490" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT self.events.data.microsoft.com:443 HTTP/1.0&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="teams.microsoft.com:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1372" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT teams.microsoft.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="presence.teams.microsoft.com:443" rc="" rm="Received fatal alert: certificate_unknown&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1372" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT presence.teams.microsoft.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="self.events.data.microsoft.com:443" rc="" rm="Remote host terminated the handshake&#xa;**ensure browser is set to accept the JMeter proxy certificate**" tn="" dt="" de="" by="1490" sc="1" ec="1" ng="0" na="0" hn="CIPL-LPT-1227">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT self.events.data.microsoft.com:443 HTTP/1.0&#xd;
+</samplerData>
+</sample>
+
+</testResults>

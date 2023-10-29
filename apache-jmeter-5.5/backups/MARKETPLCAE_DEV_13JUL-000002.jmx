@@ -1,0 +1,1325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="MARKETPLCAE_DEV_13JUL" enabled="true">
+      <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter converter v.3.1.23. Please contact support@blazemeter.com for further support.</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="sec-ch-ua" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua</stringProp>
+            <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;113&quot;, &quot;Chromium&quot;;v=&quot;113&quot;, &quot;Not-A.Brand&quot;;v=&quot;24&quot;</stringProp>
+          </elementProp>
+          <elementProp name="sec-ch-ua-mobile" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+            <stringProp name="Header.value">?0</stringProp>
+          </elementProp>
+          <elementProp name="sec-ch-ua-platform" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+            <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+          </elementProp>
+          <elementProp name="User-Agent" elementType="Header">
+            <stringProp name="Header.name">User-Agent</stringProp>
+            <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="BASE_URL_1" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_1</stringProp>
+            <stringProp name="Argument.value">marketplace.dev.nxlvl.app</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_2" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_2</stringProp>
+            <stringProp name="Argument.value">o733402.ingest.sentry.io</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_3" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_3</stringProp>
+            <stringProp name="Argument.value">routers.dev.nxlvl.app</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_4" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_4</stringProp>
+            <stringProp name="Argument.value">api.gleap.io</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_5" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_5</stringProp>
+            <stringProp name="Argument.value">data-tr-dev.azureedge.net</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="BASE_URL_6" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_6</stringProp>
+            <stringProp name="Argument.value">api-js.mixpanel.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <stringProp name="HTTPSampler.protocol"></stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <boolProp name="HTTPSampler.image_parser">true</boolProp>
+        <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
+        <collectionProp name="DNSCacheManager.servers"/>
+        <boolProp name="DNSCacheManager.clearEachIteration">true</boolProp>
+        <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
+      </DNSCacheManager>
+      <hashTree/>
+      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+        <collectionProp name="AuthManager.auth_list"/>
+        <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
+      </AuthManager>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+        <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+        <boolProp name="clearEachIteration">true</boolProp>
+        <boolProp name="useExpires">false</boolProp>
+        <boolProp name="CacheManager.controlledByThread">false</boolProp>
+      </CacheManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">10</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">5</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">5</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">0</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="MarketPlace_Dev_Homepage" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">false</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://marketplace.dev.nxlvl.app/" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path"></stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                  <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                  <stringProp name="Header.value">1</stringProp>
+                </elementProp>
+                <elementProp name="Sec-Purpose" elementType="Header">
+                  <stringProp name="Header.name">Sec-Purpose</stringProp>
+                  <stringProp name="Header.value">prefetch;prerender</stringProp>
+                </elementProp>
+                <elementProp name="Purpose" elementType="Header">
+                  <stringProp name="Header.name">Purpose</stringProp>
+                  <stringProp name="Header.value">prefetch</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+              <stringProp name="RandomTimer.range">0.0</stringProp>
+              <stringProp name="ConstantTimer.delay">0</stringProp>
+              <stringProp name="TestPlan.comments">Recorded time was 0 milliseconds</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://o733402.ingest.sentry.io/api/4504926323277824/envelope/?sentry_key=2de207a5cb914c89a4097441301dbb57&amp;sentry_version=7&amp;sentry_client=sentry.javascript.nextjs%2F7.54.0" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;sent_at&quot;:&quot;2023-07-13T06:12:09.904Z&quot;,&quot;sdk&quot;:{&quot;name&quot;:&quot;sentry.javascript.nextjs&quot;,&quot;version&quot;:&quot;7.54.0&quot;}}&#xd;
+{&quot;type&quot;:&quot;session&quot;}&#xd;
+{&quot;sid&quot;:&quot;86ff88d919284cd4bbd8d3b03e03dfd1&quot;,&quot;init&quot;:true,&quot;started&quot;:&quot;2023-07-13T06:12:09.903Z&quot;,&quot;timestamp&quot;:&quot;2023-07-13T06:12:09.904Z&quot;,&quot;status&quot;:&quot;ok&quot;,&quot;errors&quot;:0,&quot;attrs&quot;:{&quot;release&quot;:&quot;DxapHh_MrhLgEJUAlTOeG&quot;,&quot;environment&quot;:&quot;develop&quot;,&quot;user_agent&quot;:&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36&quot;}}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/4504926323277824/envelope/?sentry_key=2de207a5cb914c89a4097441301dbb57&amp;sentry_version=7&amp;sentry_client=sentry.javascript.nextjs%2F7.54.0</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://routers.dev.nxlvl.app/" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;operationName&quot;:&quot;getDashboardNFTs&quot;,&quot;variables&quot;:{&quot;dashboardArgs&quot;:{&quot;cursor&quot;:0,&quot;pageNo&quot;:0,&quot;take&quot;:20,&quot;activity&quot;:[],&quot;type&quot;:&quot;Trending&quot;}},&quot;query&quot;:&quot;query getDashboardNFTs($dashboardArgs: DashboardArgs!) {\n  getDashboardNFTs(dashboardArgs: $dashboardArgs) {\n    pageEdges {\n      node {\n        id\n        name\n        imageUrl\n        videoData\n        isLiked\n        likeCount\n        isNFTBookmarked\n        associatedTiers(nftStatus: [Listed, Sold])\n        userId\n        user {\n          id\n          firstname\n          lastname\n          profileImage\n          dwollaCustomer {\n            status\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    pageInfo {\n      hasNextPage\n      pageNo\n      totalCount\n      __typename\n    }\n    __typename\n  }\n}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path"></stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="content-type" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="authorization" elementType="Header">
+                  <stringProp name="Header.name">authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjg5MjI3ODMxLCJleHAiOjE2OTE4MTk4MzEsInBybSI6IjczMTc1ODljNDAxYTA3OTJhZWU0MDhhZWYzNWUwMWYwIiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJtYXJrZXRwbGFjZS13ZWIiLCJqdGkiOiIyMTczYmY3MS1jOTY1LTQ0NTQtODI4Mi02MGYwMzQwZDNlZDcifQ.kv1gTfEkzqttw6zt1CUy_cGi7wYRHI49c155rNBBP9fa7O-Aec0EJPMMJ_6DcrnT-sFF8_wQScT3IxHjizXbHPaNbytVcFNTW7mA6EJCcEIam-wfyJbPFWF89t9K-9v0XWGXSDYWAwp5Hp_JGZvn3xvHtNOfP3_XWZkKFl20pu_Pr__a8gCr3ykeLZrKJxXCkpqeeq1JOHV7cvyTQNw62yJ4rUUq0tW3iqBYRropC8jGzunfCpEE1wwyysnoNkTDljP8X-KOkcuvn0lH-6PHmuamvvl1UnOO5tSEyPD1CPL9IYptf-gtK6JLWFkDTbGLuYU7_qV0UfuUq8W1NULjcw</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://routers.dev.nxlvl.app/" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;operationName&quot;:&quot;getDashboardNFTs&quot;,&quot;variables&quot;:{&quot;dashboardArgs&quot;:{&quot;cursor&quot;:0,&quot;pageNo&quot;:0,&quot;take&quot;:6,&quot;activity&quot;:[],&quot;type&quot;:&quot;ForYou&quot;}},&quot;query&quot;:&quot;query getDashboardNFTs($dashboardArgs: DashboardArgs!) {\n  getDashboardNFTs(dashboardArgs: $dashboardArgs) {\n    pageEdges {\n      node {\n        id\n        name\n        imageUrl\n        videoData\n        isLiked\n        likeCount\n        isNFTBookmarked\n        associatedTiers(nftStatus: [Listed, Sold])\n        userId\n        user {\n          id\n          firstname\n          lastname\n          profileImage\n          dwollaCustomer {\n            status\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    pageInfo {\n      hasNextPage\n      pageNo\n      totalCount\n      __typename\n    }\n    __typename\n  }\n}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path"></stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="content-type" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="authorization" elementType="Header">
+                  <stringProp name="Header.name">authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjg5MjI3ODMxLCJleHAiOjE2OTE4MTk4MzEsInBybSI6IjczMTc1ODljNDAxYTA3OTJhZWU0MDhhZWYzNWUwMWYwIiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJtYXJrZXRwbGFjZS13ZWIiLCJqdGkiOiIyMTczYmY3MS1jOTY1LTQ0NTQtODI4Mi02MGYwMzQwZDNlZDcifQ.kv1gTfEkzqttw6zt1CUy_cGi7wYRHI49c155rNBBP9fa7O-Aec0EJPMMJ_6DcrnT-sFF8_wQScT3IxHjizXbHPaNbytVcFNTW7mA6EJCcEIam-wfyJbPFWF89t9K-9v0XWGXSDYWAwp5Hp_JGZvn3xvHtNOfP3_XWZkKFl20pu_Pr__a8gCr3ykeLZrKJxXCkpqeeq1JOHV7cvyTQNw62yJ4rUUq0tW3iqBYRropC8jGzunfCpEE1wwyysnoNkTDljP8X-KOkcuvn0lH-6PHmuamvvl1UnOO5tSEyPD1CPL9IYptf-gtK6JLWFkDTbGLuYU7_qV0UfuUq8W1NULjcw</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://routers.dev.nxlvl.app/" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;operationName&quot;:&quot;categories&quot;,&quot;variables&quot;:{&quot;ids&quot;:[2]},&quot;query&quot;:&quot;query categories($ids: [Int]) {\n  getCategory(ids: $ids) {\n    id\n    name\n    iconURL\n    activities {\n      id\n      name\n      iconURL\n      __typename\n    }\n    __typename\n  }\n}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path"></stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="content-type" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="authorization" elementType="Header">
+                  <stringProp name="Header.name">authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjg5MjI3ODMxLCJleHAiOjE2OTE4MTk4MzEsInBybSI6IjczMTc1ODljNDAxYTA3OTJhZWU0MDhhZWYzNWUwMWYwIiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJtYXJrZXRwbGFjZS13ZWIiLCJqdGkiOiIyMTczYmY3MS1jOTY1LTQ0NTQtODI4Mi02MGYwMzQwZDNlZDcifQ.kv1gTfEkzqttw6zt1CUy_cGi7wYRHI49c155rNBBP9fa7O-Aec0EJPMMJ_6DcrnT-sFF8_wQScT3IxHjizXbHPaNbytVcFNTW7mA6EJCcEIam-wfyJbPFWF89t9K-9v0XWGXSDYWAwp5Hp_JGZvn3xvHtNOfP3_XWZkKFl20pu_Pr__a8gCr3ykeLZrKJxXCkpqeeq1JOHV7cvyTQNw62yJ4rUUq0tW3iqBYRropC8jGzunfCpEE1wwyysnoNkTDljP8X-KOkcuvn0lH-6PHmuamvvl1UnOO5tSEyPD1CPL9IYptf-gtK6JLWFkDTbGLuYU7_qV0UfuUq8W1NULjcw</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://routers.dev.nxlvl.app/" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;operationName&quot;:&quot;getTopTraders&quot;,&quot;variables&quot;:{&quot;cursor&quot;:0,&quot;take&quot;:3},&quot;query&quot;:&quot;query getTopTraders($cursor: Int!, $take: Int!) {\n  getTopTraders(cursor: $cursor, take: $take) {\n    pageEdges {\n      node {\n        id\n        user {\n          id\n          username\n          firstname\n          lastname\n          profileImage\n          dwollaCustomer {\n            status\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    pageInfo {\n      hasNextPage\n      totalCount\n      __typename\n    }\n    __typename\n  }\n}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path"></stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="content-type" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="authorization" elementType="Header">
+                  <stringProp name="Header.name">authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjg5MjI3ODMxLCJleHAiOjE2OTE4MTk4MzEsInBybSI6IjczMTc1ODljNDAxYTA3OTJhZWU0MDhhZWYzNWUwMWYwIiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJtYXJrZXRwbGFjZS13ZWIiLCJqdGkiOiIyMTczYmY3MS1jOTY1LTQ0NTQtODI4Mi02MGYwMzQwZDNlZDcifQ.kv1gTfEkzqttw6zt1CUy_cGi7wYRHI49c155rNBBP9fa7O-Aec0EJPMMJ_6DcrnT-sFF8_wQScT3IxHjizXbHPaNbytVcFNTW7mA6EJCcEIam-wfyJbPFWF89t9K-9v0XWGXSDYWAwp5Hp_JGZvn3xvHtNOfP3_XWZkKFl20pu_Pr__a8gCr3ykeLZrKJxXCkpqeeq1JOHV7cvyTQNw62yJ4rUUq0tW3iqBYRropC8jGzunfCpEE1wwyysnoNkTDljP8X-KOkcuvn0lH-6PHmuamvvl1UnOO5tSEyPD1CPL9IYptf-gtK6JLWFkDTbGLuYU7_qV0UfuUq8W1NULjcw</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://api.gleap.io/sessions" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_4}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">sessions</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Gleap-Id" elementType="Header">
+                  <stringProp name="Header.name">Gleap-Id</stringProp>
+                  <stringProp name="Header.value">bd36d0df-528c-4cd8-8088-ab6fe87c0344</stringProp>
+                </elementProp>
+                <elementProp name="Gleap-Hash" elementType="Header">
+                  <stringProp name="Header.name">Gleap-Hash</stringProp>
+                  <stringProp name="Header.value">1c77a8e365c2dda5c4717d99fed2e79a5a0483d43c846ccb28b54bb36a550aa8</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Api-Token" elementType="Header">
+                  <stringProp name="Header.name">Api-Token</stringProp>
+                  <stringProp name="Header.value">lacoelUmsbKteU7sJHxPPUhKbLCphTOU</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://api.gleap.io/config/lacoelUmsbKteU7sJHxPPUhKbLCphTOU" enabled="false">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_4}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">config/lacoelUmsbKteU7sJHxPPUhKbLCphTOU</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Gleap-Id" elementType="Header">
+                  <stringProp name="Header.name">Gleap-Id</stringProp>
+                  <stringProp name="Header.value">bd36d0df-528c-4cd8-8088-ab6fe87c0344</stringProp>
+                </elementProp>
+                <elementProp name="Gleap-Hash" elementType="Header">
+                  <stringProp name="Header.name">Gleap-Hash</stringProp>
+                  <stringProp name="Header.value">1c77a8e365c2dda5c4717d99fed2e79a5a0483d43c846ccb28b54bb36a550aa8</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Api-Token" elementType="Header">
+                  <stringProp name="Header.name">Api-Token</stringProp>
+                  <stringProp name="Header.value">lacoelUmsbKteU7sJHxPPUhKbLCphTOU</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://o733402.ingest.sentry.io/api/4504926323277824/envelope/?sentry_key=2de207a5cb914c89a4097441301dbb57&amp;sentry_version=7&amp;sentry_client=sentry.javascript.nextjs%2F7.54.0" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;sent_at&quot;:&quot;2023-07-13T06:12:11.213Z&quot;,&quot;sdk&quot;:{&quot;name&quot;:&quot;sentry.javascript.nextjs&quot;,&quot;version&quot;:&quot;7.54.0&quot;}}&#xd;
+{&quot;type&quot;:&quot;session&quot;}&#xd;
+{&quot;sid&quot;:&quot;86ff88d919284cd4bbd8d3b03e03dfd1&quot;,&quot;init&quot;:false,&quot;started&quot;:&quot;2023-07-13T06:12:09.903Z&quot;,&quot;timestamp&quot;:&quot;2023-07-13T06:12:11.212Z&quot;,&quot;status&quot;:&quot;crashed&quot;,&quot;errors&quot;:1,&quot;attrs&quot;:{&quot;release&quot;:&quot;DxapHh_MrhLgEJUAlTOeG&quot;,&quot;environment&quot;:&quot;develop&quot;,&quot;user_agent&quot;:&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36&quot;}}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/4504926323277824/envelope/?sentry_key=2de207a5cb914c89a4097441301dbb57&amp;sentry_version=7&amp;sentry_client=sentry.javascript.nextjs%2F7.54.0</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://o733402.ingest.sentry.io/api/4504926323277824/envelope/?sentry_key=2de207a5cb914c89a4097441301dbb57&amp;sentry_version=7&amp;sentry_client=sentry.javascript.nextjs%2F7.54.0" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;event_id&quot;:&quot;27fdc3c2942d4a3e93e066b24d7825de&quot;,&quot;sent_at&quot;:&quot;2023-07-13T06:12:11.214Z&quot;,&quot;sdk&quot;:{&quot;name&quot;:&quot;sentry.javascript.nextjs&quot;,&quot;version&quot;:&quot;7.54.0&quot;},&quot;trace&quot;:{&quot;environment&quot;:&quot;develop&quot;,&quot;release&quot;:&quot;DxapHh_MrhLgEJUAlTOeG&quot;,&quot;transaction&quot;:&quot;/dashboard&quot;,&quot;public_key&quot;:&quot;2de207a5cb914c89a4097441301dbb57&quot;,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;,&quot;sample_rate&quot;:&quot;1&quot;}}&#xd;
+{&quot;type&quot;:&quot;event&quot;}&#xd;
+{&quot;exception&quot;:{&quot;values&quot;:[{&quot;type&quot;:&quot;SyntaxError&quot;,&quot;value&quot;:&quot;Identifier &apos;originalPrompt&apos; has already been declared&quot;,&quot;stacktrace&quot;:{&quot;frames&quot;:[{&quot;colno&quot;:1,&quot;filename&quot;:&quot;app:///assets/prompt.js&quot;,&quot;function&quot;:&quot;?&quot;,&quot;in_app&quot;:true,&quot;lineno&quot;:1}]},&quot;mechanism&quot;:{&quot;type&quot;:&quot;onerror&quot;,&quot;handled&quot;:false}}]},&quot;level&quot;:&quot;error&quot;,&quot;platform&quot;:&quot;javascript&quot;,&quot;event_id&quot;:&quot;27fdc3c2942d4a3e93e066b24d7825de&quot;,&quot;timestamp&quot;:1689228731.21,&quot;environment&quot;:&quot;develop&quot;,&quot;release&quot;:&quot;DxapHh_MrhLgEJUAlTOeG&quot;,&quot;sdk&quot;:{&quot;integrations&quot;:[&quot;InboundFilters&quot;,&quot;FunctionToString&quot;,&quot;TryCatch&quot;,&quot;Breadcrumbs&quot;,&quot;GlobalHandlers&quot;,&quot;LinkedErrors&quot;,&quot;Dedupe&quot;,&quot;HttpContext&quot;,&quot;RewriteFrames&quot;,&quot;BrowserTracing&quot;],&quot;name&quot;:&quot;sentry.javascript.nextjs&quot;,&quot;version&quot;:&quot;7.54.0&quot;,&quot;packages&quot;:[{&quot;name&quot;:&quot;npm:@sentry/nextjs&quot;,&quot;version&quot;:&quot;7.54.0&quot;},{&quot;name&quot;:&quot;npm:@sentry/react&quot;,&quot;version&quot;:&quot;7.54.0&quot;}]},&quot;tags&quot;:{&quot;transaction&quot;:&quot;/dashboard&quot;,&quot;runtime&quot;:&quot;browser&quot;},&quot;contexts&quot;:{&quot;trace&quot;:{&quot;op&quot;:&quot;pageload&quot;,&quot;span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;status&quot;:&quot;internal_error&quot;,&quot;tags&quot;:{&quot;routing.instrumentation&quot;:&quot;next-router&quot;},&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;}},&quot;breadcrumbs&quot;:[{&quot;timestamp&quot;:1689228730.228,&quot;category&quot;:&quot;navigation&quot;,&quot;data&quot;:{&quot;from&quot;:&quot;/&quot;,&quot;to&quot;:&quot;/&quot;}},{&quot;timestamp&quot;:1689228730.466,&quot;category&quot;:&quot;console&quot;,&quot;data&quot;:{&quot;arguments&quot;:[&quot;eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOiIiLCJwZXJtIjoiUmVmcmVzaC1Ub2tlbiIsImlhdCI6MTY4OTIyNzgzMSwiZXhwIjoxNjk5NTk1ODMxLCJwcm0iOiI0M2RkYTlmZTBjMWVmZWRjMjVhOGUzNmRhNGUyZWJhMCIsImppZCI6IkBsb2NhbGhvc3QiLCJtaW0iOiIiLCJ1a2V5IjoiIiwiY2xpZW50IjoibWFya2V0cGxhY2Utd2ViIiwianRpIjoiZTdjODRhNmUtNjUwYS00MjFmLTgwMTMtMmZhZGMxYjYwZGY2In0.CWnsF_w1Bdi76N4YzFdrP7JCyD1DMam9QGIi49TENHSl4N0dd2qm8jNmvILYxfky6XSyaSjg0aPNVwooWDWI7qeY9zZF86ZAnyfGm1WA5Xp0pH95GmNJyzq9zDPomEWUPTt-0We2BWuQkp6LWecQh54VRGM5z8mpT0PLUHmSxx7BYbrRnAnr02VwStTBWvz6j_M9CBfW-JVTO8_KoOfXW-iO8LejWmeZlkjxrur12_-sVQibMp5Zqa5sHZ7HzbHGGmuNXg89NeWiW6tAbGGatvhPEIbG-ru25XYjn15-ZesMZ7SdkzpzO1Cb726icvUr2F2oHo_90_fp9eXyz0Spaw&quot;,&quot;eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjg5MjI3ODMxLCJleHAiOjE2OTE4MTk4MzEsInBybSI6IjczMTc1ODljNDAxYTA3OTJhZWU0MDhhZWYzNWUwMWYwIiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJtYXJrZXRwbGFjZS13ZWIiLCJqdGkiOiIyMTczYmY3MS1jOTY1LTQ0NTQtODI4Mi02MGYwMzQwZDNlZDcifQ.kv1gTfEkzqttw6zt1CUy_cGi7wYRHI49c155rNBBP9fa7O-Aec0EJPMMJ_6DcrnT-sFF8_wQScT3IxHjizXbHPaNbytVcFNTW7mA6EJCcEIam-wfyJbPFWF89t9K-9v0XWGXSDYWAwp5Hp_JGZvn3xvHtNOfP3_XWZkKFl20pu_Pr__a8gCr3ykeLZrKJxXCkpqeeq1JOHV7cvyTQNw62yJ4rUUq0tW3iqBYRropC8jGzunfCpEE1wwyysnoNkTDljP8X-KOkcuvn0lH-6PHmuamvvl1UnOO5tSEyPD1CPL9IYptf-gtK6JLWFkDTbGLuYU7_qV0UfuUq8W1NULjcw&quot;],&quot;logger&quot;:&quot;console&quot;},&quot;level&quot;:&quot;log&quot;,&quot;message&quot;:&quot;eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOiIiLCJwZXJtIjoiUmVmcmVzaC1Ub2tlbiIsImlhdCI6MTY4OTIyNzgzMSwiZXhwIjoxNjk5NTk1ODMxLCJwcm0iOiI0M2RkYTlmZTBjMWVmZWRjMjVhOGUzNmRhNGUyZWJhMCIsImppZCI6IkBsb2NhbGhvc3QiLCJtaW0iOiIiLCJ1a2V5IjoiIiwiY2xpZW50IjoibWFya2V0cGxhY2Utd2ViIiwianRpIjoiZTdjODRhNmUtNjUwYS00MjFmLTgwMTMtMmZhZGMxYjYwZGY2In0.CWnsF_w1Bdi76N4YzFdrP7JCyD1DMam9QGIi49TENHSl4N0dd2qm8jNmvILYxfky6XSyaSjg0aPNVwooWDWI7qeY9zZF86ZAnyfGm1WA5Xp0pH95GmNJyzq9zDPomEWUPTt-0We2BWuQkp6LWecQh54VRGM5z8mpT0PLUHmSxx7BYbrRnAnr02VwStTBWvz6j_M9CBfW-JVTO8_KoOfXW-iO8LejWmeZlkjxrur12_-sVQibMp5Zqa5sHZ7HzbHGGmuNXg89NeWiW6tAbGGatvhPEIbG-ru25XYjn15-ZesMZ7SdkzpzO1Cb726icvUr2F2oHo_90_fp9eXyz0Spaw eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjg5MjI3ODMxLCJleHAiOjE2OTE4MTk4MzEsInBybSI6IjczMTc1ODljNDAxYTA3OTJhZWU0MDhhZWYzNWUwMWYwIiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJtYXJrZXRwbGFjZS13ZWIiLCJqdGkiOiIyMTczYmY3MS1jOTY1LTQ0NTQtODI4Mi02MGYwMzQwZDNlZDcifQ.kv1gTfEkzqttw6zt1CUy_cGi7wYRHI49c155rNBBP9fa7O-Aec0EJPMMJ_6DcrnT-sFF8_wQScT3IxHjizXbHPaNbytVcFNTW7mA6EJCcEIam-wfyJbPFWF89t9K-9v0XWGXSDYWAwp5Hp_JGZvn3xvHtNOfP3_XWZkKFl20pu_Pr__a8gCr3ykeLZrKJxXCkpqeeq1JOHV7cvyTQNw62yJ4rUUq0tW3iqBYRropC8jGzunfCpEE1wwyysnoNkTDljP8X-KOkcuvn0lH-6PHmuamvvl1UnOO5tSEyPD1CPL9IYptf-gtK6JLWFkDTbGLuYU7_qV0UfuUq8W1NULjcw&quot;},{&quot;timestamp&quot;:1689228730.466,&quot;category&quot;:&quot;console&quot;,&quot;data&quot;:{&quot;arguments&quot;:[{&quot;perm&quot;:&quot;&quot;,&quot;iat&quot;:1689227831,&quot;exp&quot;:1691819831,&quot;prm&quot;:&quot;7317589c401a0792aee408aef35e01f0&quot;,&quot;jid&quot;:&quot;@localhost&quot;,&quot;mim&quot;:&quot;&quot;,&quot;ukey&quot;:&quot;&quot;,&quot;client&quot;:&quot;marketplace-web&quot;,&quot;jti&quot;:&quot;2173bf71-c965-4454-8282-60f0340d3ed7&quot;},false],&quot;logger&quot;:&quot;console&quot;},&quot;level&quot;:&quot;log&quot;,&quot;message&quot;:&quot;[object Object] false&quot;},{&quot;timestamp&quot;:1689228730.469,&quot;category&quot;:&quot;console&quot;,&quot;data&quot;:{&quot;arguments&quot;:[&quot;eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOiIiLCJwZXJtIjoiUmVmcmVzaC1Ub2tlbiIsImlhdCI6MTY4OTIyNzgzMSwiZXhwIjoxNjk5NTk1ODMxLCJwcm0iOiI0M2RkYTlmZTBjMWVmZWRjMjVhOGUzNmRhNGUyZWJhMCIsImppZCI6IkBsb2NhbGhvc3QiLCJtaW0iOiIiLCJ1a2V5IjoiIiwiY2xpZW50IjoibWFya2V0cGxhY2Utd2ViIiwianRpIjoiZTdjODRhNmUtNjUwYS00MjFmLTgwMTMtMmZhZGMxYjYwZGY2In0.CWnsF_w1Bdi76N4YzFdrP7JCyD1DMam9QGIi49TENHSl4N0dd2qm8jNmvILYxfky6XSyaSjg0aPNVwooWDWI7qeY9zZF86ZAnyfGm1WA5Xp0pH95GmNJyzq9zDPomEWUPTt-0We2BWuQkp6LWecQh54VRGM5z8mpT0PLUHmSxx7BYbrRnAnr02VwStTBWvz6j_M9CBfW-JVTO8_KoOfXW-iO8LejWmeZlkjxrur12_-sVQibMp5Zqa5sHZ7HzbHGGmuNXg89NeWiW6tAbGGatvhPEIbG-ru25XYjn15-ZesMZ7SdkzpzO1Cb726icvUr2F2oHo_90_fp9eXyz0Spaw&quot;,&quot;eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjg5MjI3ODMxLCJleHAiOjE2OTE4MTk4MzEsInBybSI6IjczMTc1ODljNDAxYTA3OTJhZWU0MDhhZWYzNWUwMWYwIiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJtYXJrZXRwbGFjZS13ZWIiLCJqdGkiOiIyMTczYmY3MS1jOTY1LTQ0NTQtODI4Mi02MGYwMzQwZDNlZDcifQ.kv1gTfEkzqttw6zt1CUy_cGi7wYRHI49c155rNBBP9fa7O-Aec0EJPMMJ_6DcrnT-sFF8_wQScT3IxHjizXbHPaNbytVcFNTW7mA6EJCcEIam-wfyJbPFWF89t9K-9v0XWGXSDYWAwp5Hp_JGZvn3xvHtNOfP3_XWZkKFl20pu_Pr__a8gCr3ykeLZrKJxXCkpqeeq1JOHV7cvyTQNw62yJ4rUUq0tW3iqBYRropC8jGzunfCpEE1wwyysnoNkTDljP8X-KOkcuvn0lH-6PHmuamvvl1UnOO5tSEyPD1CPL9IYptf-gtK6JLWFkDTbGLuYU7_qV0UfuUq8W1NULjcw&quot;],&quot;logger&quot;:&quot;console&quot;},&quot;level&quot;:&quot;log&quot;,&quot;message&quot;:&quot;eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOiIiLCJwZXJtIjoiUmVmcmVzaC1Ub2tlbiIsImlhdCI6MTY4OTIyNzgzMSwiZXhwIjoxNjk5NTk1ODMxLCJwcm0iOiI0M2RkYTlmZTBjMWVmZWRjMjVhOGUzNmRhNGUyZWJhMCIsImppZCI6IkBsb2NhbGhvc3QiLCJtaW0iOiIiLCJ1a2V5IjoiIiwiY2xpZW50IjoibWFya2V0cGxhY2Utd2ViIiwianRpIjoiZTdjODRhNmUtNjUwYS00MjFmLTgwMTMtMmZhZGMxYjYwZGY2In0.CWnsF_w1Bdi76N4YzFdrP7JCyD1DMam9QGIi49TENHSl4N0dd2qm8jNmvILYxfky6XSyaSjg0aPNVwooWDWI7qeY9zZF86ZAnyfGm1WA5Xp0pH95GmNJyzq9zDPomEWUPTt-0We2BWuQkp6LWecQh54VRGM5z8mpT0PLUHmSxx7BYbrRnAnr02VwStTBWvz6j_M9CBfW-JVTO8_KoOfXW-iO8LejWmeZlkjxrur12_-sVQibMp5Zqa5sHZ7HzbHGGmuNXg89NeWiW6tAbGGatvhPEIbG-ru25XYjn15-ZesMZ7SdkzpzO1Cb726icvUr2F2oHo_90_fp9eXyz0Spaw eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjg5MjI3ODMxLCJleHAiOjE2OTE4MTk4MzEsInBybSI6IjczMTc1ODljNDAxYTA3OTJhZWU0MDhhZWYzNWUwMWYwIiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJtYXJrZXRwbGFjZS13ZWIiLCJqdGkiOiIyMTczYmY3MS1jOTY1LTQ0NTQtODI4Mi02MGYwMzQwZDNlZDcifQ.kv1gTfEkzqttw6zt1CUy_cGi7wYRHI49c155rNBBP9fa7O-Aec0EJPMMJ_6DcrnT-sFF8_wQScT3IxHjizXbHPaNbytVcFNTW7mA6EJCcEIam-wfyJbPFWF89t9K-9v0XWGXSDYWAwp5Hp_JGZvn3xvHtNOfP3_XWZkKFl20pu_Pr__a8gCr3ykeLZrKJxXCkpqeeq1JOHV7cvyTQNw62yJ4rUUq0tW3iqBYRropC8jGzunfCpEE1wwyysnoNkTDljP8X-KOkcuvn0lH-6PHmuamvvl1UnOO5tSEyPD1CPL9IYptf-gtK6JLWFkDTbGLuYU7_qV0UfuUq8W1NULjcw&quot;},{&quot;timestamp&quot;:1689228730.469,&quot;category&quot;:&quot;console&quot;,&quot;data&quot;:{&quot;arguments&quot;:[{&quot;perm&quot;:&quot;&quot;,&quot;iat&quot;:1689227831,&quot;exp&quot;:1691819831,&quot;prm&quot;:&quot;7317589c401a0792aee408aef35e01f0&quot;,&quot;jid&quot;:&quot;@localhost&quot;,&quot;mim&quot;:&quot;&quot;,&quot;ukey&quot;:&quot;&quot;,&quot;client&quot;:&quot;marketplace-web&quot;,&quot;jti&quot;:&quot;2173bf71-c965-4454-8282-60f0340d3ed7&quot;},false],&quot;logger&quot;:&quot;console&quot;},&quot;level&quot;:&quot;log&quot;,&quot;message&quot;:&quot;[object Object] false&quot;},{&quot;timestamp&quot;:1689228730.696,&quot;category&quot;:&quot;navigation&quot;,&quot;data&quot;:{&quot;from&quot;:&quot;/&quot;,&quot;to&quot;:&quot;/&quot;}},{&quot;timestamp&quot;:1689228730.943,&quot;category&quot;:&quot;console&quot;,&quot;data&quot;:{&quot;arguments&quot;:[&quot;eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOiIiLCJwZXJtIjoiUmVmcmVzaC1Ub2tlbiIsImlhdCI6MTY4OTIyNzgzMSwiZXhwIjoxNjk5NTk1ODMxLCJwcm0iOiI0M2RkYTlmZTBjMWVmZWRjMjVhOGUzNmRhNGUyZWJhMCIsImppZCI6IkBsb2NhbGhvc3QiLCJtaW0iOiIiLCJ1a2V5IjoiIiwiY2xpZW50IjoibWFya2V0cGxhY2Utd2ViIiwianRpIjoiZTdjODRhNmUtNjUwYS00MjFmLTgwMTMtMmZhZGMxYjYwZGY2In0.CWnsF_w1Bdi76N4YzFdrP7JCyD1DMam9QGIi49TENHSl4N0dd2qm8jNmvILYxfky6XSyaSjg0aPNVwooWDWI7qeY9zZF86ZAnyfGm1WA5Xp0pH95GmNJyzq9zDPomEWUPTt-0We2BWuQkp6LWecQh54VRGM5z8mpT0PLUHmSxx7BYbrRnAnr02VwStTBWvz6j_M9CBfW-JVTO8_KoOfXW-iO8LejWmeZlkjxrur12_-sVQibMp5Zqa5sHZ7HzbHGGmuNXg89NeWiW6tAbGGatvhPEIbG-ru25XYjn15-ZesMZ7SdkzpzO1Cb726icvUr2F2oHo_90_fp9eXyz0Spaw&quot;,&quot;eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjg5MjI3ODMxLCJleHAiOjE2OTE4MTk4MzEsInBybSI6IjczMTc1ODljNDAxYTA3OTJhZWU0MDhhZWYzNWUwMWYwIiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJtYXJrZXRwbGFjZS13ZWIiLCJqdGkiOiIyMTczYmY3MS1jOTY1LTQ0NTQtODI4Mi02MGYwMzQwZDNlZDcifQ.kv1gTfEkzqttw6zt1CUy_cGi7wYRHI49c155rNBBP9fa7O-Aec0EJPMMJ_6DcrnT-sFF8_wQScT3IxHjizXbHPaNbytVcFNTW7mA6EJCcEIam-wfyJbPFWF89t9K-9v0XWGXSDYWAwp5Hp_JGZvn3xvHtNOfP3_XWZkKFl20pu_Pr__a8gCr3ykeLZrKJxXCkpqeeq1JOHV7cvyTQNw62yJ4rUUq0tW3iqBYRropC8jGzunfCpEE1wwyysnoNkTDljP8X-KOkcuvn0lH-6PHmuamvvl1UnOO5tSEyPD1CPL9IYptf-gtK6JLWFkDTbGLuYU7_qV0UfuUq8W1NULjcw&quot;],&quot;logger&quot;:&quot;console&quot;},&quot;level&quot;:&quot;log&quot;,&quot;message&quot;:&quot;eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOiIiLCJwZXJtIjoiUmVmcmVzaC1Ub2tlbiIsImlhdCI6MTY4OTIyNzgzMSwiZXhwIjoxNjk5NTk1ODMxLCJwcm0iOiI0M2RkYTlmZTBjMWVmZWRjMjVhOGUzNmRhNGUyZWJhMCIsImppZCI6IkBsb2NhbGhvc3QiLCJtaW0iOiIiLCJ1a2V5IjoiIiwiY2xpZW50IjoibWFya2V0cGxhY2Utd2ViIiwianRpIjoiZTdjODRhNmUtNjUwYS00MjFmLTgwMTMtMmZhZGMxYjYwZGY2In0.CWnsF_w1Bdi76N4YzFdrP7JCyD1DMam9QGIi49TENHSl4N0dd2qm8jNmvILYxfky6XSyaSjg0aPNVwooWDWI7qeY9zZF86ZAnyfGm1WA5Xp0pH95GmNJyzq9zDPomEWUPTt-0We2BWuQkp6LWecQh54VRGM5z8mpT0PLUHmSxx7BYbrRnAnr02VwStTBWvz6j_M9CBfW-JVTO8_KoOfXW-iO8LejWmeZlkjxrur12_-sVQibMp5Zqa5sHZ7HzbHGGmuNXg89NeWiW6tAbGGatvhPEIbG-ru25XYjn15-ZesMZ7SdkzpzO1Cb726icvUr2F2oHo_90_fp9eXyz0Spaw eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjg5MjI3ODMxLCJleHAiOjE2OTE4MTk4MzEsInBybSI6IjczMTc1ODljNDAxYTA3OTJhZWU0MDhhZWYzNWUwMWYwIiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJtYXJrZXRwbGFjZS13ZWIiLCJqdGkiOiIyMTczYmY3MS1jOTY1LTQ0NTQtODI4Mi02MGYwMzQwZDNlZDcifQ.kv1gTfEkzqttw6zt1CUy_cGi7wYRHI49c155rNBBP9fa7O-Aec0EJPMMJ_6DcrnT-sFF8_wQScT3IxHjizXbHPaNbytVcFNTW7mA6EJCcEIam-wfyJbPFWF89t9K-9v0XWGXSDYWAwp5Hp_JGZvn3xvHtNOfP3_XWZkKFl20pu_Pr__a8gCr3ykeLZrKJxXCkpqeeq1JOHV7cvyTQNw62yJ4rUUq0tW3iqBYRropC8jGzunfCpEE1wwyysnoNkTDljP8X-KOkcuvn0lH-6PHmuamvvl1UnOO5tSEyPD1CPL9IYptf-gtK6JLWFkDTbGLuYU7_qV0UfuUq8W1NULjcw&quot;},{&quot;timestamp&quot;:1689228730.943,&quot;category&quot;:&quot;console&quot;,&quot;data&quot;:{&quot;arguments&quot;:[{&quot;perm&quot;:&quot;&quot;,&quot;iat&quot;:1689227831,&quot;exp&quot;:1691819831,&quot;prm&quot;:&quot;7317589c401a0792aee408aef35e01f0&quot;,&quot;jid&quot;:&quot;@localhost&quot;,&quot;mim&quot;:&quot;&quot;,&quot;ukey&quot;:&quot;&quot;,&quot;client&quot;:&quot;marketplace-web&quot;,&quot;jti&quot;:&quot;2173bf71-c965-4454-8282-60f0340d3ed7&quot;},false],&quot;logger&quot;:&quot;console&quot;},&quot;level&quot;:&quot;log&quot;,&quot;message&quot;:&quot;[object Object] false&quot;},{&quot;timestamp&quot;:1689228730.949,&quot;category&quot;:&quot;console&quot;,&quot;data&quot;:{&quot;arguments&quot;:[&quot;eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOiIiLCJwZXJtIjoiUmVmcmVzaC1Ub2tlbiIsImlhdCI6MTY4OTIyNzgzMSwiZXhwIjoxNjk5NTk1ODMxLCJwcm0iOiI0M2RkYTlmZTBjMWVmZWRjMjVhOGUzNmRhNGUyZWJhMCIsImppZCI6IkBsb2NhbGhvc3QiLCJtaW0iOiIiLCJ1a2V5IjoiIiwiY2xpZW50IjoibWFya2V0cGxhY2Utd2ViIiwianRpIjoiZTdjODRhNmUtNjUwYS00MjFmLTgwMTMtMmZhZGMxYjYwZGY2In0.CWnsF_w1Bdi76N4YzFdrP7JCyD1DMam9QGIi49TENHSl4N0dd2qm8jNmvILYxfky6XSyaSjg0aPNVwooWDWI7qeY9zZF86ZAnyfGm1WA5Xp0pH95GmNJyzq9zDPomEWUPTt-0We2BWuQkp6LWecQh54VRGM5z8mpT0PLUHmSxx7BYbrRnAnr02VwStTBWvz6j_M9CBfW-JVTO8_KoOfXW-iO8LejWmeZlkjxrur12_-sVQibMp5Zqa5sHZ7HzbHGGmuNXg89NeWiW6tAbGGatvhPEIbG-ru25XYjn15-ZesMZ7SdkzpzO1Cb726icvUr2F2oHo_90_fp9eXyz0Spaw&quot;,&quot;eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjg5MjI3ODMxLCJleHAiOjE2OTE4MTk4MzEsInBybSI6IjczMTc1ODljNDAxYTA3OTJhZWU0MDhhZWYzNWUwMWYwIiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJtYXJrZXRwbGFjZS13ZWIiLCJqdGkiOiIyMTczYmY3MS1jOTY1LTQ0NTQtODI4Mi02MGYwMzQwZDNlZDcifQ.kv1gTfEkzqttw6zt1CUy_cGi7wYRHI49c155rNBBP9fa7O-Aec0EJPMMJ_6DcrnT-sFF8_wQScT3IxHjizXbHPaNbytVcFNTW7mA6EJCcEIam-wfyJbPFWF89t9K-9v0XWGXSDYWAwp5Hp_JGZvn3xvHtNOfP3_XWZkKFl20pu_Pr__a8gCr3ykeLZrKJxXCkpqeeq1JOHV7cvyTQNw62yJ4rUUq0tW3iqBYRropC8jGzunfCpEE1wwyysnoNkTDljP8X-KOkcuvn0lH-6PHmuamvvl1UnOO5tSEyPD1CPL9IYptf-gtK6JLWFkDTbGLuYU7_qV0UfuUq8W1NULjcw&quot;],&quot;logger&quot;:&quot;console&quot;},&quot;level&quot;:&quot;log&quot;,&quot;message&quot;:&quot;eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOiIiLCJwZXJtIjoiUmVmcmVzaC1Ub2tlbiIsImlhdCI6MTY4OTIyNzgzMSwiZXhwIjoxNjk5NTk1ODMxLCJwcm0iOiI0M2RkYTlmZTBjMWVmZWRjMjVhOGUzNmRhNGUyZWJhMCIsImppZCI6IkBsb2NhbGhvc3QiLCJtaW0iOiIiLCJ1a2V5IjoiIiwiY2xpZW50IjoibWFya2V0cGxhY2Utd2ViIiwianRpIjoiZTdjODRhNmUtNjUwYS00MjFmLTgwMTMtMmZhZGMxYjYwZGY2In0.CWnsF_w1Bdi76N4YzFdrP7JCyD1DMam9QGIi49TENHSl4N0dd2qm8jNmvILYxfky6XSyaSjg0aPNVwooWDWI7qeY9zZF86ZAnyfGm1WA5Xp0pH95GmNJyzq9zDPomEWUPTt-0We2BWuQkp6LWecQh54VRGM5z8mpT0PLUHmSxx7BYbrRnAnr02VwStTBWvz6j_M9CBfW-JVTO8_KoOfXW-iO8LejWmeZlkjxrur12_-sVQibMp5Zqa5sHZ7HzbHGGmuNXg89NeWiW6tAbGGatvhPEIbG-ru25XYjn15-ZesMZ7SdkzpzO1Cb726icvUr2F2oHo_90_fp9eXyz0Spaw eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjg5MjI3ODMxLCJleHAiOjE2OTE4MTk4MzEsInBybSI6IjczMTc1ODljNDAxYTA3OTJhZWU0MDhhZWYzNWUwMWYwIiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJtYXJrZXRwbGFjZS13ZWIiLCJqdGkiOiIyMTczYmY3MS1jOTY1LTQ0NTQtODI4Mi02MGYwMzQwZDNlZDcifQ.kv1gTfEkzqttw6zt1CUy_cGi7wYRHI49c155rNBBP9fa7O-Aec0EJPMMJ_6DcrnT-sFF8_wQScT3IxHjizXbHPaNbytVcFNTW7mA6EJCcEIam-wfyJbPFWF89t9K-9v0XWGXSDYWAwp5Hp_JGZvn3xvHtNOfP3_XWZkKFl20pu_Pr__a8gCr3ykeLZrKJxXCkpqeeq1JOHV7cvyTQNw62yJ4rUUq0tW3iqBYRropC8jGzunfCpEE1wwyysnoNkTDljP8X-KOkcuvn0lH-6PHmuamvvl1UnOO5tSEyPD1CPL9IYptf-gtK6JLWFkDTbGLuYU7_qV0UfuUq8W1NULjcw&quot;},{&quot;timestamp&quot;:1689228730.95,&quot;category&quot;:&quot;console&quot;,&quot;data&quot;:{&quot;arguments&quot;:[{&quot;perm&quot;:&quot;&quot;,&quot;iat&quot;:1689227831,&quot;exp&quot;:1691819831,&quot;prm&quot;:&quot;7317589c401a0792aee408aef35e01f0&quot;,&quot;jid&quot;:&quot;@localhost&quot;,&quot;mim&quot;:&quot;&quot;,&quot;ukey&quot;:&quot;&quot;,&quot;client&quot;:&quot;marketplace-web&quot;,&quot;jti&quot;:&quot;2173bf71-c965-4454-8282-60f0340d3ed7&quot;},false],&quot;logger&quot;:&quot;console&quot;},&quot;level&quot;:&quot;log&quot;,&quot;message&quot;:&quot;[object Object] false&quot;}],&quot;request&quot;:{&quot;url&quot;:&quot;https://marketplace.dev.nxlvl.app/&quot;,&quot;headers&quot;:{&quot;User-Agent&quot;:&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36&quot;}}}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/4504926323277824/envelope/?sentry_key=2de207a5cb914c89a4097441301dbb57&amp;sentry_version=7&amp;sentry_client=sentry.javascript.nextjs%2F7.54.0</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://api.gleap.io/sessions/ping" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;time&quot;:1,&quot;events&quot;:[{&quot;name&quot;:&quot;sessionStarted&quot;,&quot;date&quot;:&quot;2023-07-13T06:12:11.546Z&quot;},{&quot;name&quot;:&quot;pageView&quot;,&quot;date&quot;:&quot;2023-07-13T06:12:11.546Z&quot;,&quot;data&quot;:{&quot;page&quot;:&quot;https://marketplace.dev.nxlvl.app/&quot;}}],&quot;opened&quot;:false}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_4}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">sessions/ping</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Gleap-Id" elementType="Header">
+                  <stringProp name="Header.name">Gleap-Id</stringProp>
+                  <stringProp name="Header.value">bd36d0df-528c-4cd8-8088-ab6fe87c0344</stringProp>
+                </elementProp>
+                <elementProp name="Gleap-Hash" elementType="Header">
+                  <stringProp name="Header.name">Gleap-Hash</stringProp>
+                  <stringProp name="Header.value">1c77a8e365c2dda5c4717d99fed2e79a5a0483d43c846ccb28b54bb36a550aa8</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Api-Token" elementType="Header">
+                  <stringProp name="Header.name">Api-Token</stringProp>
+                  <stringProp name="Header.value">lacoelUmsbKteU7sJHxPPUhKbLCphTOU</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://marketplace.dev.nxlvl.app/_next/static/css/5674832e1468d24d.css" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">_next/static/css/5674832e1468d24d.css</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="baggage" elementType="Header">
+                  <stringProp name="Header.name">baggage</stringProp>
+                  <stringProp name="Header.value">sentry-environment=develop,sentry-release=DxapHh_MrhLgEJUAlTOeG,sentry-transaction=%2Fdashboard,sentry-public_key=2de207a5cb914c89a4097441301dbb57,sentry-trace_id=ae6c5fbe448f4a37ba0b44aae1f95493,sentry-sample_rate=1</stringProp>
+                </elementProp>
+                <elementProp name="sentry-trace" elementType="Header">
+                  <stringProp name="Header.name">sentry-trace</stringProp>
+                  <stringProp name="Header.value">ae6c5fbe448f4a37ba0b44aae1f95493-9c73d9e041ddc989-1</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://data-tr-dev.azureedge.net/nftcategorycontainer/Sports.svg" enabled="false">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_5}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">nftcategorycontainer/Sports.svg</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://o733402.ingest.sentry.io/api/4504926323277824/envelope/?sentry_key=2de207a5cb914c89a4097441301dbb57&amp;sentry_version=7&amp;sentry_client=sentry.javascript.nextjs%2F7.54.0" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{}&#xd;
+{&quot;type&quot;:&quot;client_report&quot;}&#xd;
+{&quot;timestamp&quot;:1689228733.645,&quot;discarded_events&quot;:[{&quot;reason&quot;:&quot;event_processor&quot;,&quot;category&quot;:&quot;error&quot;,&quot;quantity&quot;:2}]}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/4504926323277824/envelope/?sentry_key=2de207a5cb914c89a4097441301dbb57&amp;sentry_version=7&amp;sentry_client=sentry.javascript.nextjs%2F7.54.0</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://o733402.ingest.sentry.io/api/4504926323277824/envelope/?sentry_key=2de207a5cb914c89a4097441301dbb57&amp;sentry_version=7&amp;sentry_client=sentry.javascript.nextjs%2F7.54.0" enabled="false">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="sentry_version" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">sentry_version</stringProp>
+                  <stringProp name="Argument.value">7</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="sentry_client" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">sentry_client</stringProp>
+                  <stringProp name="Argument.value">sentry.javascript.nextjs/7.54.0</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="sentry_key" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">sentry_key</stringProp>
+                  <stringProp name="Argument.value">2de207a5cb914c89a4097441301dbb57</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="q" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">q</stringProp>
+                  <stringProp name="Argument.value">75&quot;,&quot;op&quot;:&quot;resource.link&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;99565e482225dfcb&quot;,&quot;start_timestamp&quot;:1689228732.5098999,&quot;timestamp&quot;:1689228732.7958,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:2196,&quot;http.response_content_length&quot;:1896,&quot;http.decoded_response_content_length&quot;:1896,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/image?url=https://data-tr-dev.azureedge.net/nft-images-dev/70e89cc1-58be-4b72-a43e-6342dfb62161_thumbnail.webp</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="w" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">w</stringProp>
+                  <stringProp name="Argument.value">1920</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="{&quot;event_id&quot;:&quot;bb3facb42d7547e4948bebf5d955f31b&quot;,&quot;sent_at&quot;:&quot;2023-07-13T06:12:13.738Z&quot;,&quot;sdk&quot;:{&quot;name&quot;:&quot;sentry.javascript.nextjs&quot;,&quot;version&quot;:&quot;7.54.0&quot;},&quot;trace&quot;:{&quot;environment&quot;:&quot;develop&quot;,&quot;release&quot;:&quot;DxapHh_MrhLgEJUAlTOeG&quot;,&quot;transaction&quot;:&quot;/dashboard&quot;,&quot;public_key&quot;:&quot;2de207a5cb914c89a4097441301dbb57&quot;,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;,&quot;sample_rate&quot;:&quot;1&quot;}}&#xa;{&quot;type&quot;:&quot;transaction&quot;}&#xa;{&quot;contexts&quot;:{&quot;trace&quot;:{&quot;op&quot;:&quot;pageload&quot;,&quot;span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;status&quot;:&quot;internal_error&quot;,&quot;tags&quot;:{&quot;routing.instrumentation&quot;:&quot;next-router&quot;,&quot;visibilitychange&quot;:&quot;document.hidden&quot;,&quot;effectiveConnectionType&quot;:&quot;4g&quot;,&quot;deviceMemory&quot;:&quot;8 GB&quot;,&quot;hardwareConcurrency&quot;:&quot;8&quot;,&quot;lcp.size&quot;:4968,&quot;cls.source.1&quot;:&quot;span.text-blue &gt; &quot;},&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;}},&quot;spans&quot;:[{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;8e3e92f32b00d599&quot;,&quot;start_timestamp&quot;:1689228728.2892,&quot;timestamp&quot;:1689228728.3452,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;868aff72e257d83e&quot;,&quot;start_timestamp&quot;:1689228729.8548,&quot;timestamp&quot;:1689228729.9868,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;url&quot;:&quot;https://routers.dev.nxlvl.app&quot;,&quot;type&quot;:&quot;fetch&quot;,&quot;http.method&quot;:&quot;POST&quot;},&quot;description&quot;:&quot;POST https://routers.dev.nxlvl.app&quot;,&quot;op&quot;:&quot;http.client&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;872590e81af843fa&quot;,&quot;start_timestamp&quot;:1689228730.5379,&quot;status&quot;:&quot;ok&quot;,&quot;tags&quot;:{&quot;http.status_code&quot;:&quot;200&quot;},&quot;timestamp&quot;:1689228732.3895,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;url&quot;:&quot;https://routers.dev.nxlvl.app&quot;,&quot;type&quot;:&quot;fetch&quot;,&quot;http.method&quot;:&quot;POST&quot;},&quot;description&quot;:&quot;POST https://routers.dev.nxlvl.app&quot;,&quot;op&quot;:&quot;http.client&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;98ffe273c8eb837c&quot;,&quot;start_timestamp&quot;:1689228730.5397,&quot;status&quot;:&quot;ok&quot;,&quot;tags&quot;:{&quot;http.status_code&quot;:&quot;200&quot;},&quot;timestamp&quot;:1689228732.5291,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;bbcf47f2e39257b0&quot;,&quot;start_timestamp&quot;:1689228730.1791,&quot;timestamp&quot;:1689228730.5561001,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;992987798df2abec&quot;,&quot;start_timestamp&quot;:1689228730.5565,&quot;timestamp&quot;:1689228730.6495,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;9e9088d605f7ca18&quot;,&quot;start_timestamp&quot;:1689228730.6933,&quot;timestamp&quot;:1689228730.8193,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;url&quot;:&quot;https://routers.dev.nxlvl.app&quot;,&quot;type&quot;:&quot;fetch&quot;,&quot;http.method&quot;:&quot;POST&quot;},&quot;description&quot;:&quot;POST https://routers.dev.nxlvl.app&quot;,&quot;op&quot;:&quot;http.client&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;96a88e51aa678f26&quot;,&quot;start_timestamp&quot;:1689228730.9543998,&quot;status&quot;:&quot;ok&quot;,&quot;tags&quot;:{&quot;http.status_code&quot;:&quot;200&quot;},&quot;timestamp&quot;:1689228732.6741,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;url&quot;:&quot;https://routers.dev.nxlvl.app&quot;,&quot;type&quot;:&quot;fetch&quot;,&quot;http.method&quot;:&quot;POST&quot;},&quot;description&quot;:&quot;POST https://routers.dev.nxlvl.app&quot;,&quot;op&quot;:&quot;http.client&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;a0084a0c53e85f62&quot;,&quot;start_timestamp&quot;:1689228730.9559,&quot;status&quot;:&quot;ok&quot;,&quot;tags&quot;:{&quot;http.status_code&quot;:&quot;200&quot;},&quot;timestamp&quot;:1689228732.6742997,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;type&quot;:&quot;xhr&quot;,&quot;http.method&quot;:&quot;POST&quot;,&quot;url&quot;:&quot;https://api.gleap.io/sessions&quot;},&quot;description&quot;:&quot;POST https://api.gleap.io/sessions&quot;,&quot;op&quot;:&quot;http.client&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;abed948c721644e6&quot;,&quot;start_timestamp&quot;:1689228730.9875,&quot;status&quot;:&quot;ok&quot;,&quot;tags&quot;:{&quot;http.status_code&quot;:&quot;201&quot;},&quot;timestamp&quot;:1689228731.5454,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;type&quot;:&quot;xhr&quot;,&quot;http.method&quot;:&quot;GET&quot;,&quot;url&quot;:&quot;https://api.gleap.io/config/lacoelUmsbKteU7sJHxPPUhKbLCphTOU&quot;},&quot;description&quot;:&quot;GET https://api.gleap.io/config/lacoelUmsbKteU7sJHxPPUhKbLCphTOU&quot;,&quot;op&quot;:&quot;http.client&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;8a98073b0e4f55b5&quot;,&quot;start_timestamp&quot;:1689228731.0161,&quot;status&quot;:&quot;ok&quot;,&quot;tags&quot;:{&quot;http.status_code&quot;:&quot;200&quot;},&quot;timestamp&quot;:1689228731.7787998,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;ad6e7ee8245418bb&quot;,&quot;start_timestamp&quot;:1689228731.037,&quot;timestamp&quot;:1689228731.095,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;889e689d86b9e5ae&quot;,&quot;start_timestamp&quot;:1689228731.104,&quot;timestamp&quot;:1689228731.1850002,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;type&quot;:&quot;xhr&quot;,&quot;http.method&quot;:&quot;POST&quot;,&quot;url&quot;:&quot;https://api.gleap.io/sessions/ping&quot;},&quot;description&quot;:&quot;POST https://api.gleap.io/sessions/ping&quot;,&quot;op&quot;:&quot;http.client&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;8cfb53cbf0bb80d6&quot;,&quot;start_timestamp&quot;:1689228731.547,&quot;status&quot;:&quot;ok&quot;,&quot;tags&quot;:{&quot;http.status_code&quot;:&quot;200&quot;},&quot;timestamp&quot;:1689228732.0426,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;b11b8b9863aa893b&quot;,&quot;start_timestamp&quot;:1689228732.4338999,&quot;timestamp&quot;:1689228732.5279,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;url&quot;:&quot;/_next/static/css/5674832e1468d24d.css&quot;,&quot;type&quot;:&quot;fetch&quot;,&quot;http.method&quot;:&quot;GET&quot;},&quot;description&quot;:&quot;GET /_next/static/css/5674832e1468d24d.css&quot;,&quot;op&quot;:&quot;http.client&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;9c73d9e041ddc989&quot;,&quot;start_timestamp&quot;:1689228732.5437,&quot;status&quot;:&quot;ok&quot;,&quot;tags&quot;:{&quot;http.status_code&quot;:&quot;200&quot;},&quot;timestamp&quot;:1689228733.0557997,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;81b65afcf4beae58&quot;,&quot;start_timestamp&quot;:1689228732.5493999,&quot;timestamp&quot;:1689228732.6453998,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;url&quot;:&quot;https://data-tr-dev.azureedge.net/nftcategorycontainer/Sports.svg&quot;,&quot;type&quot;:&quot;fetch&quot;,&quot;http.method&quot;:&quot;GET&quot;,&quot;http.response_content_length&quot;:776},&quot;description&quot;:&quot;GET https://data-tr-dev.azureedge.net/nftcategorycontainer/Sports.svg&quot;,&quot;op&quot;:&quot;http.client&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;94ff3ddca00014e8&quot;,&quot;start_timestamp&quot;:1689228732.7082999,&quot;status&quot;:&quot;ok&quot;,&quot;tags&quot;:{&quot;http.status_code&quot;:&quot;200&quot;},&quot;timestamp&quot;:1689228732.9722,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;a9f54914c9199184&quot;,&quot;start_timestamp&quot;:1689228732.8141,&quot;timestamp&quot;:1689228732.8781,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;domContentLoadedEvent&quot;,&quot;op&quot;:&quot;browser&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;93503df2b497cac7&quot;,&quot;start_timestamp&quot;:1689228730.8074,&quot;timestamp&quot;:1689228730.8077,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;loadEvent&quot;,&quot;op&quot;:&quot;browser&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;b99e69512965da18&quot;,&quot;start_timestamp&quot;:1689228731.2389,&quot;timestamp&quot;:1689228731.2577,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;connect&quot;,&quot;op&quot;:&quot;browser&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;b9dd30da699c8319&quot;,&quot;start_timestamp&quot;:1689228727.2121,&quot;timestamp&quot;:1689228727.7642,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;TLS/SSL&quot;,&quot;op&quot;:&quot;browser&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;a9296b173be079f7&quot;,&quot;start_timestamp&quot;:1689228727.2124999,&quot;timestamp&quot;:1689228727.7642,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;cache&quot;,&quot;op&quot;:&quot;browser&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;9a5007c256c49384&quot;,&quot;start_timestamp&quot;:1689228725.804,&quot;timestamp&quot;:1689228727.1873999,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;DNS&quot;,&quot;op&quot;:&quot;browser&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;9540e096a9b17d6d&quot;,&quot;start_timestamp&quot;:1689228727.1873999,&quot;timestamp&quot;:1689228727.2121,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;request&quot;,&quot;op&quot;:&quot;browser&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;923880ff21b99549&quot;,&quot;start_timestamp&quot;:1689228727.7642,&quot;timestamp&quot;:1689228728.2786999,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;response&quot;,&quot;op&quot;:&quot;browser&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;8d3eab8e3f3a9a5b&quot;,&quot;start_timestamp&quot;:1689228728.0244,&quot;timestamp&quot;:1689228728.2786999,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Next.js-before-hydration&quot;,&quot;op&quot;:&quot;measure&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;ab315a845702155c&quot;,&quot;start_timestamp&quot;:1689228725.8,&quot;timestamp&quot;:1689228730.2294,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:1827,&quot;http.response_content_length&quot;:1527,&quot;http.decoded_response_content_length&quot;:7166,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/css/9104b445f3438ba0.css&quot;,&quot;op&quot;:&quot;resource.link&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;93e5ede696e27543&quot;,&quot;start_timestamp&quot;:1689228728.0374,&quot;timestamp&quot;:1689228728.5376,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:4359,&quot;http.response_content_length&quot;:4059,&quot;http.decoded_response_content_length&quot;:8651,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/webpack-5159f279b22f86db.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;a99e08d22a27eedc&quot;,&quot;start_timestamp&quot;:1689228728.0377998,&quot;timestamp&quot;:1689228728.8,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:36132,&quot;http.response_content_length&quot;:35832,&quot;http.decoded_response_content_length&quot;:120654,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/main-0aec5a71f8114457.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;a76346b1a8566fb1&quot;,&quot;start_timestamp&quot;:1689228728.0379999,&quot;timestamp&quot;:1689228729.3202,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:42470,&quot;http.response_content_length&quot;:42170,&quot;http.decoded_response_content_length&quot;:130002,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/framework-79bce4a3a540b080.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;bc9c8b16de1b6a66&quot;,&quot;start_timestamp&quot;:1689228728.0379999,&quot;timestamp&quot;:1689228729.4137998,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:17341,&quot;http.response_content_length&quot;:17041,&quot;http.decoded_response_content_length&quot;:50049,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/2922-e45c8d0f51fc34c1.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;807875828d508686&quot;,&quot;start_timestamp&quot;:1689228728.0381,&quot;timestamp&quot;:1689228729.1418,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:311358,&quot;http.response_content_length&quot;:311058,&quot;http.decoded_response_content_length&quot;:1085344,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/pages/_app-8ca5e0048c50e7ee.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;ae760ec6c10092b8&quot;,&quot;start_timestamp&quot;:1689228728.0381,&quot;timestamp&quot;:1689228729.8470001,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:59264,&quot;http.response_content_length&quot;:58964,&quot;http.decoded_response_content_length&quot;:211070,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/3627-1ccbc2a3afcdd8e6.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;90b0fc0a7b2cfcf8&quot;,&quot;start_timestamp&quot;:1689228728.0382,&quot;timestamp&quot;:1689228729.7452998,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:5712,&quot;http.response_content_length&quot;:5412,&quot;http.decoded_response_content_length&quot;:14549,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/781-8d927d52996829de.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;9e84185517db3e2d&quot;,&quot;start_timestamp&quot;:1689228728.0383,&quot;timestamp&quot;:1689228729.3778,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:3130,&quot;http.response_content_length&quot;:2830,&quot;http.decoded_response_content_length&quot;:7584,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/2955-44cc8982b13fb42d.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;85a4432f8fc225b3&quot;,&quot;start_timestamp&quot;:1689228728.0384,&quot;timestamp&quot;:1689228729.4045,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:19937,&quot;http.response_content_length&quot;:19637,&quot;http.decoded_response_content_length&quot;:70209,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/7828-f55324b0abfa16a4.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;99ddd4cdd335490f&quot;,&quot;start_timestamp&quot;:1689228728.0384,&quot;timestamp&quot;:1689228729.5857,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:5607,&quot;http.response_content_length&quot;:5307,&quot;http.decoded_response_content_length&quot;:15226,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/7333-eb417f889a822809.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;84c1313fd50d26a3&quot;,&quot;start_timestamp&quot;:1689228728.0385,&quot;timestamp&quot;:1689228729.6604002,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:4303,&quot;http.response_content_length&quot;:4003,&quot;http.decoded_response_content_length&quot;:9669,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/5675-3667e1573b1c63fd.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;88279bd844912ce8&quot;,&quot;start_timestamp&quot;:1689228728.0385,&quot;timestamp&quot;:1689228729.6803,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:8633,&quot;http.response_content_length&quot;:8333,&quot;http.decoded_response_content_length&quot;:22971,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/3558-611e5ab85140c30d.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;b4c2647069f4de08&quot;,&quot;start_timestamp&quot;:1689228728.0386,&quot;timestamp&quot;:1689228729.6886,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:4870,&quot;http.response_content_length&quot;:4570,&quot;http.decoded_response_content_length&quot;:13463,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/4164-5d9e125bf77accd7.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;9783b185ea3aca9c&quot;,&quot;start_timestamp&quot;:1689228728.0386999,&quot;timestamp&quot;:1689228729.8576,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:4579,&quot;http.response_content_length&quot;:4279,&quot;http.decoded_response_content_length&quot;:10948,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/8452-25e5b7f98e51b319.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;ad10932ed6661b72&quot;,&quot;start_timestamp&quot;:1689228728.0388,&quot;timestamp&quot;:1689228729.9201,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:13616,&quot;http.response_content_length&quot;:13316,&quot;http.decoded_response_content_length&quot;:54131,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/6430-f083026438cdcd46.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;97ab2d04f910e7c4&quot;,&quot;start_timestamp&quot;:1689228728.0388,&quot;timestamp&quot;:1689228730.0302,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:3369,&quot;http.response_content_length&quot;:3069,&quot;http.decoded_response_content_length&quot;:15504,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/2168-b2befb4e137e127b.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;9e03b896fb917044&quot;,&quot;start_timestamp&quot;:1689228728.0388,&quot;timestamp&quot;:1689228730.0306,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:2236,&quot;http.response_content_length&quot;:1936,&quot;http.decoded_response_content_length&quot;:7778,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/643-ace46cc9e2a64e50.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;80e7984421dcec99&quot;,&quot;start_timestamp&quot;:1689228728.0389,&quot;timestamp&quot;:1689228730.0291998,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:7287,&quot;http.response_content_length&quot;:6987,&quot;http.decoded_response_content_length&quot;:28353,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/2750-38d8db90964f241b.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;8947759e7fae183e&quot;,&quot;start_timestamp&quot;:1689228728.0389,&quot;timestamp&quot;:1689228730.102,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:5996,&quot;http.response_content_length&quot;:5696,&quot;http.decoded_response_content_length&quot;:20136,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/9138-2720392eea02af0f.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;bb45bcdd6a36d7d3&quot;,&quot;start_timestamp&quot;:1689228728.0389,&quot;timestamp&quot;:1689228730.1164,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:4327,&quot;http.response_content_length&quot;:4027,&quot;http.decoded_response_content_length&quot;:12152,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/pages/dashboard-6f33f6cfc9a5704f.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;86b71fac01d79bfc&quot;,&quot;start_timestamp&quot;:1689228728.039,&quot;timestamp&quot;:1689228730.177,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:2472,&quot;http.response_content_length&quot;:2172,&quot;http.decoded_response_content_length&quot;:6624,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/DxapHh_MrhLgEJUAlTOeG/_buildManifest.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;9f6036bd7857ccfc&quot;,&quot;start_timestamp&quot;:1689228728.039,&quot;timestamp&quot;:1689228730.5678,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:377,&quot;http.response_content_length&quot;:77,&quot;http.decoded_response_content_length&quot;:77,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/DxapHh_MrhLgEJUAlTOeG/_ssgManifest.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;8276cba557d5db3a&quot;,&quot;start_timestamp&quot;:1689228728.0391,&quot;timestamp&quot;:1689228730.296,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:17308,&quot;http.response_content_length&quot;:17008,&quot;http.decoded_response_content_length&quot;:17008,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/fonts/nxlvl.woff2?t" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">{&quot;event_id&quot;:&quot;bb3facb42d7547e4948bebf5d955f31b&quot;,&quot;sent_at&quot;:&quot;2023-07-13T06:12:13.738Z&quot;,&quot;sdk&quot;:{&quot;name&quot;:&quot;sentry.javascript.nextjs&quot;,&quot;version&quot;:&quot;7.54.0&quot;},&quot;trace&quot;:{&quot;environment&quot;:&quot;develop&quot;,&quot;release&quot;:&quot;DxapHh_MrhLgEJUAlTOeG&quot;,&quot;transaction&quot;:&quot;/dashboard&quot;,&quot;public_key&quot;:&quot;2de207a5cb914c89a4097441301dbb57&quot;,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;,&quot;sample_rate&quot;:&quot;1&quot;}}
+{&quot;type&quot;:&quot;transaction&quot;}
+{&quot;contexts&quot;:{&quot;trace&quot;:{&quot;op&quot;:&quot;pageload&quot;,&quot;span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;status&quot;:&quot;internal_error&quot;,&quot;tags&quot;:{&quot;routing.instrumentation&quot;:&quot;next-router&quot;,&quot;visibilitychange&quot;:&quot;document.hidden&quot;,&quot;effectiveConnectionType&quot;:&quot;4g&quot;,&quot;deviceMemory&quot;:&quot;8 GB&quot;,&quot;hardwareConcurrency&quot;:&quot;8&quot;,&quot;lcp.size&quot;:4968,&quot;cls.source.1&quot;:&quot;span.text-blue &gt; &quot;},&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;}},&quot;spans&quot;:[{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;8e3e92f32b00d599&quot;,&quot;start_timestamp&quot;:1689228728.2892,&quot;timestamp&quot;:1689228728.3452,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;868aff72e257d83e&quot;,&quot;start_timestamp&quot;:1689228729.8548,&quot;timestamp&quot;:1689228729.9868,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;url&quot;:&quot;https://routers.dev.nxlvl.app&quot;,&quot;type&quot;:&quot;fetch&quot;,&quot;http.method&quot;:&quot;POST&quot;},&quot;description&quot;:&quot;POST https://routers.dev.nxlvl.app&quot;,&quot;op&quot;:&quot;http.client&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;872590e81af843fa&quot;,&quot;start_timestamp&quot;:1689228730.5379,&quot;status&quot;:&quot;ok&quot;,&quot;tags&quot;:{&quot;http.status_code&quot;:&quot;200&quot;},&quot;timestamp&quot;:1689228732.3895,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;url&quot;:&quot;https://routers.dev.nxlvl.app&quot;,&quot;type&quot;:&quot;fetch&quot;,&quot;http.method&quot;:&quot;POST&quot;},&quot;description&quot;:&quot;POST https://routers.dev.nxlvl.app&quot;,&quot;op&quot;:&quot;http.client&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;98ffe273c8eb837c&quot;,&quot;start_timestamp&quot;:1689228730.5397,&quot;status&quot;:&quot;ok&quot;,&quot;tags&quot;:{&quot;http.status_code&quot;:&quot;200&quot;},&quot;timestamp&quot;:1689228732.5291,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;bbcf47f2e39257b0&quot;,&quot;start_timestamp&quot;:1689228730.1791,&quot;timestamp&quot;:1689228730.5561001,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;992987798df2abec&quot;,&quot;start_timestamp&quot;:1689228730.5565,&quot;timestamp&quot;:1689228730.6495,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;9e9088d605f7ca18&quot;,&quot;start_timestamp&quot;:1689228730.6933,&quot;timestamp&quot;:1689228730.8193,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;url&quot;:&quot;https://routers.dev.nxlvl.app&quot;,&quot;type&quot;:&quot;fetch&quot;,&quot;http.method&quot;:&quot;POST&quot;},&quot;description&quot;:&quot;POST https://routers.dev.nxlvl.app&quot;,&quot;op&quot;:&quot;http.client&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;96a88e51aa678f26&quot;,&quot;start_timestamp&quot;:1689228730.9543998,&quot;status&quot;:&quot;ok&quot;,&quot;tags&quot;:{&quot;http.status_code&quot;:&quot;200&quot;},&quot;timestamp&quot;:1689228732.6741,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;url&quot;:&quot;https://routers.dev.nxlvl.app&quot;,&quot;type&quot;:&quot;fetch&quot;,&quot;http.method&quot;:&quot;POST&quot;},&quot;description&quot;:&quot;POST https://routers.dev.nxlvl.app&quot;,&quot;op&quot;:&quot;http.client&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;a0084a0c53e85f62&quot;,&quot;start_timestamp&quot;:1689228730.9559,&quot;status&quot;:&quot;ok&quot;,&quot;tags&quot;:{&quot;http.status_code&quot;:&quot;200&quot;},&quot;timestamp&quot;:1689228732.6742997,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;type&quot;:&quot;xhr&quot;,&quot;http.method&quot;:&quot;POST&quot;,&quot;url&quot;:&quot;https://api.gleap.io/sessions&quot;},&quot;description&quot;:&quot;POST https://api.gleap.io/sessions&quot;,&quot;op&quot;:&quot;http.client&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;abed948c721644e6&quot;,&quot;start_timestamp&quot;:1689228730.9875,&quot;status&quot;:&quot;ok&quot;,&quot;tags&quot;:{&quot;http.status_code&quot;:&quot;201&quot;},&quot;timestamp&quot;:1689228731.5454,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;type&quot;:&quot;xhr&quot;,&quot;http.method&quot;:&quot;GET&quot;,&quot;url&quot;:&quot;https://api.gleap.io/config/lacoelUmsbKteU7sJHxPPUhKbLCphTOU&quot;},&quot;description&quot;:&quot;GET https://api.gleap.io/config/lacoelUmsbKteU7sJHxPPUhKbLCphTOU&quot;,&quot;op&quot;:&quot;http.client&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;8a98073b0e4f55b5&quot;,&quot;start_timestamp&quot;:1689228731.0161,&quot;status&quot;:&quot;ok&quot;,&quot;tags&quot;:{&quot;http.status_code&quot;:&quot;200&quot;},&quot;timestamp&quot;:1689228731.7787998,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;ad6e7ee8245418bb&quot;,&quot;start_timestamp&quot;:1689228731.037,&quot;timestamp&quot;:1689228731.095,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;889e689d86b9e5ae&quot;,&quot;start_timestamp&quot;:1689228731.104,&quot;timestamp&quot;:1689228731.1850002,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;type&quot;:&quot;xhr&quot;,&quot;http.method&quot;:&quot;POST&quot;,&quot;url&quot;:&quot;https://api.gleap.io/sessions/ping&quot;},&quot;description&quot;:&quot;POST https://api.gleap.io/sessions/ping&quot;,&quot;op&quot;:&quot;http.client&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;8cfb53cbf0bb80d6&quot;,&quot;start_timestamp&quot;:1689228731.547,&quot;status&quot;:&quot;ok&quot;,&quot;tags&quot;:{&quot;http.status_code&quot;:&quot;200&quot;},&quot;timestamp&quot;:1689228732.0426,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;b11b8b9863aa893b&quot;,&quot;start_timestamp&quot;:1689228732.4338999,&quot;timestamp&quot;:1689228732.5279,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;url&quot;:&quot;/_next/static/css/5674832e1468d24d.css&quot;,&quot;type&quot;:&quot;fetch&quot;,&quot;http.method&quot;:&quot;GET&quot;},&quot;description&quot;:&quot;GET /_next/static/css/5674832e1468d24d.css&quot;,&quot;op&quot;:&quot;http.client&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;9c73d9e041ddc989&quot;,&quot;start_timestamp&quot;:1689228732.5437,&quot;status&quot;:&quot;ok&quot;,&quot;tags&quot;:{&quot;http.status_code&quot;:&quot;200&quot;},&quot;timestamp&quot;:1689228733.0557997,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;81b65afcf4beae58&quot;,&quot;start_timestamp&quot;:1689228732.5493999,&quot;timestamp&quot;:1689228732.6453998,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;url&quot;:&quot;https://data-tr-dev.azureedge.net/nftcategorycontainer/Sports.svg&quot;,&quot;type&quot;:&quot;fetch&quot;,&quot;http.method&quot;:&quot;GET&quot;,&quot;http.response_content_length&quot;:776},&quot;description&quot;:&quot;GET https://data-tr-dev.azureedge.net/nftcategorycontainer/Sports.svg&quot;,&quot;op&quot;:&quot;http.client&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;94ff3ddca00014e8&quot;,&quot;start_timestamp&quot;:1689228732.7082999,&quot;status&quot;:&quot;ok&quot;,&quot;tags&quot;:{&quot;http.status_code&quot;:&quot;200&quot;},&quot;timestamp&quot;:1689228732.9722,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Main UI thread blocked&quot;,&quot;op&quot;:&quot;ui.long-task&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;a9f54914c9199184&quot;,&quot;start_timestamp&quot;:1689228732.8141,&quot;timestamp&quot;:1689228732.8781,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;domContentLoadedEvent&quot;,&quot;op&quot;:&quot;browser&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;93503df2b497cac7&quot;,&quot;start_timestamp&quot;:1689228730.8074,&quot;timestamp&quot;:1689228730.8077,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;loadEvent&quot;,&quot;op&quot;:&quot;browser&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;b99e69512965da18&quot;,&quot;start_timestamp&quot;:1689228731.2389,&quot;timestamp&quot;:1689228731.2577,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;connect&quot;,&quot;op&quot;:&quot;browser&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;b9dd30da699c8319&quot;,&quot;start_timestamp&quot;:1689228727.2121,&quot;timestamp&quot;:1689228727.7642,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;TLS/SSL&quot;,&quot;op&quot;:&quot;browser&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;a9296b173be079f7&quot;,&quot;start_timestamp&quot;:1689228727.2124999,&quot;timestamp&quot;:1689228727.7642,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;cache&quot;,&quot;op&quot;:&quot;browser&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;9a5007c256c49384&quot;,&quot;start_timestamp&quot;:1689228725.804,&quot;timestamp&quot;:1689228727.1873999,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;DNS&quot;,&quot;op&quot;:&quot;browser&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;9540e096a9b17d6d&quot;,&quot;start_timestamp&quot;:1689228727.1873999,&quot;timestamp&quot;:1689228727.2121,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;request&quot;,&quot;op&quot;:&quot;browser&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;923880ff21b99549&quot;,&quot;start_timestamp&quot;:1689228727.7642,&quot;timestamp&quot;:1689228728.2786999,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;response&quot;,&quot;op&quot;:&quot;browser&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;8d3eab8e3f3a9a5b&quot;,&quot;start_timestamp&quot;:1689228728.0244,&quot;timestamp&quot;:1689228728.2786999,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Next.js-before-hydration&quot;,&quot;op&quot;:&quot;measure&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;ab315a845702155c&quot;,&quot;start_timestamp&quot;:1689228725.8,&quot;timestamp&quot;:1689228730.2294,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:1827,&quot;http.response_content_length&quot;:1527,&quot;http.decoded_response_content_length&quot;:7166,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/css/9104b445f3438ba0.css&quot;,&quot;op&quot;:&quot;resource.link&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;93e5ede696e27543&quot;,&quot;start_timestamp&quot;:1689228728.0374,&quot;timestamp&quot;:1689228728.5376,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:4359,&quot;http.response_content_length&quot;:4059,&quot;http.decoded_response_content_length&quot;:8651,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/webpack-5159f279b22f86db.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;a99e08d22a27eedc&quot;,&quot;start_timestamp&quot;:1689228728.0377998,&quot;timestamp&quot;:1689228728.8,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:36132,&quot;http.response_content_length&quot;:35832,&quot;http.decoded_response_content_length&quot;:120654,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/main-0aec5a71f8114457.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;a76346b1a8566fb1&quot;,&quot;start_timestamp&quot;:1689228728.0379999,&quot;timestamp&quot;:1689228729.3202,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:42470,&quot;http.response_content_length&quot;:42170,&quot;http.decoded_response_content_length&quot;:130002,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/framework-79bce4a3a540b080.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;bc9c8b16de1b6a66&quot;,&quot;start_timestamp&quot;:1689228728.0379999,&quot;timestamp&quot;:1689228729.4137998,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:17341,&quot;http.response_content_length&quot;:17041,&quot;http.decoded_response_content_length&quot;:50049,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/2922-e45c8d0f51fc34c1.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;807875828d508686&quot;,&quot;start_timestamp&quot;:1689228728.0381,&quot;timestamp&quot;:1689228729.1418,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:311358,&quot;http.response_content_length&quot;:311058,&quot;http.decoded_response_content_length&quot;:1085344,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/pages/_app-8ca5e0048c50e7ee.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;ae760ec6c10092b8&quot;,&quot;start_timestamp&quot;:1689228728.0381,&quot;timestamp&quot;:1689228729.8470001,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:59264,&quot;http.response_content_length&quot;:58964,&quot;http.decoded_response_content_length&quot;:211070,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/3627-1ccbc2a3afcdd8e6.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;90b0fc0a7b2cfcf8&quot;,&quot;start_timestamp&quot;:1689228728.0382,&quot;timestamp&quot;:1689228729.7452998,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:5712,&quot;http.response_content_length&quot;:5412,&quot;http.decoded_response_content_length&quot;:14549,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/781-8d927d52996829de.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;9e84185517db3e2d&quot;,&quot;start_timestamp&quot;:1689228728.0383,&quot;timestamp&quot;:1689228729.3778,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:3130,&quot;http.response_content_length&quot;:2830,&quot;http.decoded_response_content_length&quot;:7584,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/2955-44cc8982b13fb42d.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;85a4432f8fc225b3&quot;,&quot;start_timestamp&quot;:1689228728.0384,&quot;timestamp&quot;:1689228729.4045,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:19937,&quot;http.response_content_length&quot;:19637,&quot;http.decoded_response_content_length&quot;:70209,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/7828-f55324b0abfa16a4.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;99ddd4cdd335490f&quot;,&quot;start_timestamp&quot;:1689228728.0384,&quot;timestamp&quot;:1689228729.5857,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:5607,&quot;http.response_content_length&quot;:5307,&quot;http.decoded_response_content_length&quot;:15226,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/7333-eb417f889a822809.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;84c1313fd50d26a3&quot;,&quot;start_timestamp&quot;:1689228728.0385,&quot;timestamp&quot;:1689228729.6604002,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:4303,&quot;http.response_content_length&quot;:4003,&quot;http.decoded_response_content_length&quot;:9669,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/5675-3667e1573b1c63fd.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;88279bd844912ce8&quot;,&quot;start_timestamp&quot;:1689228728.0385,&quot;timestamp&quot;:1689228729.6803,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:8633,&quot;http.response_content_length&quot;:8333,&quot;http.decoded_response_content_length&quot;:22971,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/3558-611e5ab85140c30d.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;b4c2647069f4de08&quot;,&quot;start_timestamp&quot;:1689228728.0386,&quot;timestamp&quot;:1689228729.6886,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:4870,&quot;http.response_content_length&quot;:4570,&quot;http.decoded_response_content_length&quot;:13463,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/4164-5d9e125bf77accd7.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;9783b185ea3aca9c&quot;,&quot;start_timestamp&quot;:1689228728.0386999,&quot;timestamp&quot;:1689228729.8576,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:4579,&quot;http.response_content_length&quot;:4279,&quot;http.decoded_response_content_length&quot;:10948,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/8452-25e5b7f98e51b319.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;ad10932ed6661b72&quot;,&quot;start_timestamp&quot;:1689228728.0388,&quot;timestamp&quot;:1689228729.9201,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:13616,&quot;http.response_content_length&quot;:13316,&quot;http.decoded_response_content_length&quot;:54131,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/6430-f083026438cdcd46.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;97ab2d04f910e7c4&quot;,&quot;start_timestamp&quot;:1689228728.0388,&quot;timestamp&quot;:1689228730.0302,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:3369,&quot;http.response_content_length&quot;:3069,&quot;http.decoded_response_content_length&quot;:15504,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/2168-b2befb4e137e127b.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;9e03b896fb917044&quot;,&quot;start_timestamp&quot;:1689228728.0388,&quot;timestamp&quot;:1689228730.0306,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:2236,&quot;http.response_content_length&quot;:1936,&quot;http.decoded_response_content_length&quot;:7778,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/643-ace46cc9e2a64e50.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;80e7984421dcec99&quot;,&quot;start_timestamp&quot;:1689228728.0389,&quot;timestamp&quot;:1689228730.0291998,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:7287,&quot;http.response_content_length&quot;:6987,&quot;http.decoded_response_content_length&quot;:28353,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/2750-38d8db90964f241b.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;8947759e7fae183e&quot;,&quot;start_timestamp&quot;:1689228728.0389,&quot;timestamp&quot;:1689228730.102,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:5996,&quot;http.response_content_length&quot;:5696,&quot;http.decoded_response_content_length&quot;:20136,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/9138-2720392eea02af0f.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;bb45bcdd6a36d7d3&quot;,&quot;start_timestamp&quot;:1689228728.0389,&quot;timestamp&quot;:1689228730.1164,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:4327,&quot;http.response_content_length&quot;:4027,&quot;http.decoded_response_content_length&quot;:12152,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/pages/dashboard-6f33f6cfc9a5704f.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;86b71fac01d79bfc&quot;,&quot;start_timestamp&quot;:1689228728.039,&quot;timestamp&quot;:1689228730.177,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:2472,&quot;http.response_content_length&quot;:2172,&quot;http.decoded_response_content_length&quot;:6624,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/DxapHh_MrhLgEJUAlTOeG/_buildManifest.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;9f6036bd7857ccfc&quot;,&quot;start_timestamp&quot;:1689228728.039,&quot;timestamp&quot;:1689228730.5678,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:377,&quot;http.response_content_length&quot;:77,&quot;http.decoded_response_content_length&quot;:77,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/DxapHh_MrhLgEJUAlTOeG/_ssgManifest.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;8276cba557d5db3a&quot;,&quot;start_timestamp&quot;:1689228728.0391,&quot;timestamp&quot;:1689228730.296,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:17308,&quot;http.response_content_length&quot;:17008,&quot;http.decoded_response_content_length&quot;:17008,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/fonts/nxlvl.woff2?t</stringProp>
+                  <stringProp name="Argument.value">1688986436237&quot;,&quot;op&quot;:&quot;resource.css&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;bd778458e1af627a&quot;,&quot;start_timestamp&quot;:1689228728.5444,&quot;timestamp&quot;:1689228729.1188,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:8048,&quot;http.response_content_length&quot;:7748,&quot;http.decoded_response_content_length&quot;:7748,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/fonts/poppins-latin-medium.woff2&quot;,&quot;op&quot;:&quot;resource.css&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;84bc5cfef174bc3f&quot;,&quot;start_timestamp&quot;:1689228728.5449998,&quot;timestamp&quot;:1689228728.8818,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:8184,&quot;http.response_content_length&quot;:7884,&quot;http.decoded_response_content_length&quot;:7884,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/fonts/poppins-latin-regular.woff2&quot;,&quot;op&quot;:&quot;resource.css&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;a83812a383b0f777&quot;,&quot;start_timestamp&quot;:1689228728.5451999,&quot;timestamp&quot;:1689228728.8763998,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;first-paint&quot;,&quot;op&quot;:&quot;paint&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;9d57361db3d93040&quot;,&quot;start_timestamp&quot;:1689228728.7129,&quot;timestamp&quot;:1689228728.7129,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;first-contentful-paint&quot;,&quot;op&quot;:&quot;paint&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;90fd434d8a1abb1b&quot;,&quot;start_timestamp&quot;:1689228728.7129,&quot;timestamp&quot;:1689228728.7129,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;sentry-tracing-init&quot;,&quot;op&quot;:&quot;mark&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;bb2a4df463b3cd4a&quot;,&quot;start_timestamp&quot;:1689228729.8602,&quot;timestamp&quot;:1689228729.8602,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;Next.js-hydration&quot;,&quot;op&quot;:&quot;measure&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;a932188fdb346c35&quot;,&quot;start_timestamp&quot;:1689228730.2294,&quot;timestamp&quot;:1689228730.419,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:3957,&quot;http.response_content_length&quot;:3657,&quot;http.decoded_response_content_length&quot;:11409,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/3071.f001613e04b55a14.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;9cb4f5ec9db724c3&quot;,&quot;start_timestamp&quot;:1689228730.3035998,&quot;timestamp&quot;:1689228730.6388,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:2249,&quot;http.response_content_length&quot;:1949,&quot;http.decoded_response_content_length&quot;:4974,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/672.db221bc653078496.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;95a5c725b96032c0&quot;,&quot;start_timestamp&quot;:1689228730.3081,&quot;timestamp&quot;:1689228730.8053,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:43429,&quot;http.response_content_length&quot;:43129,&quot;http.decoded_response_content_length&quot;:175722,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/static/chunks/4c7977fa.80166fd97e012d99.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;8bf33e40fd5334ab&quot;,&quot;start_timestamp&quot;:1689228730.4249,&quot;timestamp&quot;:1689228730.9449,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:0,&quot;http.response_content_length&quot;:0,&quot;http.decoded_response_content_length&quot;:0,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;https://accounts.google.com/gsi/client&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;93dc24ff4d6f9d2a&quot;,&quot;start_timestamp&quot;:1689228730.4254,&quot;timestamp&quot;:1689228731.0332,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:1986,&quot;http.response_content_length&quot;:1686,&quot;http.decoded_response_content_length&quot;:3093,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;https://connect.facebook.net/en_US/sdk.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;946d23c460558331&quot;,&quot;start_timestamp&quot;:1689228730.4259999,&quot;timestamp&quot;:1689228730.6369998,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:0,&quot;http.response_content_length&quot;:0,&quot;http.decoded_response_content_length&quot;:0,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;https://cdn.dwolla.com/v2.1.8/dwolla-web.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;a1129c7472e2f5c3&quot;,&quot;start_timestamp&quot;:1689228730.4264,&quot;timestamp&quot;:1689228730.6397998,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:0,&quot;http.response_content_length&quot;:0,&quot;http.decoded_response_content_length&quot;:0,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;https://www.googletagmanager.com/gtag/js?id=G-S1J112KFF8&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;a42eaacb4884e7c6&quot;,&quot;start_timestamp&quot;:1689228730.4266,&quot;timestamp&quot;:1689228731.0866,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:0,&quot;http.response_content_length&quot;:0,&quot;http.decoded_response_content_length&quot;:0,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;bcffec725e22b12f&quot;,&quot;start_timestamp&quot;:1689228730.4275,&quot;timestamp&quot;:1689228730.6518,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;beforeRender&quot;,&quot;op&quot;:&quot;mark&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;b423edbddcd8177f&quot;,&quot;start_timestamp&quot;:1689228730.6976,&quot;timestamp&quot;:1689228730.6976,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;description&quot;:&quot;afterRender&quot;,&quot;op&quot;:&quot;mark&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;89d381434e1a87a5&quot;,&quot;start_timestamp&quot;:1689228730.8071,&quot;timestamp&quot;:1689228730.8071,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:89049,&quot;http.response_content_length&quot;:88749,&quot;http.decoded_response_content_length&quot;:314154,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;https://connect.facebook.net/en_US/sdk.js?hash=35820a0b0f0e2cbf49cf5e704052e149&quot;,&quot;op&quot;:&quot;resource.script&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;a70a693a252f39b4&quot;,&quot;start_timestamp&quot;:1689228730.8806999,&quot;timestamp&quot;:1689228730.9218,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:8300,&quot;http.response_content_length&quot;:8000,&quot;http.decoded_response_content_length&quot;:8000,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/fonts/poppins-latin-semiBold.woff2&quot;,&quot;op&quot;:&quot;resource.css&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;87735a41e70baca0&quot;,&quot;start_timestamp&quot;:1689228730.9201,&quot;timestamp&quot;:1689228731.2194,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:0,&quot;http.response_content_length&quot;:0,&quot;http.decoded_response_content_length&quot;:0,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;https://datatrdev.blob.core.windows.net/marketplace-static-images/nxlvl_logo.webp&quot;,&quot;op&quot;:&quot;resource.other&quot;,&quot;parent_span_id&quot;:&quot;ada681e5a2d66b3c&quot;,&quot;span_id&quot;:&quot;83c96ccf5580c11b&quot;,&quot;start_timestamp&quot;:1689228731.3099,&quot;timestamp&quot;:1689228732.4643002,&quot;trace_id&quot;:&quot;ae6c5fbe448f4a37ba0b44aae1f95493&quot;},{&quot;data&quot;:{&quot;http.response_transfer_size&quot;:8714,&quot;http.response_content_length&quot;:8414,&quot;http.decoded_response_content_length&quot;:8414,&quot;resource.render_blocking_status&quot;:&quot;non-blocking&quot;},&quot;description&quot;:&quot;/_next/image?url=https://data-tr-dev.azureedge.net/nft-images-dev/536752f8-f63c-4835-b59f-83eb6f756c82_thumbnail.webp</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/4504926323277824/envelope/</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://api-js.mixpanel.com/track/?verbose=1&amp;ip=1&amp;_=1689228736826" enabled="false">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="ip" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">ip</stringProp>
+                  <stringProp name="Argument.value">1</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="verbose" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">verbose</stringProp>
+                  <stringProp name="Argument.value">1</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="_" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">_</stringProp>
+                  <stringProp name="Argument.value">1689228736826</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+                <elementProp name="data" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                  <stringProp name="Argument.name">data</stringProp>
+                  <stringProp name="Argument.value">[
+    {&quot;event&quot;: &quot;Homepage&quot;,&quot;properties&quot;: {&quot;$os&quot;: &quot;Windows&quot;,&quot;$browser&quot;: &quot;Chrome&quot;,&quot;$current_url&quot;: &quot;https://marketplace.dev.nxlvl.app/&quot;,&quot;$browser_version&quot;: 113,&quot;$screen_height&quot;: 768,&quot;$screen_width&quot;: 1366,&quot;mp_lib&quot;: &quot;web&quot;,&quot;$lib_version&quot;: &quot;2.47.0&quot;,&quot;$insert_id&quot;: &quot;h6i65f4bo929nl6u&quot;,&quot;time&quot;: 1689228730.959,&quot;distinct_id&quot;: 10,&quot;$device_id&quot;: &quot;18901401841602-0a00373140cdcf-26031a51-100200-18901401841602&quot;,&quot;$initial_referrer&quot;: &quot;https://marketplace.qa.nxlvl.app/my-nft/sold&quot;,&quot;$initial_referring_domain&quot;: &quot;marketplace.qa.nxlvl.app&quot;,&quot;ID&quot;: 10,&quot;First Name&quot;: &quot;Frank&quot;,&quot;Last Name&quot;: &quot;Marshall&quot;,&quot;User Name&quot;: &quot;fm&quot;,&quot;Login Type&quot;: &quot;Email&quot;,&quot;Last Login Date&quot;: &quot;Tuesday, July 4, 2023 06:34 PM&quot;,&quot;Signup Date&quot;: &quot;Friday, September 17, 2021 01:27 PM&quot;,&quot;List of Interests&quot;: &quot;Baseball,Basketball,Cycling,Lacrosse,Modern Pentathlon,Roller Derby,Rugby (League),Skateboarding,Skiing,Slap Boxing,Softball,Sumo Wrestling,Ultimate Frisbee,Volleyball&quot;,&quot;$user_id&quot;: 10,&quot;token&quot;: &quot;c22021ac4b5979e50969e6360db8896d&quot;,&quot;mp_sent_by_lib_version&quot;: &quot;2.47.0&quot;}}
+]</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_6}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">track/</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://api.gleap.io/sessions/ping" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;time&quot;:11,&quot;events&quot;:[],&quot;opened&quot;:false}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_4}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">sessions/ping</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Gleap-Id" elementType="Header">
+                  <stringProp name="Header.name">Gleap-Id</stringProp>
+                  <stringProp name="Header.value">bd36d0df-528c-4cd8-8088-ab6fe87c0344</stringProp>
+                </elementProp>
+                <elementProp name="Gleap-Hash" elementType="Header">
+                  <stringProp name="Header.name">Gleap-Hash</stringProp>
+                  <stringProp name="Header.value">1c77a8e365c2dda5c4717d99fed2e79a5a0483d43c846ccb28b54bb36a550aa8</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Api-Token" elementType="Header">
+                  <stringProp name="Header.name">Api-Token</stringProp>
+                  <stringProp name="Header.value">lacoelUmsbKteU7sJHxPPUhKbLCphTOU</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://routers.dev.nxlvl.app/" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;operationName&quot;:&quot;getDashboardNFTs&quot;,&quot;variables&quot;:{&quot;dashboardArgs&quot;:{&quot;cursor&quot;:0,&quot;pageNo&quot;:0,&quot;take&quot;:3,&quot;activity&quot;:[],&quot;type&quot;:&quot;LatestDrop&quot;}},&quot;query&quot;:&quot;query getDashboardNFTs($dashboardArgs: DashboardArgs!) {\n  getDashboardNFTs(dashboardArgs: $dashboardArgs) {\n    pageEdges {\n      node {\n        id\n        name\n        imageUrl\n        videoData\n        isLiked\n        likeCount\n        isNFTBookmarked\n        associatedTiers(nftStatus: [Listed, Sold])\n        userId\n        user {\n          id\n          firstname\n          lastname\n          profileImage\n          dwollaCustomer {\n            status\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    pageInfo {\n      hasNextPage\n      pageNo\n      totalCount\n      __typename\n    }\n    __typename\n  }\n}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path"></stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="content-type" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="authorization" elementType="Header">
+                  <stringProp name="Header.name">authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjg5MjI3ODMxLCJleHAiOjE2OTE4MTk4MzEsInBybSI6IjczMTc1ODljNDAxYTA3OTJhZWU0MDhhZWYzNWUwMWYwIiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJtYXJrZXRwbGFjZS13ZWIiLCJqdGkiOiIyMTczYmY3MS1jOTY1LTQ0NTQtODI4Mi02MGYwMzQwZDNlZDcifQ.kv1gTfEkzqttw6zt1CUy_cGi7wYRHI49c155rNBBP9fa7O-Aec0EJPMMJ_6DcrnT-sFF8_wQScT3IxHjizXbHPaNbytVcFNTW7mA6EJCcEIam-wfyJbPFWF89t9K-9v0XWGXSDYWAwp5Hp_JGZvn3xvHtNOfP3_XWZkKFl20pu_Pr__a8gCr3ykeLZrKJxXCkpqeeq1JOHV7cvyTQNw62yJ4rUUq0tW3iqBYRropC8jGzunfCpEE1wwyysnoNkTDljP8X-KOkcuvn0lH-6PHmuamvvl1UnOO5tSEyPD1CPL9IYptf-gtK6JLWFkDTbGLuYU7_qV0UfuUq8W1NULjcw</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://routers.dev.nxlvl.app/" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;operationName&quot;:&quot;getDashboardNFTs&quot;,&quot;variables&quot;:{&quot;dashboardArgs&quot;:{&quot;cursor&quot;:0,&quot;pageNo&quot;:0,&quot;take&quot;:3,&quot;activity&quot;:[],&quot;type&quot;:&quot;TopPick&quot;}},&quot;query&quot;:&quot;query getDashboardNFTs($dashboardArgs: DashboardArgs!) {\n  getDashboardNFTs(dashboardArgs: $dashboardArgs) {\n    pageEdges {\n      node {\n        id\n        name\n        imageUrl\n        videoData\n        isLiked\n        likeCount\n        isNFTBookmarked\n        associatedTiers(nftStatus: [Listed, Sold])\n        userId\n        user {\n          id\n          firstname\n          lastname\n          profileImage\n          dwollaCustomer {\n            status\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    pageInfo {\n      hasNextPage\n      pageNo\n      totalCount\n      __typename\n    }\n    __typename\n  }\n}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path"></stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="content-type" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="authorization" elementType="Header">
+                  <stringProp name="Header.name">authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjg5MjI3ODMxLCJleHAiOjE2OTE4MTk4MzEsInBybSI6IjczMTc1ODljNDAxYTA3OTJhZWU0MDhhZWYzNWUwMWYwIiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJtYXJrZXRwbGFjZS13ZWIiLCJqdGkiOiIyMTczYmY3MS1jOTY1LTQ0NTQtODI4Mi02MGYwMzQwZDNlZDcifQ.kv1gTfEkzqttw6zt1CUy_cGi7wYRHI49c155rNBBP9fa7O-Aec0EJPMMJ_6DcrnT-sFF8_wQScT3IxHjizXbHPaNbytVcFNTW7mA6EJCcEIam-wfyJbPFWF89t9K-9v0XWGXSDYWAwp5Hp_JGZvn3xvHtNOfP3_XWZkKFl20pu_Pr__a8gCr3ykeLZrKJxXCkpqeeq1JOHV7cvyTQNw62yJ4rUUq0tW3iqBYRropC8jGzunfCpEE1wwyysnoNkTDljP8X-KOkcuvn0lH-6PHmuamvvl1UnOO5tSEyPD1CPL9IYptf-gtK6JLWFkDTbGLuYU7_qV0UfuUq8W1NULjcw</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://routers.dev.nxlvl.app/" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;operationName&quot;:&quot;getFeaturedCreators&quot;,&quot;variables&quot;:{&quot;cursor&quot;:0,&quot;take&quot;:6,&quot;userId&quot;:0},&quot;query&quot;:&quot;query getFeaturedCreators($cursor: Int!, $take: Int!, $userId: Int!, $activityId: [Int]) {\n  getFeaturedCreators(cursor: $cursor, take: $take, activityId: $activityId) {\n    pageEdges {\n      node {\n        id\n        user {\n          id\n          firstname\n          lastname\n          profileImage\n          backgroundImage\n          backgroundVideoData\n          isFollowing(userId: $userId)\n          dwollaCustomer {\n            status\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    pageInfo {\n      hasNextPage\n      totalCount\n      __typename\n    }\n    __typename\n  }\n}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path"></stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="content-type" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="authorization" elementType="Header">
+                  <stringProp name="Header.name">authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjg5MjI3ODMxLCJleHAiOjE2OTE4MTk4MzEsInBybSI6IjczMTc1ODljNDAxYTA3OTJhZWU0MDhhZWYzNWUwMWYwIiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJtYXJrZXRwbGFjZS13ZWIiLCJqdGkiOiIyMTczYmY3MS1jOTY1LTQ0NTQtODI4Mi02MGYwMzQwZDNlZDcifQ.kv1gTfEkzqttw6zt1CUy_cGi7wYRHI49c155rNBBP9fa7O-Aec0EJPMMJ_6DcrnT-sFF8_wQScT3IxHjizXbHPaNbytVcFNTW7mA6EJCcEIam-wfyJbPFWF89t9K-9v0XWGXSDYWAwp5Hp_JGZvn3xvHtNOfP3_XWZkKFl20pu_Pr__a8gCr3ykeLZrKJxXCkpqeeq1JOHV7cvyTQNw62yJ4rUUq0tW3iqBYRropC8jGzunfCpEE1wwyysnoNkTDljP8X-KOkcuvn0lH-6PHmuamvvl1UnOO5tSEyPD1CPL9IYptf-gtK6JLWFkDTbGLuYU7_qV0UfuUq8W1NULjcw</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://routers.dev.nxlvl.app/" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;operationName&quot;:&quot;getDashboardNFTs&quot;,&quot;variables&quot;:{&quot;dashboardArgs&quot;:{&quot;cursor&quot;:0,&quot;pageNo&quot;:0,&quot;take&quot;:3,&quot;activity&quot;:[],&quot;type&quot;:&quot;TopSales&quot;}},&quot;query&quot;:&quot;query getDashboardNFTs($dashboardArgs: DashboardArgs!) {\n  getDashboardNFTs(dashboardArgs: $dashboardArgs) {\n    pageEdges {\n      node {\n        id\n        name\n        imageUrl\n        videoData\n        isLiked\n        likeCount\n        isNFTBookmarked\n        associatedTiers(nftStatus: [Listed, Sold])\n        userId\n        user {\n          id\n          firstname\n          lastname\n          profileImage\n          dwollaCustomer {\n            status\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    pageInfo {\n      hasNextPage\n      pageNo\n      totalCount\n      __typename\n    }\n    __typename\n  }\n}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path"></stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="content-type" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="authorization" elementType="Header">
+                  <stringProp name="Header.name">authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjg5MjI3ODMxLCJleHAiOjE2OTE4MTk4MzEsInBybSI6IjczMTc1ODljNDAxYTA3OTJhZWU0MDhhZWYzNWUwMWYwIiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJtYXJrZXRwbGFjZS13ZWIiLCJqdGkiOiIyMTczYmY3MS1jOTY1LTQ0NTQtODI4Mi02MGYwMzQwZDNlZDcifQ.kv1gTfEkzqttw6zt1CUy_cGi7wYRHI49c155rNBBP9fa7O-Aec0EJPMMJ_6DcrnT-sFF8_wQScT3IxHjizXbHPaNbytVcFNTW7mA6EJCcEIam-wfyJbPFWF89t9K-9v0XWGXSDYWAwp5Hp_JGZvn3xvHtNOfP3_XWZkKFl20pu_Pr__a8gCr3ykeLZrKJxXCkpqeeq1JOHV7cvyTQNw62yJ4rUUq0tW3iqBYRropC8jGzunfCpEE1wwyysnoNkTDljP8X-KOkcuvn0lH-6PHmuamvvl1UnOO5tSEyPD1CPL9IYptf-gtK6JLWFkDTbGLuYU7_qV0UfuUq8W1NULjcw</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://routers.dev.nxlvl.app/" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;operationName&quot;:&quot;searchNFT&quot;,&quot;variables&quot;:{&quot;searchNFTArgs&quot;:{&quot;pageNo&quot;:0,&quot;take&quot;:12,&quot;activity&quot;:[],&quot;editions&quot;:[],&quot;isForSale&quot;:false}},&quot;query&quot;:&quot;query searchNFT($searchNFTArgs: SearchNFTArgs!) {\n  searchNFT(searchNFTArgs: $searchNFTArgs) {\n    pageEdges {\n      node {\n        id\n        name\n        tier\n        userId\n        user {\n          profileImage\n          dwollaCustomer {\n            status\n            __typename\n          }\n          __typename\n        }\n        firstname\n        lastname\n        imageURL\n        isNFTBookmarked\n        isLiked\n        likeCount\n        playbackId\n        editions {\n          id\n          tier\n          __typename\n        }\n        activity {\n          id\n          name\n          __typename\n        }\n        createdAt\n        __typename\n      }\n      __typename\n    }\n    pageInfo {\n      hasNextPage\n      pageNo\n      totalCount\n      __typename\n    }\n    __typename\n  }\n}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path"></stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="content-type" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="authorization" elementType="Header">
+                  <stringProp name="Header.name">authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjg5MjI3ODMxLCJleHAiOjE2OTE4MTk4MzEsInBybSI6IjczMTc1ODljNDAxYTA3OTJhZWU0MDhhZWYzNWUwMWYwIiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJtYXJrZXRwbGFjZS13ZWIiLCJqdGkiOiIyMTczYmY3MS1jOTY1LTQ0NTQtODI4Mi02MGYwMzQwZDNlZDcifQ.kv1gTfEkzqttw6zt1CUy_cGi7wYRHI49c155rNBBP9fa7O-Aec0EJPMMJ_6DcrnT-sFF8_wQScT3IxHjizXbHPaNbytVcFNTW7mA6EJCcEIam-wfyJbPFWF89t9K-9v0XWGXSDYWAwp5Hp_JGZvn3xvHtNOfP3_XWZkKFl20pu_Pr__a8gCr3ykeLZrKJxXCkpqeeq1JOHV7cvyTQNw62yJ4rUUq0tW3iqBYRropC8jGzunfCpEE1wwyysnoNkTDljP8X-KOkcuvn0lH-6PHmuamvvl1UnOO5tSEyPD1CPL9IYptf-gtK6JLWFkDTbGLuYU7_qV0UfuUq8W1NULjcw</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://routers.dev.nxlvl.app/" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;operationName&quot;:&quot;getGroupedUserActivities&quot;,&quot;variables&quot;:{&quot;isUserActivity&quot;:false},&quot;query&quot;:&quot;query getGroupedUserActivities($isUserActivity: Boolean) {\n  getGroupedUserActivities(isUserActivity: $isUserActivity) {\n    groupedUserActivities {\n      name\n      activities {\n        id\n        name\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path"></stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="content-type" elementType="Header">
+                  <stringProp name="Header.name">content-type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="authorization" elementType="Header">
+                  <stringProp name="Header.name">authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJwZXJtIjoiIiwiaWF0IjoxNjg5MjI3ODMxLCJleHAiOjE2OTE4MTk4MzEsInBybSI6IjczMTc1ODljNDAxYTA3OTJhZWU0MDhhZWYzNWUwMWYwIiwiamlkIjoiQGxvY2FsaG9zdCIsIm1pbSI6IiIsInVrZXkiOiIiLCJjbGllbnQiOiJtYXJrZXRwbGFjZS13ZWIiLCJqdGkiOiIyMTczYmY3MS1jOTY1LTQ0NTQtODI4Mi02MGYwMzQwZDNlZDcifQ.kv1gTfEkzqttw6zt1CUy_cGi7wYRHI49c155rNBBP9fa7O-Aec0EJPMMJ_6DcrnT-sFF8_wQScT3IxHjizXbHPaNbytVcFNTW7mA6EJCcEIam-wfyJbPFWF89t9K-9v0XWGXSDYWAwp5Hp_JGZvn3xvHtNOfP3_XWZkKFl20pu_Pr__a8gCr3ykeLZrKJxXCkpqeeq1JOHV7cvyTQNw62yJ4rUUq0tW3iqBYRropC8jGzunfCpEE1wwyysnoNkTDljP8X-KOkcuvn0lH-6PHmuamvvl1UnOO5tSEyPD1CPL9IYptf-gtK6JLWFkDTbGLuYU7_qV0UfuUq8W1NULjcw</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://api.gleap.io/sessions/ping" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;time&quot;:21,&quot;events&quot;:[],&quot;opened&quot;:false}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_4}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">sessions/ping</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Gleap-Id" elementType="Header">
+                  <stringProp name="Header.name">Gleap-Id</stringProp>
+                  <stringProp name="Header.value">bd36d0df-528c-4cd8-8088-ab6fe87c0344</stringProp>
+                </elementProp>
+                <elementProp name="Gleap-Hash" elementType="Header">
+                  <stringProp name="Header.name">Gleap-Hash</stringProp>
+                  <stringProp name="Header.value">1c77a8e365c2dda5c4717d99fed2e79a5a0483d43c846ccb28b54bb36a550aa8</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+                </elementProp>
+                <elementProp name="Api-Token" elementType="Header">
+                  <stringProp name="Header.name">Api-Token</stringProp>
+                  <stringProp name="Header.value">lacoelUmsbKteU7sJHxPPUhKbLCphTOU</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">true</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>true</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>true</responseData>
+              <samplerData>true</samplerData>
+              <xml>true</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>true</responseHeaders>
+              <requestHeaders>true</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <fileName>true</fileName>
+              <hostname>true</hostname>
+              <threadCounts>true</threadCounts>
+              <sampleCount>true</sampleCount>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename">D:\NXLVL\Marketplace_QA\R1.1_MarketplcaeDev_FrontPage_50Iterations.xml</stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename">D:\NXLVL\Marketplace_QA\R1.1_MarketplcaeDev_FrontPage_50Iterations.jtl</stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

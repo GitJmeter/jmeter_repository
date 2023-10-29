@@ -1,0 +1,69 @@
+2023-07-25 21:46:06,208 INFO o.a.j.u.JMeterUtils: Setting Locale to en_IN
+2023-07-25 21:46:06,274 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2023-07-25 21:46:06,278 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2023-07-25 21:46:06,279 INFO o.a.j.JMeter: Loading additional properties from: D:\NXLVL\Software\apache-jmeter-5.5\apache-jmeter-5.5\bin\jmeter.properties
+2023-07-25 21:46:06,292 INFO o.a.j.JMeter: Copyright (c) 1998-2022 The Apache Software Foundation
+2023-07-25 21:46:06,293 INFO o.a.j.JMeter: Version 5.5
+2023-07-25 21:46:06,293 INFO o.a.j.JMeter: java.version=19.0.2
+2023-07-25 21:46:06,293 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2023-07-25 21:46:06,293 INFO o.a.j.JMeter: os.name=Windows 10
+2023-07-25 21:46:06,293 INFO o.a.j.JMeter: os.arch=amd64
+2023-07-25 21:46:06,293 INFO o.a.j.JMeter: os.version=10.0
+2023-07-25 21:46:06,293 INFO o.a.j.JMeter: file.encoding=UTF-8
+2023-07-25 21:46:06,294 INFO o.a.j.JMeter: java.awt.headless=true
+2023-07-25 21:46:06,294 INFO o.a.j.JMeter: Max memory     =4225761280
+2023-07-25 21:46:06,294 INFO o.a.j.JMeter: Available Processors =8
+2023-07-25 21:46:06,312 INFO o.a.j.JMeter: Default Locale=English (India)
+2023-07-25 21:46:06,312 INFO o.a.j.JMeter: JMeter  Locale=English (India)
+2023-07-25 21:46:06,312 INFO o.a.j.JMeter: JMeterHome=D:\NXLVL\Software\apache-jmeter-5.5\apache-jmeter-5.5
+2023-07-25 21:46:06,312 INFO o.a.j.JMeter: user.dir  =D:\NXLVL\Software\apache-jmeter-5.5\apache-jmeter-5.5\bin
+2023-07-25 21:46:06,314 INFO o.a.j.JMeter: PWD       =D:\NXLVL\Software\apache-jmeter-5.5\apache-jmeter-5.5\bin
+2023-07-25 21:46:06,319 INFO o.a.j.JMeter: IP: 172.20.10.13 Name: CIPL-LPT-1227 FullName: CIPL-LPT-1227.cygnet.com
+2023-07-25 21:46:06,336 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'C:\Users\pravin.parakhe\Documents\HTMLReport'
+2023-07-25 21:46:06,345 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2023-07-25 21:46:06,345 INFO o.a.j.r.d.ReportGenerator: Will only generate report from results file: C:\Users\pravin.parakhe\Documents\LoginResult123.csv
+2023-07-25 21:46:06,346 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: D:\NXLVL\Software\apache-jmeter-5.5\apache-jmeter-5.5\bin\reportgenerator.properties
+2023-07-25 21:46:06,351 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2023-07-25 21:46:06,358 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2023-07-25 21:46:06,363 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2023-07-25 21:46:06,375 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2023-07-25 21:46:06,375 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2023-07-25 21:46:06,375 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2023-07-25 21:46:06,376 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2023-07-25 21:46:06,376 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2023-07-25 21:46:06,376 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2023-07-25 21:46:06,391 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2023-07-25 21:46:06,399 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2023-07-25 21:46:06,399 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2023-07-25 21:46:06,399 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2023-07-25 21:46:06,399 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2023-07-25 21:46:06,399 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2023-07-25 21:46:06,400 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2023-07-25 21:46:06,400 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2023-07-25 21:46:06,400 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2023-07-25 21:46:06,400 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2023-07-25 21:46:06,400 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2023-07-25 21:46:06,401 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2023-07-25 21:46:06,401 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2023-07-25 21:46:06,401 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2023-07-25 21:46:06,401 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2023-07-25 21:46:06,402 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2023-07-25 21:46:06,402 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2023-07-25 21:46:06,737 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2023-07-25 21:46:06,780 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2023-07-25 21:46:06,785 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2023-07-25 21:46:06,811 WARN o.a.j.s.CSVSaveService: Unknown column name 1690297538413
+2023-07-25 21:46:06,819 WARN o.a.j.r.c.CsvSampleReader: File 'C:\Users\pravin.parakhe\Documents\LoginResult123.csv' does not contain the field names header, ensure the jmeter.save.saveservice.* properties are the same as when the CSV file was created or the file may be read incorrectly when generating report
+2023-07-25 21:46:06,823 WARN o.a.j.r.c.CsvSampleReader: Short CSV read around line 2 of file 'C:\Users\pravin.parakhe\Documents\LoginResult123.csv'. Could only read 12 elements of 17 expected. Data is [1690297539242, 211, Login, 200, OK, Thread Group 1-2, text, true, 1118, 2, 2, 211]
+2023-07-25 21:46:06,824 ERROR o.a.j.JMeter: An error occurred: 
+org.apache.jmeter.report.core.SampleException: Mismatch between expected number of columns:17 and columns in CSV file:12, check your jmeter.save.saveservice.* configuration or check if line 2 in 'C:\Users\pravin.parakhe\Documents\LoginResult123.csv' is complete
+	at org.apache.jmeter.report.core.CsvSampleReader.assertCorrectColumns(CsvSampleReader.java:205) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.report.core.CsvSampleReader.nextSample(CsvSampleReader.java:189) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.report.core.CsvSampleReader.<init>(CsvSampleReader.java:135) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.report.core.CsvSampleReader.<init>(CsvSampleReader.java:87) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.report.processor.CsvFileSampleSource.<init>(CsvFileSampleSource.java:111) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.report.dashboard.ReportGenerator.generate(ReportGenerator.java:209) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.JMeter.start(JMeter.java:462) ~[ApacheJMeter_core.jar:5.5]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:259) ~[ApacheJMeter.jar:5.5]

@@ -1,0 +1,2506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <com.blazemeter.jmeter.RandomCSVDataSetConfig guiclass="com.blazemeter.jmeter.RandomCSVDataSetConfigGui" testclass="com.blazemeter.jmeter.RandomCSVDataSetConfig" testname="bzm - Random CSV Data Set Config" enabled="false">
+        <stringProp name="filename">xmppUser.csv</stringProp>
+        <stringProp name="fileEncoding">UTF-8</stringProp>
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="variableNames">id,xmppUsername</stringProp>
+        <boolProp name="randomOrder">false</boolProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <boolProp name="rewindOnTheEndOfList">true</boolProp>
+        <boolProp name="independentListPerThread">false</boolProp>
+      </com.blazemeter.jmeter.RandomCSVDataSetConfig>
+      <hashTree/>
+      <com.blazemeter.jmeter.RandomCSVDataSetConfig guiclass="com.blazemeter.jmeter.RandomCSVDataSetConfigGui" testclass="com.blazemeter.jmeter.RandomCSVDataSetConfig" testname="bzm - Random CSV Data Set Config" enabled="false">
+        <stringProp name="filename">User_Stress - User_updated.csv</stringProp>
+        <stringProp name="fileEncoding">UTF-8</stringProp>
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="variableNames">id,username,email,createdAt</stringProp>
+        <boolProp name="randomOrder">false</boolProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <boolProp name="rewindOnTheEndOfList">true</boolProp>
+        <boolProp name="independentListPerThread">false</boolProp>
+        <stringProp name="TestPlan.comments">id,username,email,createdAt</stringProp>
+      </com.blazemeter.jmeter.RandomCSVDataSetConfig>
+      <hashTree/>
+      <com.blazemeter.jmeter.RandomCSVDataSetConfig guiclass="com.blazemeter.jmeter.RandomCSVDataSetConfigGui" testclass="com.blazemeter.jmeter.RandomCSVDataSetConfig" testname="bzm - Random CSV Data Set Config" enabled="false">
+        <stringProp name="filename">Tagged_UserContentID.csv</stringProp>
+        <stringProp name="fileEncoding">UTF-8</stringProp>
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="variableNames">user_id,contentid</stringProp>
+        <boolProp name="randomOrder">false</boolProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <boolProp name="rewindOnTheEndOfList">true</boolProp>
+        <boolProp name="independentListPerThread">false</boolProp>
+      </com.blazemeter.jmeter.RandomCSVDataSetConfig>
+      <hashTree/>
+      <com.blazemeter.jmeter.RandomCSVDataSetConfig guiclass="com.blazemeter.jmeter.RandomCSVDataSetConfigGui" testclass="com.blazemeter.jmeter.RandomCSVDataSetConfig" testname="bzm - Random CSV Data Set Config" enabled="true">
+        <stringProp name="filename">addFollowers_Data.csv</stringProp>
+        <stringProp name="fileEncoding">UTF-8</stringProp>
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="variableNames">id,id1</stringProp>
+        <boolProp name="randomOrder">false</boolProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <boolProp name="rewindOnTheEndOfList">true</boolProp>
+        <boolProp name="independentListPerThread">false</boolProp>
+      </com.blazemeter.jmeter.RandomCSVDataSetConfig>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">25</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">5</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">910</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="GetFeedUsingAIML" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;getFeedUsingAimlId&quot;: ${id},
+  &quot;pageNo&quot;: 0,
+  &quot;take&quot;: 20
+},&quot;query&quot;:&quot;query GetFeedUsingAIML($getFeedUsingAimlId: Int!, $pageNo: Int, $take: Int) {\n  getFeedUsingAIML(id: $getFeedUsingAimlId, pageNo: $pageNo, take: $take) {\n    pageInfo {\n      totalCount\n      hasNextPage\n    }\n    data {\n       id\n        allowComments\n        allowRepost\n        allowSharing\n        commentCount\n        contentData\n        contentType\n        description\n        dateOfEvent\n        createdAt\n        contentWidth\n        displayTags\n        feedCategory\n        imageURL\n        isActive\n        isCommented\n        isCommitment\n        isPrimary\n        isPinned\n        isNxtag\n        isPublished\n        likeCount\n        repostParentId\n        repostDescription\n        reaction\n        publishToFeed\n        pinnedDate\n        taggedUserIds\n        taggedUsersCount\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetFeedUsingAIML($getFeedUsingAimlId: Int!, $pageNo: Int, $take: Int) {
+  getFeedUsingAIML(id: $getFeedUsingAimlId, pageNo: $pageNo, take: $take) {
+    pageInfo {
+      totalCount
+      hasNextPage
+    }
+    data {
+       id
+        allowComments
+        allowRepost
+        allowSharing
+        commentCount
+        contentData
+        contentType
+        description
+        dateOfEvent
+        createdAt
+        contentWidth
+        displayTags
+        feedCategory
+        imageURL
+        isActive
+        isCommented
+        isCommitment
+        isPrimary
+        isPinned
+        isNxtag
+        isPublished
+        likeCount
+        repostParentId
+        repostDescription
+        reaction
+        publishToFeed
+        pinnedDate
+        taggedUserIds
+        taggedUsersCount
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;getFeedUsingAimlId&quot;: ${id},
+  &quot;pageNo&quot;: 0,
+  &quot;take&quot;: 20
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="Login" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;query&quot;:&quot;mutation {\n  login(\n    loginInput: {\n      email: \&quot;${email}\&quot;\n      password: \&quot;QWRtaW5AMTIz\&quot;\n    }\n  ) {\n    accessToken\n    userId\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">mutation {
+  login(
+    loginInput: {
+      email: &quot;${email}&quot;
+      password: &quot;QWRtaW5AMTIz&quot;
+    }
+  ) {
+    accessToken
+    userId
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables"></stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="false">
+            <stringProp name="JSONPostProcessor.referenceNames">auth_token ; user_id</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$..accessToken ; $..userId</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">TokenNotFound ; useridnotfound</stringProp>
+            <stringProp name="Sample.scope">all</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login_share" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+    &quot;email&quot;:&quot;${email}&quot;,&#xd;
+    &quot;password&quot;: &quot;QWRtaW5AMTIz&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">share.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/login</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="Login_IOC" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;query&quot;:&quot;mutation {\n login (\n\temail:\&quot;${email}\&quot;,\n\tpassword:\&quot;QWRtaW5AMTIz\&quot;\n)\n\t{\n\t\titem{\n\t\t\tuserId\n\t\t\taccessToken\n\t\t}\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">ioc.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">mutation {
+ login (
+	email:&quot;${email}&quot;,
+	password:&quot;QWRtaW5AMTIz&quot;
+)
+	{
+		item{
+			userId
+			accessToken
+		}
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables"></stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="Login" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;query&quot;:&quot;mutation {\n  login(\n    loginInput: {\n      email: \&quot;${email}\&quot;\n      password: \&quot;QWRtaW5AMTIz\&quot;\n    }\n  ) {\n    accessToken\n    userId\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">mutation {
+  login(
+    loginInput: {
+      email: &quot;${email}&quot;
+      password: &quot;QWRtaW5AMTIz&quot;
+    }
+  ) {
+    accessToken
+    userId
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables"></stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">api.stress.nxlvldev.app</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjkwMDQsInBlcm0iOiIiLCJpYXQiOjE2ODg5ODY3NjYsImV4cCI6MTY5MTU3ODc2NiwicHJtIjoiY2QwYmI3YjY1MTg0MmNkNGQ5ZjY4N2NkZTRmYTI1NWYiLCJqaWQiOiJjbGJ1Z3B3eDU2OTk5MjBqMmEyZGt3bndwdkBsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1Z3B3eDU2OTk5MjBqMmEyZGt3bndwdiIsInVrZXkiOiI1ZmEyNDcwZi04ZWIwLTQyZGItYTQ1Ni01MTY2OTY5ZGRhNTYiLCJjbGllbnQiOiIiLCJqdGkiOiI4MmFiMTYxMS1kMjFmLTQ2YmUtOWY3OC04ZjYzMWVlMTU3YmQifQ.EWtPA6GnuikcCm3Mq4xI6SXgBL5Oa2frJ4YoUDr3RvJulI4-FluCjLew2KnglHK2sb2GitQA-EkeMaLNCQiwLxb45frD1PsfWpf_L6Kp6dTxygDWJd2I6-hfPWGrLkWIGjJ7m-H7uGqsVgWn2IOkIcLGUrkuc5QeqB4g1a0W-dDOznlH6mj9UosYRC2EBS9jtS_sEXWwvaSjRxU0GdkvpicwDj6Js5uXYDQiV7AHJDilWL9gbqmKhJ5fqA585e30tFJdt1e45OLBrcQvxZY8uA_9Dui7pOypmP4sOe7VSXlsfagtpFnWA7jlvwMqxP03STowHOLuz1KxJGClDSp7Qw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="false">
+            <stringProp name="JSONPostProcessor.referenceNames">auth_token ; user_id</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$..accessToken ; $..userId</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">TokenNotFound ; useridnotfound</stringProp>
+            <stringProp name="Sample.scope">all</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="GetMutualConnectionsWithCount" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{  &quot;loggedInUserId&quot;: ${id},
+  &quot;connectionUserId&quot;: ${id1},
+  &quot;pageNo&quot;: 0
+},&quot;query&quot;:&quot;query GetMutualConnectionsWithCount($loggedInUserId: Int!, $connectionUserId: Int!, $pageNo: Int) {\n  getMutualConnectionsWithCount(loggedInUserId: $loggedInUserId, connectionUserId: $connectionUserId, pageNo: $pageNo) {\n    count\n    mutualConnections {\n      firstname\n      lastname\n      username\n      mutualConnectionCount\n      followerCount\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetMutualConnectionsWithCount($loggedInUserId: Int!, $connectionUserId: Int!, $pageNo: Int) {
+  getMutualConnectionsWithCount(loggedInUserId: $loggedInUserId, connectionUserId: $connectionUserId, pageNo: $pageNo) {
+    count
+    mutualConnections {
+      firstname
+      lastname
+      username
+      mutualConnectionCount
+      followerCount
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{  &quot;loggedInUserId&quot;: ${id},
+  &quot;connectionUserId&quot;: ${id1},
+  &quot;pageNo&quot;: 0
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">${contentid}</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="GetSuggestionsBasedOnConnection" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{  &quot;loggedInUserId&quot;: ${id},
+  &quot;pageNo&quot;: 0,
+  &quot;limit&quot;: 20
+},&quot;query&quot;:&quot;query GetSuggestionsBasedOnConnection($loggedInUserId: Int!, $pageNo: Int!, $limit: Int) {\n  getSuggestionsBasedOnConnection(loggedInUserId: $loggedInUserId, pageNo: $pageNo, limit: $limit) {\n    pageEdges {\n      node {\n        id\n        firstname\n        lastname\n        username\n        profileImage\n        xmppUsername\n        backgroundImage\n        backgroundImageThumbnail\n        backgroundVideoData\n        mutualConnectionCount\n        followerCount\n        connectionStatus {\n          isRequest\n          status\n        }\n      }\n    }\n    pageInfo {\n      hasNextPage\n      totalCount\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetSuggestionsBasedOnConnection($loggedInUserId: Int!, $pageNo: Int!, $limit: Int) {
+  getSuggestionsBasedOnConnection(loggedInUserId: $loggedInUserId, pageNo: $pageNo, limit: $limit) {
+    pageEdges {
+      node {
+        id
+        firstname
+        lastname
+        username
+        profileImage
+        xmppUsername
+        backgroundImage
+        backgroundImageThumbnail
+        backgroundVideoData
+        mutualConnectionCount
+        followerCount
+        connectionStatus {
+          isRequest
+          status
+        }
+      }
+    }
+    pageInfo {
+      hasNextPage
+      totalCount
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{  &quot;loggedInUserId&quot;: ${id},
+  &quot;pageNo&quot;: 0,
+  &quot;limit&quot;: 20
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">${contentid}</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="SearchMutualConnections" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{  &quot;loggedInUserId&quot;: ${id},
+  &quot;userId&quot;: ${id1},
+  &quot;pageNo&quot;: 0,
+  &quot;limit&quot;: 20,
+  &quot;isFollowingUserId2&quot;: ${id},
+  &quot;searchString&quot;: &quot;&quot;
+},&quot;query&quot;:&quot;query SearchMutualConnections($loggedInUserId: Int!, $userId: Int!, $pageNo: Int!, $limit: Int, $isFollowingUserId2: Int!, $searchString: String) {\n  searchMutualConnections(loggedInUserId: $loggedInUserId, userId: $userId, pageNo: $pageNo, limit: $limit, searchString: $searchString) {\n    pageEdges {\n      node {\n        firstname\n        lastname\n        username\n        profileImage\n        xmppUsername\n        backgroundImage\n        backgroundImageThumbnail\n        backgroundVideoData\n        mutualConnectionCount\n        followerCount\n        id\n        isFollowing(userId: $isFollowingUserId2)\n      }\n    }\n    pageInfo {\n      hasNextPage\n      totalCount\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query SearchMutualConnections($loggedInUserId: Int!, $userId: Int!, $pageNo: Int!, $limit: Int, $isFollowingUserId2: Int!, $searchString: String) {
+  searchMutualConnections(loggedInUserId: $loggedInUserId, userId: $userId, pageNo: $pageNo, limit: $limit, searchString: $searchString) {
+    pageEdges {
+      node {
+        firstname
+        lastname
+        username
+        profileImage
+        xmppUsername
+        backgroundImage
+        backgroundImageThumbnail
+        backgroundVideoData
+        mutualConnectionCount
+        followerCount
+        id
+        isFollowing(userId: $isFollowingUserId2)
+      }
+    }
+    pageInfo {
+      hasNextPage
+      totalCount
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{  &quot;loggedInUserId&quot;: ${id},
+  &quot;userId&quot;: ${id1},
+  &quot;pageNo&quot;: 0,
+  &quot;limit&quot;: 20,
+  &quot;isFollowingUserId2&quot;: ${id},
+  &quot;searchString&quot;: &quot;&quot;
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">${contentid}</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="GetSuggestionsBasedOnFollowing" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{  &quot;loggedInUserId&quot;: ${id},
+  &quot;pageNo&quot;: 0,
+  &quot;limit&quot;: 20
+},&quot;query&quot;:&quot;query GetSuggestionsBasedOnFollowing($loggedInUserId: Int!, $pageNo: Int!, $limit: Int) {\n  getSuggestionsBasedOnFollowing(loggedInUserId: $loggedInUserId, pageNo: $pageNo, limit: $limit) {\n    pageEdges {\n      node {\n        id\n        firstname\n        lastname\n        profileImage\n        xmppUsername\n        backgroundImageThumbnail\n        backgroundVideoData\n        mutualConnectionCount\n        followerCount\n        connectionStatus {\n          isRequest\n          status\n        }\n      }\n    }\n    pageInfo {\n      hasNextPage\n      totalCount\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetSuggestionsBasedOnFollowing($loggedInUserId: Int!, $pageNo: Int!, $limit: Int) {
+  getSuggestionsBasedOnFollowing(loggedInUserId: $loggedInUserId, pageNo: $pageNo, limit: $limit) {
+    pageEdges {
+      node {
+        id
+        firstname
+        lastname
+        profileImage
+        xmppUsername
+        backgroundImageThumbnail
+        backgroundVideoData
+        mutualConnectionCount
+        followerCount
+        connectionStatus {
+          isRequest
+          status
+        }
+      }
+    }
+    pageInfo {
+      hasNextPage
+      totalCount
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{  &quot;loggedInUserId&quot;: ${id},
+  &quot;pageNo&quot;: 0,
+  &quot;limit&quot;: 20
+}
+</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">${contentid}</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="GetSuggestionsBasedOnProfile" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{  &quot;userId&quot;: ${id},
+  &quot;pageNo&quot;: 0,
+  &quot;limit&quot;: 20
+},&quot;query&quot;:&quot;query GetSuggestionsBasedOnProfile($userId: Int!, $pageNo: Int!, $limit: Int) {\n  getSuggestionsBasedOnProfile(userId: $userId, pageNo: $pageNo, limit: $limit) {\n    pageEdges {\n      node {\n        id\n        firstname\n        lastname\n        username\n        profileThumbnail\n        backgroundImageThumbnail\n        followerCount\n        mutualConnectionCount\n        xmppUsername\n        connectionStatus {\n          isRequest\n          status\n        }\n      }\n    }\n    pageInfo {\n      hasNextPage\n      totalCount\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetSuggestionsBasedOnProfile($userId: Int!, $pageNo: Int!, $limit: Int) {
+  getSuggestionsBasedOnProfile(userId: $userId, pageNo: $pageNo, limit: $limit) {
+    pageEdges {
+      node {
+        id
+        firstname
+        lastname
+        username
+        profileThumbnail
+        backgroundImageThumbnail
+        followerCount
+        mutualConnectionCount
+        xmppUsername
+        connectionStatus {
+          isRequest
+          status
+        }
+      }
+    }
+    pageInfo {
+      hasNextPage
+      totalCount
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{  &quot;userId&quot;: ${id},
+  &quot;pageNo&quot;: 0,
+  &quot;limit&quot;: 20
+}
+</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">${contentid}</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="GetBlockedUsers" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;userId&quot;: ${id},
+  &quot;searchString&quot;: &quot;&quot;,
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 20
+},&quot;query&quot;:&quot;query GetBlockedUsers($userId: Int!, $searchString: String, $cursor: Int, $take: Int) {\n  getBlockedUsers(userId: $userId, searchString: $searchString, cursor: $cursor, take: $take) {\n    pageEdges {\n      node {\n        id\n        firstname\n        lastname\n        username\n        email\n        profileImage\n        gender\n        mutualConnectionCount\n      }\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetBlockedUsers($userId: Int!, $searchString: String, $cursor: Int, $take: Int) {
+  getBlockedUsers(userId: $userId, searchString: $searchString, cursor: $cursor, take: $take) {
+    pageEdges {
+      node {
+        id
+        firstname
+        lastname
+        username
+        email
+        profileImage
+        gender
+        mutualConnectionCount
+      }
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;userId&quot;: ${id},
+  &quot;searchString&quot;: &quot;&quot;,
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 20
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="GetUserConnections" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;userId&quot;: ${id},
+  &quot;take&quot;: 20,
+  &quot;cursor&quot;: 0,
+  &quot;status&quot;: &quot;Approved&quot;,
+  &quot;isFollowingUserId2&quot;: ${id},
+  &quot;isRequest&quot;: true,
+  &quot;searchString&quot;: &quot;&quot;,
+  &quot;requireMutualConnectionCount&quot;: true
+},&quot;query&quot;:&quot;query GetUserConnections($userId: Int!, $take: Int, $cursor: Int, $status: ConnectionStatus, $isFollowingUserId2: Int!, $isRequest: Boolean, $searchString: String) {\n  getUserConnections(userId: $userId, take: $take, cursor: $cursor, status: $status, isRequest: $isRequest, searchString: $searchString) {\n    pageEdges {\n      node {\n        id\n        connectionUser {\n          id\n          firstname\n          lastname\n          profileImage\n          isFollowing(userId: $isFollowingUserId2)\n          xmppUsername\n          username\n          backgroundImageThumbnail\n        }\n        connectionUserId\n        isRequest\n        status\n        mutualConnection\n        followerCount\n      }\n    }\n    pageInfo {\n      hasNextPage\n      totalCount\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetUserConnections($userId: Int!, $take: Int, $cursor: Int, $status: ConnectionStatus, $isFollowingUserId2: Int!, $isRequest: Boolean, $searchString: String) {
+  getUserConnections(userId: $userId, take: $take, cursor: $cursor, status: $status, isRequest: $isRequest, searchString: $searchString) {
+    pageEdges {
+      node {
+        id
+        connectionUser {
+          id
+          firstname
+          lastname
+          profileImage
+          isFollowing(userId: $isFollowingUserId2)
+          xmppUsername
+          username
+          backgroundImageThumbnail
+        }
+        connectionUserId
+        isRequest
+        status
+        mutualConnection
+        followerCount
+      }
+    }
+    pageInfo {
+      hasNextPage
+      totalCount
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;userId&quot;: ${id},
+  &quot;take&quot;: 20,
+  &quot;cursor&quot;: 0,
+  &quot;status&quot;: &quot;Approved&quot;,
+  &quot;isFollowingUserId2&quot;: ${id},
+  &quot;isRequest&quot;: true,
+  &quot;searchString&quot;: &quot;&quot;,
+  &quot;requireMutualConnectionCount&quot;: true
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjY4ODUyLCJwZXJtIjoiIiwiaWF0IjoxNjc0NjQ1MjM2LCJleHAiOjE2NzcyMzcyMzYsInBybSI6IjM1ZmMyY2EzZTdlZTEzNTk2MjUwZjdhZGYwMTExNzQ5IiwiamlkIjoiY2xidzMyOXM0MDAwMHkxMGw2cjVxeTVld0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ3MzI5czQwMDAweTEwbDZyNXF5NWV3IiwidWtleSI6ImE3ZjVmZjhmLTZmNDMtNDRjMC1hZGQwLTFmMDMzYjg5NGMwZCIsImNsaWVudCI6IiIsImp0aSI6IjZiYWY1OTJjLTJiZmEtNGQ5YS1hOTc2LTlmYzBhYjZmNGI4NyJ9.lyGnJ89qzpKaVbsHa0rz8U4unwDUN--SerU9erZQfUGNSlhEqnDVzrg5U5Mw3XPho6HGVFv_RX3pfixNT_OXQvVz7sQfBXyjKRz51FrQ8knOiF4Rupn8p1ckzq3RIY5K0RP1eMvcsONrwdRYaj8HyYCEvtxEAOKoXmHBwlv0D9WUEIxozaC_PmVxJeoR_qH8VRZqE5RgH6TI_eYWUimrn-LNItaMHM9PNBajiZwiqAGMwi7TWLElJNUyPK25j2WvrT1AHSV4uYy0HuKBZlsYb-EMayOnT3BsKr5jUq4RS4slDm9o8zVS8DtqJ2i93g6UUAiPK6IGL1MxFhqGNX-MQQ</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjkwMDQsInBlcm0iOiIiLCJpYXQiOjE2ODg1Mzc3NTQsImV4cCI6MTY5MTEyOTc1NCwicHJtIjoiYWI5MTk5YWYyZDdlYWNmODE2MDFmODkyODEzY2IzNGYiLCJqaWQiOiJjbGJ1Z3B3eDU2OTk5MjBqMmEyZGt3bndwdkBsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1Z3B3eDU2OTk5MjBqMmEyZGt3bndwdiIsInVrZXkiOiI1ZmEyNDcwZi04ZWIwLTQyZGItYTQ1Ni01MTY2OTY5ZGRhNTYiLCJjbGllbnQiOiIiLCJqdGkiOiIwYzBhZWNhMi0zNTU2LTRmZmItYmZlZi1kMDc1YjhmZTY5NDIifQ.PkpZKA6izn0NMddB2j7EcgK-ZNrbZfkvghzsc__fN-cHSUDGtEoiO6Z1HFhZvDCRQO7XyHBSqH0iCiGjag5LV50ow3r6Y_yUBPDJ6Mzx2w9xJlWRmrYw99ysXafhAzMsCcyIJVix6Zn5IF0npFCVuMb8sppMNG9hdBxBEYFI19LxcTnXgr_3kPKu85_gIRoZ1wqTzKl6XwNzANy0FO4n8VPqINKrOIq-wGtebJkvW8JEiB6lQUva7tHj2pDwmTMrXLHz-bOO9TCDvZ5xSeNVB_R1m8uVsq3PkdDl3bvGyZDeIiHxNUv1rXoniBR2B9_PPU-zyEEsAG7KJx5ulBRoCg</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="GetNetworkStatus" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;query&quot;:&quot;query GetNetworkStatus {\n  getNetworkStatus(userId: ${id}, networkUserId: ${id1}) {\n    isFollowing(userId: ${id})\n    userConnection {\n      status\n      isRequest\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetNetworkStatus {
+  getNetworkStatus(userId: ${id}, networkUserId: ${id1}) {
+    isFollowing(userId: ${id})
+    userConnection {
+      status
+      isRequest
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables"></stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjY4ODUyLCJwZXJtIjoiIiwiaWF0IjoxNjc0NjQ1MjM2LCJleHAiOjE2NzcyMzcyMzYsInBybSI6IjM1ZmMyY2EzZTdlZTEzNTk2MjUwZjdhZGYwMTExNzQ5IiwiamlkIjoiY2xidzMyOXM0MDAwMHkxMGw2cjVxeTVld0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ3MzI5czQwMDAweTEwbDZyNXF5NWV3IiwidWtleSI6ImE3ZjVmZjhmLTZmNDMtNDRjMC1hZGQwLTFmMDMzYjg5NGMwZCIsImNsaWVudCI6IiIsImp0aSI6IjZiYWY1OTJjLTJiZmEtNGQ5YS1hOTc2LTlmYzBhYjZmNGI4NyJ9.lyGnJ89qzpKaVbsHa0rz8U4unwDUN--SerU9erZQfUGNSlhEqnDVzrg5U5Mw3XPho6HGVFv_RX3pfixNT_OXQvVz7sQfBXyjKRz51FrQ8knOiF4Rupn8p1ckzq3RIY5K0RP1eMvcsONrwdRYaj8HyYCEvtxEAOKoXmHBwlv0D9WUEIxozaC_PmVxJeoR_qH8VRZqE5RgH6TI_eYWUimrn-LNItaMHM9PNBajiZwiqAGMwi7TWLElJNUyPK25j2WvrT1AHSV4uYy0HuKBZlsYb-EMayOnT3BsKr5jUq4RS4slDm9o8zVS8DtqJ2i93g6UUAiPK6IGL1MxFhqGNX-MQQ</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="GetTaggedUsers" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;query&quot;:&quot;query GetTaggedUsers {\n  getTaggedUsers(loggedInUserId: ${user_id}, contentId: ${contentid}) {\n    backgroundImageThumbnail\n    connectionStatus {\n      isRequest\n      status\n    }\n    firstname\n    lastname\n    id\n    followerCount\n    mutualConnectionCount\n    isTagged\n    profileThumbnail\n    username\n    xmppUsername\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetTaggedUsers {
+  getTaggedUsers(loggedInUserId: ${user_id}, contentId: ${contentid}) {
+    backgroundImageThumbnail
+    connectionStatus {
+      isRequest
+      status
+    }
+    firstname
+    lastname
+    id
+    followerCount
+    mutualConnectionCount
+    isTagged
+    profileThumbnail
+    username
+    xmppUsername
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables"></stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjY4ODUyLCJwZXJtIjoiIiwiaWF0IjoxNjc0NjQ1MjM2LCJleHAiOjE2NzcyMzcyMzYsInBybSI6IjM1ZmMyY2EzZTdlZTEzNTk2MjUwZjdhZGYwMTExNzQ5IiwiamlkIjoiY2xidzMyOXM0MDAwMHkxMGw2cjVxeTVld0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ3MzI5czQwMDAweTEwbDZyNXF5NWV3IiwidWtleSI6ImE3ZjVmZjhmLTZmNDMtNDRjMC1hZGQwLTFmMDMzYjg5NGMwZCIsImNsaWVudCI6IiIsImp0aSI6IjZiYWY1OTJjLTJiZmEtNGQ5YS1hOTc2LTlmYzBhYjZmNGI4NyJ9.lyGnJ89qzpKaVbsHa0rz8U4unwDUN--SerU9erZQfUGNSlhEqnDVzrg5U5Mw3XPho6HGVFv_RX3pfixNT_OXQvVz7sQfBXyjKRz51FrQ8knOiF4Rupn8p1ckzq3RIY5K0RP1eMvcsONrwdRYaj8HyYCEvtxEAOKoXmHBwlv0D9WUEIxozaC_PmVxJeoR_qH8VRZqE5RgH6TI_eYWUimrn-LNItaMHM9PNBajiZwiqAGMwi7TWLElJNUyPK25j2WvrT1AHSV4uYy0HuKBZlsYb-EMayOnT3BsKr5jUq4RS4slDm9o8zVS8DtqJ2i93g6UUAiPK6IGL1MxFhqGNX-MQQ</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="SearchUser" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;searchUserInput&quot;: {
+    &quot;userId&quot;: ${id},
+    &quot;searchString&quot;: &quot;&quot;
+  }
+},&quot;query&quot;:&quot;query SearchUser($searchUserInput: SearchUserInput) {\n  searchUser(searchUserInput: $searchUserInput) {\n    pageEdges {\n      node {\n        id\n        firstname\n        lastname\n        username\n        instituteName\n        profileThumbnail\n        mutualConnectionCount\n        backgroundImageThumbnail\n        followerCount\n        xmppUsername\n      }\n    }\n    pageInfo {\n      totalCount\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query SearchUser($searchUserInput: SearchUserInput) {
+  searchUser(searchUserInput: $searchUserInput) {
+    pageEdges {
+      node {
+        id
+        firstname
+        lastname
+        username
+        instituteName
+        profileThumbnail
+        mutualConnectionCount
+        backgroundImageThumbnail
+        followerCount
+        xmppUsername
+      }
+    }
+    pageInfo {
+      totalCount
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;searchUserInput&quot;: {
+    &quot;userId&quot;: ${id},
+    &quot;searchString&quot;: &quot;&quot;
+  }
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjY4ODUyLCJwZXJtIjoiIiwiaWF0IjoxNjczNTA0NTY2LCJleHAiOjE2NzYwOTY1NjYsInBybSI6ImUxOWVhODBkOGNjMjJmZGRhNWUwMDMwMzYxY2RmY2QxIiwiamlkIjoiY2xidzMyOXM0MDAwMHkxMGw2cjVxeTVld0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ3MzI5czQwMDAweTEwbDZyNXF5NWV3IiwidWtleSI6ImE3ZjVmZjhmLTZmNDMtNDRjMC1hZGQwLTFmMDMzYjg5NGMwZCIsImNsaWVudCI6IiIsImp0aSI6IjFmZTllY2EwLTA5MzMtNGNhMC1iMjBiLTY2NGRlNGQzZWFlNiJ9.RHkZRWvVc1aFnmjGD-IfRxpzuVLjsKFgK_1cuUGfEf0Uf7r4GV8JSBd7ycgX5XKQuPvW_NiG5EOfwf2kiYHSZj4SKDCghW25BMgkgGUx5wyr4fcqkZ17hkcDR4LHMYxiKRjIYIUNkacRFOJraoPPGSBNazSgzUtQkVX1wNXZuB-z6hrN0ypBn99u2O9jr5fqiU_Way-qU7-gAd2KK8tisJb6DYTysaobkxlLRpdzzUWObT6uUceVU2jiibHybZwSAb6QeA3MqId9igQQvfwk0CarF1Krt7b-T7Td15nUgLj-pgFm83PnszmQiKFrZG53Ij9dQi1IMHcbmf6P99bnFQ</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="SearchUserES" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;searchUserInput&quot;: {
+    &quot;userId&quot;: ${id},
+    &quot;searchString&quot;: &quot;&quot;
+  }
+},&quot;query&quot;:&quot;query SearchUserES($searchUserInput: SearchUserInput) {\n  searchUserES(searchUserInput: $searchUserInput) {\n    pageEdges {\n      node {\n        id\n        firstname\n        lastname\n        username\n        instituteName\n        profileThumbnail\n        mutualConnectionCount\n        backgroundImageThumbnail\n        followerCount\n        xmppUsername\n      }\n    }\n    pageInfo {\n      totalCount\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query SearchUserES($searchUserInput: SearchUserInput) {
+  searchUserES(searchUserInput: $searchUserInput) {
+    pageEdges {
+      node {
+        id
+        firstname
+        lastname
+        username
+        instituteName
+        profileThumbnail
+        mutualConnectionCount
+        backgroundImageThumbnail
+        followerCount
+        xmppUsername
+      }
+    }
+    pageInfo {
+      totalCount
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;searchUserInput&quot;: {
+    &quot;userId&quot;: ${id},
+    &quot;searchString&quot;: &quot;&quot;
+  }
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjY4ODUyLCJwZXJtIjoiIiwiaWF0IjoxNjczNTA0NTY2LCJleHAiOjE2NzYwOTY1NjYsInBybSI6ImUxOWVhODBkOGNjMjJmZGRhNWUwMDMwMzYxY2RmY2QxIiwiamlkIjoiY2xidzMyOXM0MDAwMHkxMGw2cjVxeTVld0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ3MzI5czQwMDAweTEwbDZyNXF5NWV3IiwidWtleSI6ImE3ZjVmZjhmLTZmNDMtNDRjMC1hZGQwLTFmMDMzYjg5NGMwZCIsImNsaWVudCI6IiIsImp0aSI6IjFmZTllY2EwLTA5MzMtNGNhMC1iMjBiLTY2NGRlNGQzZWFlNiJ9.RHkZRWvVc1aFnmjGD-IfRxpzuVLjsKFgK_1cuUGfEf0Uf7r4GV8JSBd7ycgX5XKQuPvW_NiG5EOfwf2kiYHSZj4SKDCghW25BMgkgGUx5wyr4fcqkZ17hkcDR4LHMYxiKRjIYIUNkacRFOJraoPPGSBNazSgzUtQkVX1wNXZuB-z6hrN0ypBn99u2O9jr5fqiU_Way-qU7-gAd2KK8tisJb6DYTysaobkxlLRpdzzUWObT6uUceVU2jiibHybZwSAb6QeA3MqId9igQQvfwk0CarF1Krt7b-T7Td15nUgLj-pgFm83PnszmQiKFrZG53Ij9dQi1IMHcbmf6P99bnFQ</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="GetUserById" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;getUserByIdId&quot;: ${id}
+},&quot;query&quot;:&quot;query GetUserById($getUserByIdId: Int!) {\n  getUserById(id: $getUserByIdId) {\n    id\n    profileImage\n    backgroundImage\n    backgroundImageThumbnail\n    videoThumbnail\n    firstname\n    lastname\n    username\n    weight\n    height\n    SATScore\n    HSGraduationYear\n    highSchoolLevel\n    isEmailConfirmed\n    gender\n    birthDate\n    businessEmail\n    city\n    state\n    bio\n    viewEditProfile\n    email\n    userAchievements {\n      id\n      userId\n      achievement\n      team\n      position\n      date\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetUserById($getUserByIdId: Int!) {
+  getUserById(id: $getUserByIdId) {
+    id
+    profileImage
+    backgroundImage
+    backgroundImageThumbnail
+    videoThumbnail
+    firstname
+    lastname
+    username
+    weight
+    height
+    SATScore
+    HSGraduationYear
+    highSchoolLevel
+    isEmailConfirmed
+    gender
+    birthDate
+    businessEmail
+    city
+    state
+    bio
+    viewEditProfile
+    email
+    userAchievements {
+      id
+      userId
+      achievement
+      team
+      position
+      date
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;getUserByIdId&quot;: ${id}
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="getProfileViews" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;userId&quot;: ${id},
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 20
+},&quot;query&quot;:&quot;query GetProfileViews($userId: Int!, $cursor: Int, $take: Int) {\n  getProfileViews(userId: $userId, cursor: $cursor, take: $take) {\n    pageEdges {\n      node {\n        id\n        fromUser {\n          id\n          firstname\n          lastname\n          username\n          xmppUsername\n          backgroundImageThumbnail\n          profileImage\n        }\n        viewDate\n        fromUserId\n        followerCount\n        mutualConnection\n        connectionStatus {\n          isRequest\n          status\n        }\n      }\n    }\n    pageInfo {\n      totalCount\n      hasNextPage\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetProfileViews($userId: Int!, $cursor: Int, $take: Int) {
+  getProfileViews(userId: $userId, cursor: $cursor, take: $take) {
+    pageEdges {
+      node {
+        id
+        fromUser {
+          id
+          firstname
+          lastname
+          username
+          xmppUsername
+          backgroundImageThumbnail
+          profileImage
+        }
+        viewDate
+        fromUserId
+        followerCount
+        mutualConnection
+        connectionStatus {
+          isRequest
+          status
+        }
+      }
+    }
+    pageInfo {
+      totalCount
+      hasNextPage
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;userId&quot;: ${id},
+  &quot;cursor&quot;: 0,
+  &quot;take&quot;: 20
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="GetFollowingUsers" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;userNetWorkInput&quot;: {
+    &quot;limit&quot;: 20,
+    &quot;pageNo&quot;: 0,
+    &quot;requireMutualConnectionCount&quot;: true,
+    &quot;searchString&quot;: &quot;&quot;,
+    &quot;userId&quot;: ${id}
+  }
+},&quot;query&quot;:&quot;query GetFollowingUsers($userNetWorkInput: UserNetWorkInput!) {\n  getFollowingUsers(userNetWorkInput: $userNetWorkInput) {\n    pageInfo {\n      hasNextPage\n      totalCount\n    }\n    data {\n      id\n      firstname\n      lastname\n      username\n      xmppUsername\n      backgroundImageThumbnail\n      followerCount\n      mutualConnectionCount\n      isFollowing\n      profileThumbnail\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetFollowingUsers($userNetWorkInput: UserNetWorkInput!) {
+  getFollowingUsers(userNetWorkInput: $userNetWorkInput) {
+    pageInfo {
+      hasNextPage
+      totalCount
+    }
+    data {
+      id
+      firstname
+      lastname
+      username
+      xmppUsername
+      backgroundImageThumbnail
+      followerCount
+      mutualConnectionCount
+      isFollowing
+      profileThumbnail
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;userNetWorkInput&quot;: {
+    &quot;limit&quot;: 20,
+    &quot;pageNo&quot;: 0,
+    &quot;requireMutualConnectionCount&quot;: true,
+    &quot;searchString&quot;: &quot;&quot;,
+    &quot;userId&quot;: ${id}
+  }
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="GetFollowerUsers" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;userNetWorkInput&quot;: {
+    &quot;limit&quot;: 20,
+    &quot;pageNo&quot;: 0,
+    &quot;requireMutualConnectionCount&quot;: true,
+    &quot;searchString&quot;: &quot;&quot;,
+    &quot;userId&quot;: ${id}
+  }
+},&quot;query&quot;:&quot;query GetFollowerUsers($userNetWorkInput: UserNetWorkInput!) {\n  getFollowerUsers(userNetWorkInput: $userNetWorkInput) {\n    data {\n      backgroundImageThumbnail\n      id\n      firstname\n      lastname\n      username\n      xmppUsername\n      isFollowing\n      followerCount\n      mutualConnectionCount\n      profileThumbnail\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query GetFollowerUsers($userNetWorkInput: UserNetWorkInput!) {
+  getFollowerUsers(userNetWorkInput: $userNetWorkInput) {
+    data {
+      backgroundImageThumbnail
+      id
+      firstname
+      lastname
+      username
+      xmppUsername
+      isFollowing
+      followerCount
+      mutualConnectionCount
+      profileThumbnail
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;userNetWorkInput&quot;: {
+    &quot;limit&quot;: 20,
+    &quot;pageNo&quot;: 0,
+    &quot;requireMutualConnectionCount&quot;: true,
+    &quot;searchString&quot;: &quot;&quot;,
+    &quot;userId&quot;: ${id}
+  }
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="SuggestionsBasedOnFollowing" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;suggestionInput&quot;: {
+    &quot;userId&quot;: ${id},
+    &quot;pageNo&quot;: 0,
+    &quot;limit&quot;: 20
+  }
+},&quot;query&quot;:&quot;query SuggestionsBasedOnFollowing($suggestionInput: SuggestionInput) {\n  suggestionsBasedOnFollowing(suggestionInput: $suggestionInput) {\n    data {\n      backgroundImageThumbnail\n      connectionStatus {\n        status\n        isRequest\n      }\n      firstname\n      followerCount\n      id\n      isFollowing\n      lastname\n      mutualConnectionCount\n      profileThumbnail\n      username\n      xmppUsername\n    }\n    pageInfo {\n      hasNextPage\n      totalCount\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query SuggestionsBasedOnFollowing($suggestionInput: SuggestionInput) {
+  suggestionsBasedOnFollowing(suggestionInput: $suggestionInput) {
+    data {
+      backgroundImageThumbnail
+      connectionStatus {
+        status
+        isRequest
+      }
+      firstname
+      followerCount
+      id
+      isFollowing
+      lastname
+      mutualConnectionCount
+      profileThumbnail
+      username
+      xmppUsername
+    }
+    pageInfo {
+      hasNextPage
+      totalCount
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;suggestionInput&quot;: {
+    &quot;userId&quot;: ${id},
+    &quot;pageNo&quot;: 0,
+    &quot;limit&quot;: 20
+  }
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="SuggestionsBasedOnConnection" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;suggestionInput&quot;: {
+    &quot;userId&quot;: ${id},
+    &quot;pageNo&quot;: 0,
+    &quot;limit&quot;: 20
+  }
+},&quot;query&quot;:&quot;query SuggestionsBasedOnConnection($suggestionInput: SuggestionInput) {\n  suggestionsBasedOnConnection(suggestionInput: $suggestionInput) {\n    data {\n      backgroundImageThumbnail\n      firstname\n      lastname\n      followerCount\n      id\n      isFollowing\n      mutualConnectionCount\n      profileThumbnail\n      username\n      xmppUsername\n      connectionStatus {\n        status\n        isRequest\n      }\n    }\n    pageInfo {\n      hasNextPage\n      totalCount\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query SuggestionsBasedOnConnection($suggestionInput: SuggestionInput) {
+  suggestionsBasedOnConnection(suggestionInput: $suggestionInput) {
+    data {
+      backgroundImageThumbnail
+      firstname
+      lastname
+      followerCount
+      id
+      isFollowing
+      mutualConnectionCount
+      profileThumbnail
+      username
+      xmppUsername
+      connectionStatus {
+        status
+        isRequest
+      }
+    }
+    pageInfo {
+      hasNextPage
+      totalCount
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;suggestionInput&quot;: {
+    &quot;userId&quot;: ${id},
+    &quot;pageNo&quot;: 0,
+    &quot;limit&quot;: 20
+  }
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="SearchBlockedUsers" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;userNetWorkInput&quot;: {
+    &quot;userId&quot;: ${id},
+    &quot;searchString&quot;: &quot;&quot;,
+    &quot;pageNo&quot;: 0,
+    &quot;limit&quot;: 20
+  }
+},&quot;query&quot;:&quot;query SearchBlockedUsers($userNetWorkInput: UserNetWorkInput!) {\n  searchBlockedUsers(userNetWorkInput: $userNetWorkInput) {\n    data {\n      id\n      firstname\n      lastname\n      username\n      mutualConnectionCount\n      profileThumbnail\n    }\n    pageInfo {\n      hasNextPage\n      totalCount\n    }\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query SearchBlockedUsers($userNetWorkInput: UserNetWorkInput!) {
+  searchBlockedUsers(userNetWorkInput: $userNetWorkInput) {
+    data {
+      id
+      firstname
+      lastname
+      username
+      mutualConnectionCount
+      profileThumbnail
+    }
+    pageInfo {
+      hasNextPage
+      totalCount
+    }
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;userNetWorkInput&quot;: {
+    &quot;userId&quot;: ${id},
+    &quot;searchString&quot;: &quot;&quot;,
+    &quot;pageNo&quot;: 0,
+    &quot;limit&quot;: 20
+  }
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="SearchUsersByXMPPUsernames" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;xmppUsernames&quot;: &quot;${xmppUsername}&quot;
+},&quot;query&quot;:&quot;query SearchUsersByXMPPUsernames($xmppUsernames: [String]) {\n  searchUsersByXMPPUsernames(xmppUsernames: $xmppUsernames) {\n    id\n    username\n    firstname\n    lastname\n    profileThumbnail\n    xmppUsername\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">query SearchUsersByXMPPUsernames($xmppUsernames: [String]) {
+  searchUsersByXMPPUsernames(xmppUsernames: $xmppUsernames) {
+    id
+    username
+    firstname
+    lastname
+    profileThumbnail
+    xmppUsername
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;xmppUsernames&quot;: &quot;${xmppUsername}&quot;
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="false">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="AddFollowers" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{  &quot;userId&quot;: ${id},
+  &quot;followingId&quot;: ${id1}
+},&quot;query&quot;:&quot;mutation AddFollowers($userId: Int!, $followingId: Int!) {\n  addFollowers(userId: $userId, followingId: $followingId)\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">mutation AddFollowers($userId: Int!, $followingId: Int!) {
+  addFollowers(userId: $userId, followingId: $followingId)
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{  &quot;userId&quot;: ${id},
+  &quot;followingId&quot;: ${id1}
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">1000</stringProp>
+        </TestAction>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="addConnection" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{  &quot;userId&quot;: 253563,
+  &quot;connectionId&quot;: ${user_id}
+},&quot;query&quot;:&quot;mutation Mutation($userId: Int!, $connectionId: Int!) {\n  addConnection(userId: $userId, connectionId: $connectionId)\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">mutation Mutation($userId: Int!, $connectionId: Int!) {
+  addConnection(userId: $userId, connectionId: $connectionId)
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{  &quot;userId&quot;: 253563,
+  &quot;connectionId&quot;: ${user_id}
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="GraphQLHTTPSamplerGui" testclass="HTTPSamplerProxy" testname="BlockUser" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument" enabled="true">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;operationName&quot;:null,&quot;variables&quot;:{
+  &quot;userAction&quot;: {
+    &quot;blockedUserId&quot;: ${id},
+    &quot;userId&quot;: 253563,
+    &quot;type&quot;: &quot;Block&quot;
+  }
+},&quot;query&quot;:&quot;mutation BlockUser($userAction: UserReportBlock) {\n  blockUser(userAction: $userAction) {\n    userId\n    blockedUserId\n    type\n    reason\n  }\n}&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">routers.stress.nxlvldev.app</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="GraphQLHTTPSampler.operationName"></stringProp>
+          <stringProp name="GraphQLHTTPSampler.query">mutation BlockUser($userAction: UserReportBlock) {
+  blockUser(userAction: $userAction) {
+    userId
+    blockedUserId
+    type
+    reason
+  }
+}</stringProp>
+          <stringProp name="GraphQLHTTPSampler.variables">{
+  &quot;userAction&quot;: {
+    &quot;blockedUserId&quot;: ${id},
+    &quot;userId&quot;: 253563,
+    &quot;type&quot;: &quot;Block&quot;
+  }
+}</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IndGSm1EY0h3ZVludDZLaGlDYmJPZloxNnVnVjJNM044NnRXSFp2RERWQ1EifQ.eyJ1aWQiOjQ0MDkwLCJwZXJtIjoiIiwiaWF0IjoxNjc1MTYzODcwLCJleHAiOjE2Nzc3NTU4NzAsInBybSI6ImI4ZjY5OGJhZjdkMTQ5ZDYwMDY1YzAyNzZhMWRkOWQxIiwiamlkIjoiY2xidXAyZHJzMDAwMjBqenl1M3F5a2FwY0Bsb2NhbGhvc3QiLCJtaW0iOiJjbGJ1cDJkcnMwMDAyMGp6eXUzcXlrYXBjIiwidWtleSI6IjRmMTI1MmYxLWRjY2ItNGYyYi1iZDg1LWYwZTBjMTczNzljNyIsImNsaWVudCI6IiIsImp0aSI6Ijg5M2FlNGUwLWY4ZTAtNDZkMS04Njk5LWQwNWUyOGM3ODhlOSJ9.qF9ZhwFl45IK_eyAr0VfXZgeD2ZoQQ3JDsXWscJ89sp6j0bDR7xsL13at5z_pp1fxKAcvna0dBX8E1Khd98ISF6e-Ja9dpmHbs_wYdGSJKNYY5S_4CL_g6BogW4LhSgmTA87pQIvKvGKr6VRReSBrEVOJ01Tm9rn2PQi2D9zp7yS3NJuOyW_I5W-PQjZfqZ3cuBQi5xzJ87uTMCSRxRnwK3xV12sWgbPRg0Sum_kVmAwltuvZZ_9vYvMvo_7zgvPyqytTZxwbDxfFbtrSQYoKIJaCed1092I5ufWM8hIjQzpozeX72vHZcE4nhhYr1cjxRBzvopX7--2KI6mw4cpYw</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1294635157">errors</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">6</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="false">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
